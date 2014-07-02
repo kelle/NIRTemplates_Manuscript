@@ -391,7 +391,9 @@ based entirely on similar spectral morphology in the optical. nothing about age 
 
 The number of objects included in each template, the mean, minimum, maximum, and range of $J-K_S$ colors is listed in Table~\#. 
 
+\subsection{The low-gravity spectral sequence}
 
+In Figure~\ref{fig:lg_sequence}, we show the spectral sequence made by low gravity templates.
 
 \subsection{Isolating gravity: Low-gravity templates compared to the field gravity templates} 
 
@@ -448,23 +450,36 @@ As discussed by \citet[\S~3.2]{Kirkpatrick05} and \citet[abbreviated as K10]{Kir
 In an MK system \citep{Morgan:1984wy}, the ideal scheme uses the on-sky spectral standards and the entirety of the spectrum to estimate a type. 
 % More recently, \cite{Kirkpatrick10} proposed a suite of NIR standards and a spectral typing scheme that compares the entire 1--2.5~$\micron$ region, normalized at 1.28 $\micron$ (resulting in the ``fan'' described above in \S~\ref{sec:method} and illustrated in Figure~\ref{fig:L1fan}), but only requiring a good match to the spectral standard in the $J$ band. 
 % Objects with a poor match to the standard in the $H$ and $K$ bands, despite a good $J$-band match, are given a `blue' or `red' suffix. 
-Here, we build on the utility of the K10 spectral standards and suggest a method for estimating optically-anchored spectral types for L dwarfs based solely on NIR data, especially when high quality $J$-band data is not available. 
+Here, we build on the utility of the K10 spectral standards and classification scheme by introducing the normal-gravity templates, low-gravity spectral standards, and suggesting a classification method for estimating optically-anchored spectral types for L dwarfs based on NIR data when high quality $J$-band data is not available.
 
+\subsection{NIR templates compared to NIR standards}
+
+\citet{Kirkpatrick10} identified on-sky L dwarf spectral standards and we refer to these objects as the K10 spectral standards. In Figure \ref{fig:templates-stds} we show the NIR spectral average templates (black and gray) and the K10 spectral type standards (colors). The L8 template is compared to both the L8 and L9 spectral type standards. The agreement in spectral shape between the templates and spectral standards is excellent for all subtypes. The L8 template, however, fits better to the L9 spectral standard.
+
+The K10 standards were not treated any differently than the rest of L dwarfs when determining their inclusion in the optical-NIR sample used to calculate the NIR templates. This resulted in the exclusion of the three standards below from the templates:
+\begin{itemize}
+	\item The L2 NIR standard, \object{2MASS~1305$-$2541} Kelu-1, is a confirmed binary. Was rejected in H and K band, but not in J.
+	\item The L5 NIR standard, \object{2MASS~0835+1953}, has no available optical spectrum. 
+	\item The L7 NIR standard, \object{2MASS~0103+1935}, is classified as L6 in the optical (reference?), we have re-classified it as L6pec after a re-analysis of its optical spectrum. It's included in the L6 template.
+\end{itemize}
+
+While the K10 spectral standards remain the spectral type anchors, we expect the templates to the most useful for establishing the \emph{range} of spectral morphologies spanned at each spectral type.
+Setting the tolerance for a ``good'' match.
+
+%That the templates agree so well with the standards mean that they are good standards.
 
 \subsection{Low-Gravity L Dwarf Spectral Standards in the Near-Infrared}
 
 Of the objects included in the templates, 
-
 Choose bright objects. 
+chose gammas.
+and not at extreme north or south dec. Choose two L0 gammas due to 0141 being at -46.
+listed in Table~\ref{tab:lg_standards}.
 
-chose betas and gammas in the optical even though NIR spectra are very similar.
+\textbf{need to make low gravity sequence figure.}
 
-and not at extreme north or south dec. Choose two L0 gammas due to 0141 being at -46
-
-Table~\ref{tab:lg_standards}.
 
 \subsection{Method for estimating spectral types from NIR data}
-
 
 We propose a scheme that takes advantage of normalizing band-by-band (as described above in \S~\ref{sec:method}), uses spectral standards and the spectral average templates (\S~\ref{sec:templates}), and provides a method to assign spectral types to L~dwarfs with only $H$-~or $K$-band data. 
 %As illustrated in Figure~\ref{fig:sequence}, the $H$ and $K$ bands are not as diagnostic of an optically-anchored spectral type as the feature-rich $J$ band.
@@ -479,8 +494,16 @@ In order to estimate a spectral type based on NIR data, we suggest the following
 The features contributing to a good match in the $K$ band are both the blue and red slopes on either side of the 2.13~$\micron$ peak.	
 	\item If data are not available in all three bands, $J$ band in particular, there will likely be a range of types that have equally good matches and the spectral type can be reported as a range (e.g., L3--L5). In these cases, the range notation is preferred since L3--L5 implies the types L3, L4, and L5 are all equally probable, whereas L4$\pm$1 implies a best-fit type of L4 using a method with one spectral type precision.
 	\item If the target is not a good match to any available standards or field or low-gravity templates, consider a `pec' suffix to indicate the peculiarity of the spectrum.
-	\item Spectral types based on low signal-to-noise data ($S/N\sim15$) can be indicated with a `:' suffix or `::' for very-low signal-to-noise ($S/N\sim5$) data (REF). For example, ``L1:'' could be used to describe a low signal-to-noise spectrum that matches the L1 template best in both $J$ and $H$ bands. ``L1--L3::'' could be used to describe a very low signal-to-noise spectrum that matches the L1, L2, and L3 templates all equally well.
+	\item Spectral types based on low signal-to-noise data ($S/N\sim15$) can be indicated with a `:' suffix or `::' for very-low signal-to-noise ($S/N\sim5$) data (REF). For example, `L1:' could be used to describe a low signal-to-noise spectrum that matches the L1 template best in both $J$ and $H$ bands. `L1--L3::' could be used to describe a very low signal-to-noise spectrum that matches the L1, L2, and L3 templates all equally well.
 \end{itemize}	
+
+K10 also suggests adding `red' and `blue' suffixes for objects that, when normalized at 1.28~$\micron$, have poor fits across the $H$ and $K$ bands due to the slope of the spectrum relative to the standard. 
+While the spectral slope information is useful, and possibly diagnostic of the object's cloud properties, this method for assigning the suffix is relatively objective.
+Since, the spectral slope of the object can be assessed via the $J-H$ and $J-K$ colors, we suggest that the bulk color properties of the optical-NIR sample be used to help objectively guide when a red or blue suffix is warranted.
+In Figure~\ref{fig:JK_colors} and Table~\ref{tab:sample_prop}, we show the quartile ranges of the $J-K$ colors at each spectral type. 
+We suggest that normal-gravity objects with $J-K$ colors in the upper or lower quartiles of this distribution be considered for a red or blue suffix, respectively. 
+Color alone is not sufficient to warrant a blue or red suffix: the suffix is intended to be used for objects that, when normalized band-by-band, are good matches in $J$, $H$, and $K$ to the normal-gravity standards or templates but have an unusually steep or shallow spectral slope from $J$ to $K$.
+If the spectrum does not match the field gravity standards or templates, a low gravity or `pec' classification should be considered.
 
 Presently, we do not encourage the use of half-types for spectral types based on low-resolution NIR data. 
 Compared to the optical sequence, where half-types are warranted, the SpeX prism near-infrared spectra are at lower resolution, cover a larger wavelength range, and display a greater diversity of spectral morphologies at each type. 
@@ -519,23 +542,7 @@ Larger datasets and/or higher-resolution spectra may facilitate the introduction
 
 %In addition, since this scheme is tied closely to the optical scheme, discrepancies between optical and NIR-based types should be greatly reduced.
 
-\subsection{NIR templates compared to NIR standards}
 
-\citet{Kirkpatrick10} identified on-sky L dwarf spectral standards and we refer to these objects as the K10 spectral standards.
-
-In Figure \ref{fig:templates-stds} we show our NIR spectral average templates (in black) with their flux range strips (in gray) and the K10 spectral type standards (in colors). The L8 template is compared to both the L8 and L9 spectral type standards. The agreement in spectral shape between the templates and spectral standards is excellent for all subtypes. The L8 template, however, fits better to the L9 spectral standard.
-
-The K10 standards were not treated any differently than the rest of L dwarfs when determining their inclusion in the optical-NIR sample used to calculate the NIR templates. This resulted in the exclusion of the three standards below from the templates:
-\begin{itemize}
-	\item The L2 NIR standard, \object{2MASS~1305$-$2541} Kelu-1, is a confirmed binary. Was rejected in H and K band, but not in J.
-	\item The L5 NIR standard, \object{2MASS~0835+1953}, has no available optical spectrum. 
-	\item The L7 NIR standard, \object{2MASS~0103+1935}, is classified as L6 in the optical (reference?), we have re-classified it as L6pec after a re-analysis of its optical spectrum. It's included in the L6 template.
-\end{itemize}
-
-While the K10 spectral standards remain the spectral type anchors, we expect the templates to the most useful for establishing the \emph{range} of spectral morphologies spanned at each spectral type.
-Setting the tolerance for a ``good'' match.
-
-That the templates agree so well with the standards mean that they are good standards.
 
 %\subsection{Spectral Typing Notes}
 
@@ -861,7 +868,11 @@ atmospheres.}
 	\label{fig:lowg_excluded}
 \end{figure}
 
-
+\begin{figure}
+	\caption{The low gravity near-infrared spectral sequence.}
+	\label{fig:lg_sequence}
+\end{figure}
+	
 %\end{landscape}
 
 \begin{figure}
