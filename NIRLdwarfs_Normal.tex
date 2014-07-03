@@ -456,12 +456,24 @@ Here, we build on the utility of the K10 spectral standards and classification s
 
 \citet{Kirkpatrick10} identified on-sky L dwarf spectral standards and we refer to these objects as the K10 spectral standards. In Figure \ref{fig:templates-stds} we show the NIR spectral average templates (black and gray) and the K10 spectral type standards (colors). The L8 template is compared to both the L8 and L9 spectral type standards. The agreement in spectral shape between the templates and spectral standards is excellent for all subtypes. The L8 template, however, fits better to the L9 spectral standard.
 
-The K10 standards were not treated any differently than the rest of L dwarfs when determining their inclusion in the optical-NIR sample used to calculate the NIR templates. This resulted in the exclusion of the three standards below from the templates:
+The K10 standards were not treated any differently than the rest of L dwarfs when determining their inclusion in the optical-NIR sample used to calculate the NIR templates. 
+Five of the ten standards are included in the spectral average template calculation for their spectral type: L1 2130-0845, L3 1506+1321, L4 2158-1550, L6 1010-0406, L8 1632+1904.
+The other five, however, are not included in the template for the K10 assigned NIR spectral type:
 \begin{itemize}
-	\item The L2 NIR standard, \object{2MASS~1305$-$2541} Kelu-1, is a confirmed binary. Was rejected in H and K band, but not in J.
-	\item The L5 NIR standard, \object{2MASS~0835+1953}, has no available optical spectrum. 
-	\item The L7 NIR standard, \object{2MASS~0103+1935}, is classified as L6 in the optical (reference?), we have re-classified it as L6pec after a re-analysis of its optical spectrum. It's included in the L6 template.
+	
+	\item L0 2M~0345 was rejected maybe due to wavelength calibration.
+
+	\item The L2 NIR standard, \object{2MASS~1305$-$2541} Kelu-1, a confirmed binary, was rejected from the templates in $H$ and $K$ band, but not in $J$. As can be seen in Figure~\ref{fig:templates-stds}, the spectrum of Kelu-1 is slightly different from the standard: the blue slope of the $H$ band is steeper, the width of the $H$-band peak is narrower, and the $K$-band CO absorption is weaker than the template. That said, the spectrum is still the best fit to the L2 template at all bands (\textbf{CHECK}) and could remain a suitable L2 on-sky standard.
+
+	\item The L5 NIR standard, \object{2MASS~0835+1953}, even for an L dwarf, is quite faint ($J=15.9$) and has no available optical spectrum. As a result, it is not included in the optical-NIR sample used as the basis for the template construction. As shown in Figure~\ref{fig:templates-stds}, despite not having a very high signal-to-noise ratio, the spectrum is a good match to the L5 template in all three bands and it remains a good L5 on-sky standard.
+
+	\item The L7 NIR standard, \object{2MASS~0103+1935}, is classified as L6 in the optical (reference?), we have re-classified it as L6pec after a re-analysis of its optical spectrum. It's included in the L6 template.  As can be seen in Figure~\ref{fig:templates-stds}, it's not a good match to the L7 template and we suggest demoting it as the L7 on-sky standard. We suggest replacing it with \textbf{L7 OBJECT}.
+	
+	\item The L9 NIR standard, \object{2MASS 0255-4700}, is classified as an L8 in the optical and is included in the L8 template. 
+	
 \end{itemize}
+
+\textbf{something about the L8/L9 issue.}
 
 While the K10 spectral standards remain the spectral type anchors, we expect the templates to the most useful for establishing the \emph{range} of spectral morphologies spanned at each spectral type.
 Setting the tolerance for a ``good'' match.
