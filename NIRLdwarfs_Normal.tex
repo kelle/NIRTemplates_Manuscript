@@ -674,9 +674,10 @@ Spectra can be downloaded from...
 
 
 \appendix
-\section{Spectra of Galaxies}
+\section{APPENDIX: Spectra of Galaxies}
 \label{sec:galaxies}
-As part of the spectroscopic follow-up described in \S~\ref{sec:obs_new_nir}, some candidates turned out to be galaxies and not M or L~dwarfs. We show the spectra of these objects in Figures~\ref{fig:notMs_1}--\ref{fig:notMs_3} and list them in Table~\ref{tab:notm}.
+As part of the spectroscopic follow-up described in \S~\ref{sec:obs_new_nir}, some candidates turned out to be galaxies and not M or L~dwarfs. We show the spectra of these objects in Figure set~\ref{fig:notMs_1}.
+
 
 \acknowledgments
 We would like to acknowledge the IRTF telescope operators
@@ -723,9 +724,10 @@ Facilities:
 \begin{figure}
 		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/JK.pdf}
 		\caption{2MASS $J-K_S$ color versus spectral type for the L dwarfs in the optical-NIR sample. 
-		%All individual L dwarfs are drawn as gray circles, and the average color at each spectral type is drawn as a black bar. 
-		Photometric uncertainties are not shown but all have photometric uncertainties smaller than 0.1~mag. 		
-		The properties of the field and low-gravity template samples are summarized in Table~\ref{tab:sample_prop} and~\ref{tab:lg_sample_prop}, respectively. The individual objects included and excluded from the field and low-gravity samples are listed in Tables~\ref{tab:field_template},\ref{tab:field_excluded},\ref{tab:lg_template}, and~\ref{tab:field_excluded}. }
+		Quartile ranges (\emph{box and whisker}) and mean colors (\emph{solid circles}) are shown for the objects included in the field gravity (\emph{black}) and low gravity (\emph{red}) templates. 
+		Objects excluded from the templates are marked individually (\emph{crosses}, field g: \emph{gray}, low-g: \emph{orange}).
+		%All individual L dwarfs are drawn as gray circles, and the average color at each spectral type is drawn as a black bar. 		
+		The properties of the field and low-gravity template samples are summarized in Table~\ref{tab:sample_prop} and~\ref{tab:lg_sample_prop}, respectively. The individual objects included in the field and low gravity templates are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, while the excluded objects are listed in Tables~\ref{tab:field_excluded} and~\ref{tab:lowg_excluded}. }
 	\label{fig:JK_colors}
 \end{figure}
 
@@ -828,9 +830,24 @@ Facilities:
 \clearpage
 
 \begin{figure}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_f_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_f_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_f_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L3strip_f_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_f_excluded.pdf}
 	\caption{Spectra excluded from the field gravity templates.}
 	\label{fig:field_excluded}
 \end{figure}
+
+\begin{figure}
+	\figurenum{6.1}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L5strip_f_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L6strip_f_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L7strip_f_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L8strip_f_excluded.pdf}
+	\caption{field excluded continued.}
+\end{figure}
+
 %\end{landscape}
 
 \begin{figure}
@@ -842,8 +859,10 @@ Facilities:
 
 \begin{figure}
 	\epsscale{1}
-	\plotone{figures/fig_oplot_templates.pdf}
-	\caption{Spectral band templates overplotted, L0--L5 on the top panels, and L6--L8 on the bottom panels. The blackbody curves for 2000 (purple), 1800 (blue), and 1600~K (red) (with arbitrary normalizations) are shown as dotted lines on the L0--L5 sequence. The L0--L5 spectra form an organized sequence in the $J$, $H$, and $K$ bands, whereas the L6--L8 spectra do not follow the same trend as the earlier types and are, therefore, plotted separately.}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_f.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence1_f.pdf}
+	\caption{Spectral band templates overplotted, L0--L5 on the top panels, and L6--L8 on the bottom panels. %The blackbody curves for 2000 (purple), 1800 (blue), and 1600~K (red) (with arbitrary normalizations) are shown as dotted lines on the L0--L5 sequence. 
+	The L0--L5 spectra form an organized sequence in the $J$, $H$, and $K$ bands, whereas the L6--L8 spectra do not follow the same trend as the earlier types and are, therefore, plotted separately.}
 	\label{fig:spec_sequence}
 \end{figure}
 
@@ -893,11 +912,18 @@ field objects plotted.}
 
 
 \begin{figure}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_lg_excluded.pdf}
+	% \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_lg_excluded.pdf}
+	% \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_lg_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_lg_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L5strip_lg_excluded.pdf}		
 	\caption{Spectra excluded from the low gravity templates.}
 	\label{fig:lowg_excluded}
 \end{figure}
 
 \begin{figure}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_lg.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence1_lg.pdf}
 	\caption{The low gravity near-infrared spectral sequence.}
 	\label{fig:lg_sequence}
 \end{figure}
@@ -929,20 +955,20 @@ field objects plotted.}
 \begin{figure}
 	\epsscale{1}
 	\plotone{figures/notM_galaxies1.pdf}
-	\caption{Normalized NIR range of 2MASS targets identified as not Ms, set 1 of 3. The objects plotted are: 0011+5149, 0256+1935, 0256+2013, 0421+1528, 0515$-$0656, and 055741$-$1333.}
+	\caption{Normalized NIR range of 2MASS targets identified as not Ms.}
 	\label{fig:notMs_1}
 \end{figure}
 
 \begin{figure}
+	\figurenum{16.1}
 	\plotone{figures/notM_galaxies2.pdf}
-	\caption{Normalized NIR range of 2MASS targets identified as not Ms, set 2 of 3. The objects plotted are: 055742-1333, 0558-1339, 1357-3946, 1506+2759, 1721-0619, and 2240+3848.}\include{tables/tab_normal_template.tex}
-	\label{fig:notMs_2}
+	\caption{Normalized NIR range of 2MASS targets identified as not Ms.}
 \end{figure}
 
 \begin{figure}
+	\figurenum{16.2}
 	\plotone{figures/notM_emln_galaxies.pdf}
-	\caption{Normalized NIR range of 2MASS targets identified as not Ms, set 3 of 3. The objects plotted are: 2015-1252, 2243-1525, and 2349+1833.}
-	\label{fig:notMs_3}
+	\caption{Normalized NIR range of 2MASS targets identified as not Ms.}
 \end{figure}
 
 \clearpage
