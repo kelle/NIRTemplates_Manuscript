@@ -320,13 +320,15 @@ L5 low gravity used $\chi^2 > 1.7$ due to small number of objects.
 
 L7 field used $\chi^2 > 1.4$ due to small number of objects.
 
+L8 field used $\chi^2 > 1.4$ due to small number of objects.
+
 %The width of the gray strip surrounding the template illustrates the range of spectral shapes found at each spectral type. 
 %Given the relatively large number of objects and $J-K_S$ colors spanned at each type, we expect that these strips encompass normal and that the spectra of all normal L dwarfs fall within this range. 
 %We also think the range is dominated by intrinsic properties, not instrumental or atmospheric effects.
 
 The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\# while the low-gravity templates are in Figure set~\ref{fig:lg_templates} and discussed in \S~\#. The templates (black lines), are calculated using the weighted average flux at each pixel. 
 Three templates are calculated for each integer spectral subtype, one for each NIR band. 
-Two gray strips surrounds the template, the dark gray indicates the 1sigma variance at each pixel and the light gray indicates the flux range (minimum and maximum flux values) at each pixel of the spectra used to calculate the template. 
+Two gray strips surrounds the template, the dark gray indicates the 1$\sigma$ variance at each pixel and the light gray indicates the flux range (minimum and maximum flux values) at each pixel of the spectra used to calculate the template. 
 %The saturation of the shading of the gray strip indicates the variance of the weighted average flux at each pixel. Darker gray indicates smaller variance, more agreement amongst the spectra and thus a more reliable template at that wavelength. 
 The optical spectra were smoothed to approximately match the resolution of the NIR spectra, and their flux range strip is indicated in light gray, regardless of the variance.
 Objects included in the template spectrum for each subtype are listed by increasing $J-K_S$ color to emphasize the range of colors spanned at each subtype.
@@ -335,6 +337,14 @@ Within the population of normal L dwarfs at each spectral type, there is likely 
 These same differences are also likely causing the different reddening terms that results in the range of $J-K_S$ colors. \citet[in prep.]{Hiranaka13} is using modeling to constrain the cloud properties that could be causing this range of effects.
 
 Spectra excluded from the templates are shown in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
+
+\subsection{L8/L9 and the end of the L dwarf sequence}
+
+The analysis presented here is anchored in the optical and thus we do not have an L9 template.
+While the optical system of \cite{K99} only goes to L8, \cite{Geballe02} introduced an L9 type, mostly to maintain smoothly varying infrared spectral indices.
+They define the beginning of the T dwarf sequence as the first appearance of the 1.6$\micron$ methane absorption feature in the $H$ band.
+All L8s display the 2.2$\micron$ methane absorption feature in $K$ band.
+Further, while we do see a larger variety of spectral morphologies in the L8, we do not see a trend which would warrant another spectral class.
 
 %As more and higher signal-to-noise SpeX Prism spectra of L~dwarfs with both optical and NIR data become available, especially at later spectral types, we intend to update the templates. 
 %As more objects are added and lower signal-to-noise data are replaced, the templates will provide a more accurate reflection of the spectral morphologies spanned at each spectral type.
@@ -374,12 +384,12 @@ The normal L dwarf $J$, $H$, and $K_S$ low-resolution spectral templates describ
 The prominent atomic (\ion{K}{1}, \ion{Na}{1}) and molecular (FeH, H$_2$O) absorption spectral features from L0 to L5 form a clear sequence in all three bands (top panel).
 These same spectral features in the later type objects (L6--L8), however, saturate (H$_2$O) or disappear (FeH, \ion{K}{1}) and do not follow the same trends as the earlier type objects and are therefore plotted separately (bottom panel).
 
-The blackbody curves for 2000, 1800, and 1600~K (with by-eye normalizations) are shown as dotted lines on the L0--L5 sequence. 
-While there is likely molecular absorption at all wavelengths, the emergent spectra must still bear the imprint of the underlying blackbody spectrum.
-The optical and $J$-band spectra are principally comprised of the steep Wien tail of the blackbody curve,
-the $H$ band is near the peak of the curve, while the $K$-band is comprised of the Rayleigh-Jeans tail.
-Indeed, the Wien tail appears to be dominating the spectral slope of the $J$ band and the relative height of the $J$-band peak at 1.3~$\micron$.
-Because the slope of the Wien tail is much more temperature sensitive than the shape of the blackbody peak or the Rayleigh-Jeans tail, this might substantially explain why the far-red optical and $J$-band spectra are more highly correlated with temperature.
+%The blackbody curves for 2000, 1800, and 1600~K (with by-eye normalizations) are shown as dotted lines on the L0--L5 sequence. 
+%While there is likely molecular absorption at all wavelengths, the emergent spectra must still bear the imprint of the underlying blackbody spectrum.
+%The optical and $J$-band spectra are principally comprised of the steep Wien tail of the blackbody curve,
+%the $H$ band is near the peak of the curve, while the $K$-band is comprised of the Rayleigh-Jeans tail.
+%Indeed, the Wien tail appears to be dominating the spectral slope of the $J$ band and the relative height of the $J$-band peak at 1.3~$\micron$.
+%Because the slope of the Wien tail is much more temperature sensitive than the shape of the blackbody peak or the Rayleigh-Jeans tail, this might substantially explain why the far-red optical and $J$-band spectra are more highly correlated with temperature.
 
 Below, we describe how the spectral features in the low-resolution L0--L5 template sequence change, as shown in the top panels of Figure~\ref{fig:spec_sequence}. (The L6--L8 spectra do not follow this sequence.)
 While these have been known since the early studies of L dwarfs in the NIR \citep{Testi01,Geballe02}, we would like to call out their prominence in the optically-anchored templates.
@@ -431,6 +441,8 @@ The number of objects included in each template, the mean, minimum, maximum, and
 \subsection{The low-gravity spectral sequence}
 
 In Figure~\ref{fig:lg_sequence}, we show the spectral sequence made by low gravity templates.
+
+It doesn't really make a sequence, but each type is different from each other.
 
 \subsection{Isolating gravity: Low-gravity templates compared to the field gravity templates} 
 
@@ -506,16 +518,13 @@ The other five, however, are not included in the template for the K10 assigned N
 
 	\item The L7 NIR standard, \object{2MASS~0103+1935}, is classified as L6 in the optical \cite{K00} and it is included in the L6 template. As can be seen in Figure~\ref{fig:templates-stds}, it's not a good match to the L7 template and we suggest demoting it as the L7 on-sky standard. We suggest replacing it with \object{2M~2152+0937}, a bright optically-classified L7 with a NIR spectral morphology characteristic of the three other self-similar L7 dwarfs included in the template. Confusingly, 2152+0937 was originally typed as an L6: in \cite{Reid08}, but a careful reanalysis of the same slightly noisy spectrum resulted in a revised type of L7:. Further, it has been resolved as an equal magnitude binary \cite{Reid06_binary}.
 		
-	\item The L9 NIR standard, \object{2MASS 0255-4700}, is classified as an L8 in the optical and is included in the L8 template. 
+	\item The L9 NIR standard, \object{2MASS 0255-4700}, is classified as an L8 in the optical and is included in the L8 template. (Our analysis is anchored in the optical and since the L9 subclass is only defined for NIR data, we do not have an L9 template.) 
 	
 \end{itemize}
 
-\textbf{something about the L8/L9 issue.}
-
 While the K10 spectral standards remain the spectral type anchors, we expect the templates to the most useful for establishing the \emph{range} of spectral morphologies spanned at each spectral type.
-Setting the tolerance for a ``good'' match.
+Setting the tolerance for a `good' match.
 
-%That the templates agree so well with the standards mean that they are good standards.
 
 \subsection{Low-Gravity L Dwarf Spectral Standards in the Near-Infrared}
 
@@ -525,7 +534,7 @@ chose gammas.
 and not at extreme north or south dec. Choose two L0 gammas due to 0141 being at -46.
 listed in Table~\ref{tab:lg_standards}.
 
-\textbf{need to make low gravity sequence figure.}
+Low gravity spectral template sequence in Figure~\ref{fig:lg_sequence}
 
 
 \subsection{Method for estimating spectral types from NIR data}
