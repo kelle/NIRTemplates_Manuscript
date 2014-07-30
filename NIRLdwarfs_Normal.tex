@@ -172,6 +172,7 @@ Allers uses indices.
 % (We also mark the two regions in the optical regime that Cruz et al. 2009 hypthesized to be most sensitive to clouds/gravity (0.74-0.8) and less sensitive (0.8-0.84).
 % We note that the models show those to be good choices.)
 
+\clearpage
 \section{A Sample of L dwarfs with Optical and NIR Spectra}
 \label{sec:sample}
 
@@ -254,12 +255,13 @@ In the Appendix, we discuss objects that NIR spectra revealed to not be ultracoo
 
 %The data were acquired in a variety of weather and seeing conditions, but were uniformly observed using the 0.5 or 0.8-wide slit aligned at parallactic angle and generally at low airmass (sec z $<$ 2). Each target was observed with multiple exposures, dithering in an ABBA pattern along the slit, with total integration times of 240--1200~s depending on target brightness and weather conditions. Before or after each target observation, nearby A0 stars at a similar airmass to the target were observed for both telluric and flux calibration. Internal flat field and argon arc lamp calibration frames were obtained at each target position for pixel response and wavelength calibration. All data was extracted, flat fielded, wavelength calibrated, telluric corrected, and flux calibrated with the Spextool reduction package \citep{Cushing04,Spextool2}. 
 
+\clearpage
 \section{Method for Normalizing NIR Spectra}
 \label{sec:method}
 
-L dwarfs exhibit a wide range of $J-K_S$ colors at each optical spectral type \cite[e.g.,][Fig. 3]{Schmidt10} and this color spread has complicated the analysis of NIR spectra. 
+L dwarfs exhibit a wide range of $J-K_S$ colors at each optical spectral type \cite[e.g.,]{Schmidt10, Faherty:2012cy} and this color spread has complicated the analysis of NIR spectra. 
 %since it makes it difficult to directly compare objects of similar spectral type
-%It is difficult to directly compare spectra of objects with disparate colors, but similar spectral types, especially when normalized at a single wavelength.
+%It is difficult to directly compare spectra of objects with disparate colors, but similar spectral types, estimatepecially when normalized at a single wavelength.
 Common practice is to normalize NIR spectra of L~dwarfs at the $J$-band peak (1.28--1.32~$\micron$) \citep[e.g.,][]{Kirkpatrick10}. 
 In the top panel of Figure~\ref{fig:L1fan}, we show the 0.8--2.4~$\micron$ spectral range for 17 field gravity, optically-typed L1 dwarfs normalized in this manner.
 Despite all of the objects having the same optical spectral type and appearing to have similar NIR spectral morphology, the spectra `fan out'. 
@@ -281,6 +283,7 @@ The same objects shown in the top panel of Figure~\ref{fig:L1fan} that fan out o
 With this plotting method, the color term present in the NIR spectra of L~dwarfs is approximated as a three component piece-wise step function. Since the reddening contributing to the color term has been found to be well described by a smooth function \citep[in prep.]{Hiranaka13,Marocco:2014kr}, there is likely still a small amount of residual reddening remaining within each band.
 This normalization method can be used when comparing spectra of objects with very different colors but with similar absorption features. As discussed further in \S~\ref{sec:temp}, this normalization method minimizes the broad band effects likely due to cloud properties while highlighting the molecular absorption features most sensitive to effective temperature. 
 
+\clearpage
 \section{Making Spectral Average Templates}
 \label{sec:templates}
 
@@ -351,6 +354,7 @@ Further, while we do see a larger variety of spectral morphologies in the L8, we
 
 %We discuss how these templates can be used to spectral type in later sections.
 
+\clearpage
 \section{Analysis: Field Gravity L Dwarfs}
 \label{sec:fieldg}
 
@@ -423,6 +427,7 @@ Finally, L8 is marked by the onset of methane absorption in the $K$-band.
 %This is evident in the striking similarity of the $K$ bands of the L2 and L3 templates.
 %This is at least partially due to the $H$ and $K$-bands being in the peak and Rayleigh-Jeans tail of the spectral energy distribution which is not as sensitive to temperature as the steeper Wien tail at shorter wavelengths.
 
+\clearpage
 \section{Analysis: Low-Gravity L Dwarfs}
 \label{sec:lowg}
 
@@ -516,7 +521,7 @@ Finally, the L4$\gamma$ K-band shape most resembles that of the earlier-type (L1
 % both pec. very red L6s. and Gizis' very red WISE object.
 
 
-
+\clearpage
 \section{Near-Infrared Spectral Classification of L Dwarfs}
 \label{sec:classification}
 
@@ -933,15 +938,7 @@ Facilities:
 % 	\label{fig:allers}
 % \end{figure}
 
-\begin{figure}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-stds.pdf}
-		\caption{
-	L dwarf $J$, $H$, and $K$-band spectral templates (in black) with their flux range strips ---as described in \S~\ref{sec:templates}---overplotted with their respective NIR spectral standard (in colors; \cite{Kirkpatrick10}). 
-	The width of the range (gray strips) indicates the range of spectral morphologies spanned by of the objects included in the template at each spectral type.
-	Spectra are normalized over the entire band and offset to separate the spectra vertically.
-	The L8 template is compared to both the L8 and L9 spectral standards. }
-	\label{fig:templates-stds}
-\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LOW GRAVITY TEMPLATE FIGURES %
@@ -1046,6 +1043,16 @@ field objects plotted.}
 %\end{figure}
 
 \clearpage
+
+\begin{figure}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-stds.pdf}
+		\caption{
+	L dwarf $J$, $H$, and $K$-band spectral templates (in black) with their flux range strips ---as described in \S~\ref{sec:templates}---overplotted with their respective NIR spectral standard (in colors; \cite{Kirkpatrick10}). 
+	The width of the range (gray strips) indicates the range of spectral morphologies spanned by of the objects included in the template at each spectral type.
+	Spectra are normalized over the entire band and offset to separate the spectra vertically.
+	The L8 template is compared to both the L8 and L9 spectral standards. }
+	\label{fig:templates-stds}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%
 % APPENDIX FIGURES
