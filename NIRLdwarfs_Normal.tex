@@ -469,18 +469,15 @@ Finally, L8 is marked by the onset of methane absorption in the $K$-band.
 \section{Analysis: Low-Gravity L Dwarfs}
 \label{sec:lowg}
 
-shown in Figure set~\ref{fig:lg_templates}.
-
-
 
 \subsection{Characterizing the Low Gravity Template Subsample}
 \label{sec:templates_lowg}
 
-In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the entire optical-NIR sample of L~dwarfs. The plot shows the colors of the individual L dwarfs (filled circles) as well as the average color at each spectral type (black bar). All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag. 
+In Figure~\ref{fig:spthist}, we show the spectral type distribution for the low-gravity objects included in the optical-NIR sample of L dwarfs as red and orange bars. L0$\gamma$--L4$\gamma$, L0$\beta$, and L1$\beta$ spectral average templates are shown in Figure Sets~\ref{fig:betaa_templates}--\ref{fig:gamma_templates} and listed in Table~\ref{tab:lowg_template}. The spectra rejected from the templates are shown in Figure Set~\ref{fig:lowg_excluded} and listed in Table~\ref{tab:lowg_excluded}.
 
-The end caps mark the minimum and maximum of the distribution, the whiskers mark the bottom and top quartiles, the box indicates the locations of the 2nd and 3rd quartiles, and the median is indicated with a bar. The number of objects used in calculating the quartiles are indicated above the end caps.
+In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the field (black and gray) and low gravity objects (red and orange) included in the optical-NIR sample of L~dwarfs. The mean color of the objects included in the templates is marked as a solid circle and box and whiskers are used to show the quartile ranges of the colors spanned at each spectral type. 
 
-objects selected from the opt-NIR sample classified on the \citet{Cruz09_lowg} scheme. betas and gammas lumped together.
+objects selected from the opt-NIR sample classified on the \citet{Cruz09_lowg} scheme.
 
 sample mostly from \citet{Cruz09_lowg} but have included more objects as described in \SS~\ref{sec:obs_new_opt} and~\ref{sec:obs_new_nir} and listed in Table \#.
 
@@ -847,18 +844,20 @@ Facilities:
 		\caption{Spectral type distribution of the optical-NIR sample distinguishing field gravity objects in black and gray and low gravity objects in orange and red.	 
 		Right hatching indicates objects with new optical spectra and left hatching indicates new NIR spectra; these objects are listed in Tables~\ref{tab:newopt} and \ref{tab:newnir}, respectively.
 		Objects included in the field gravity templates are indicated in black and objects included in the low gravity templates are indicated in red; these objects are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, respectively.
-		Field gravity objects that are excluded from the field gravity templates are indicated in gray and low-gravity objects excluded from the low gravity templates are indicated in orange; these objects are listed in Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}, respectively.
+		Field gravity objects that are excluded from the field gravity templates are indicated in gray and low-gravity objects excluded from the low gravity templates are indicated in orange; these objects are listed in Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}, respectively.\\
+		\emph{fig:spthist}
 		}
-	\label{fig:newdata_spthist}
+	\label{fig:spthist}
 \end{figure}
 
 \begin{figure}
 		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/JK.pdf}
 		\caption{2MASS $J-K_S$ color versus spectral type for the L dwarfs in the optical-NIR sample. 
-		Quartile ranges (\emph{box and whisker}) and mean colors (\emph{solid circles}) are shown for the objects included in the field gravity (\emph{black}) and low gravity (\emph{red}) templates. 
+		Quartile ranges (\emph{box and whisker}) and mean colors (\emph{solid circles}) are shown for the objects included in the field gravity (\emph{black}) and low gravity (\emph{red}) templates. The end caps mark the minimum and maximum of the distribution, the whiskers mark the bottom and top quartiles, the box indicates the locations of the 2nd and 3rd quartiles, and the median is indicated with a bar. The number of objects used in calculating the quartiles are indicated above the end caps.
 		Objects excluded from the templates are marked individually (\emph{crosses}, field g: \emph{gray}, low-g: \emph{orange}).
 		%All individual L dwarfs are drawn as gray circles, and the average color at each spectral type is drawn as a black bar. 		
-		The properties of the field and low-gravity template samples are summarized in Table~\ref{tab:sample_prop} and~\ref{tab:lg_sample_prop}, respectively. The individual objects included in the field and low gravity templates are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, while the excluded objects are listed in Tables~\ref{tab:field_excluded} and~\ref{tab:lowg_excluded}. }
+		The properties of the field and low-gravity template samples are summarized in Table~\ref{tab:sample_prop} and~\ref{tab:lg_sample_prop}, respectively. The individual objects included in the field and low gravity templates are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, while the excluded objects are listed in Tables~\ref{tab:field_excluded} and~\ref{tab:lowg_excluded}.\\
+		\emph{fig:JK\_colors} }
 	\label{fig:JK_colors}
 \end{figure}
 
@@ -915,7 +914,7 @@ Facilities:
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L6strip_f.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L7strip_f.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L8strip_f.pdf}
-	\caption{templates continued.}
+	\caption{field templates continued.}
 \end{figure}
 
 
@@ -1034,7 +1033,8 @@ Facilities:
 dwarfs. The spectra are normalized individually by band (optical, J, H, and K bands)
 using the entire band range. The most prominent atomic and molecular features are indicated. Superimposed in black in the near-infrared
 bands is the template spectrum calculated using a weighted average of all the
-field objects plotted.}
+field objects plotted. \\
+\emph{fig:beta_templates}}
 	\label{fig:beta_templates}
 \end{figure}
 
@@ -1047,7 +1047,8 @@ field objects plotted.}
 dwarfs. The spectra are normalized individually by band (optical, J, H, and K bands)
 using the entire band range. The most prominent atomic and molecular features are indicated. Superimposed in black in the near-infrared
 bands is the template spectrum calculated using a weighted average of all the
-field objects plotted.}
+field objects plotted. \\
+\emph{fig:gamma_templates}}
 	\label{fig:gamma_templates}
 \end{figure}
 
@@ -1065,7 +1066,8 @@ field objects plotted.}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_g_excluded.pdf}
 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_g_excluded.pdf}
 	% \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_lg_excluded.pdf}
-	\caption{Spectra excluded from the low gravity templates. Also listed in Table~\ref{tab:lowg_excluded}.}
+	\caption{Spectra excluded from the low gravity templates. Also listed in Table~\ref{tab:lowg_excluded}. \\
+	\emph{fig:lowg_excluded}}
 	\label{fig:lowg_excluded}
 \end{figure}
 \begin{figure}
@@ -1077,7 +1079,8 @@ field objects plotted.}
 \begin{figure}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_g.pdf}
 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence1_g.pdf}
-	\caption{The low gravity $\gamma$ L dwarf near-infrared spectral sequence.}
+	\caption{The low gravity $\gamma$ L dwarf near-infrared spectral sequence. \\
+	\emph{fig:lg_sequence}}
 	\label{fig:lg_sequence}
 \end{figure}
 	
@@ -1089,31 +1092,51 @@ field objects plotted.}
 
 \begin{figure}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L0g.pdf}
-	\caption{The L0$\gamma$ spectral average template (black) compared to the field L dwarf templates (color). The field templates that most resemble the L0$\gamma$ are plotted with thicker lines. We assert that in order to use NIR spectra to credibly distinguish an L0$\gamma$ from a field object in the NIR, a K band spectrum is insufficient and H and/or J band data is required.}
+	\caption{The L0$\gamma$ spectral average template (blue) compared to the field L dwarf templates and their 1$\sigma$ variance (black, gray). The field templates that most resemble the L0$\gamma$ are plotted with thicker lines. We assert that in order to use NIR spectra to credibly distinguish an L0$\gamma$ from a field object in the NIR, a \emph{K}-band spectrum is insufficient and \emph{H} and/or \emph{J}-band data is required.\\
+	\emph{fig:L0lg-field}}
 	\label{fig:L0lg-field}
 \end{figure}
 
 \begin{figure}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L0b.pdf}
+	\caption{The L0$\beta$ spectral average template (blue) compared to the field L dwarf templates... We assert that in order to use NIR spectra to credibly distinguish an L0$\beta$ from a field object in the NIR...\\
+	\emph{fig:L0b-field}}
+	\label{fig:L0b-field}
+\end{figure}
+
+\begin{figure}
 		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L1g.pdf}	
-	\caption{The L1$\gamma$ spectral average template (black) to the field L dwarf templates (color). The field templates that most resemble the L1$\gamma$ are plotted with thicker lines. We assert that in order to use NIR spectra to credibly distinguish an L1$\gamma$ from a field object in the NIR, either a J, H, or K-band spectrum is sufficient.}
+	\caption{The L1$\gamma$ spectral average template (light blue) to the field L dwarf templates.... \\
+	We assert that in order to use NIR spectra to credibly distinguish an L1$\gamma$ from a field object in the NIR, either a \emph{J}, \emph{H}, or \emph{K}-band spectrum is sufficient. \\
+	\emph{fig:L1lg-field}}
 	\label{fig:L1lg-field}
 \end{figure}
 
 \begin{figure}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L1b.pdf}
+	\caption{The L1$\beta$ spectral average template (red) compared to the field L dwarf templates (). We assert that in order to use NIR spectra to credibly distinguish an L0$\beta$ from a field object in the NIR...\\
+	\emph{fig:L1b-field}}
+	\label{fig:L1b-field}
+\end{figure}
+
+\begin{figure}
 		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L2g.pdf}	
-	\caption{The L2$\gamma$ spectral average template (black) to the field L dwarf templates (color). The field templates that most resemble the L2$\gamma$ are plotted with thicker lines. We assert that in order to use NIR spectra to credibly distinguish an L2$\gamma$ from a field object in the NIR, either a J, H, or K-band spectrum is sufficient.}
+	\caption{The L2$\gamma$ spectral average template (green) to the field L dwarf templates (). \\
+	We assert that in order to use NIR spectra to credibly distinguish an L2$\gamma$ from a field object in the NIR, either a \emph{J}, \emph{H}, or \emph{K}-band spectrum is sufficient.}
 	\label{fig:L2lg-field}
 \end{figure}
 
 \begin{figure}
 		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L3g.pdf}	
-	\caption{The L3$\gamma$ spectral average template (black) to the field L dwarf templates (color). The field templates that most resemble the L3$\gamma$ are plotted with thicker lines. We assert that in order to use NIR spectra to credibly distinguish an L3$\gamma$ from a field object, a K-band spectrum is insufficient and H and/or J band data is required.}
+	\caption{The L3$\gamma$ spectral average template (orange) to the field L dwarf templates... \\
+	We assert that in order to use NIR spectra to credibly distinguish an L3$\gamma$ from a field object, a \emph{K}-band spectrum is insufficient and \emph{H}- and/or \emph{J}-band data is required.}
 	\label{fig:L3lg-field}
 \end{figure}
 
 \begin{figure}
 		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L4g.pdf}	
-	\caption{The L4$\gamma$ spectral average template (black) to the field L dwarf templates (color). The field templates that most resemble the L4$\gamma$ are plotted with thicker lines. We assert that in order to use NIR spectra to credibly distinguish an L4$\gamma$ from a field object, a K-band spectrum is insufficient and H and/or J band data is required.}
+	\caption{The L4$\gamma$ spectral average template (dark red) to the field L dwarf templates. \\
+	We assert that in order to use NIR spectra to credibly distinguish an L4$\gamma$ from a field object, a \emph{K}-band spectrum is insufficient and H and/or \emph{J}-band data is required.}
 	\label{fig:L4lg-field}
 \end{figure}
 
