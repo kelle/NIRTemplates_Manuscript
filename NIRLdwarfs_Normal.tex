@@ -343,35 +343,32 @@ This normalization method can be used when comparing spectra of objects with ver
 \subsection{Making optically anchored NIR spectral average templates}
 \label{sec:templates}
 
-want to make spectral average templates, similar to  what has been done in the optical
---SDSS M and L dwarf templates in the optical \cite{Bochanski07_templates, Schmidt:2014jc}. but can't due to diversity of spectral morphologies.
+want to make spectral average templates, similar to  what has been done in the optical--SDSS M and L dwarf templates in the optical \cite{Bochanski07_templates, Schmidt:2014jc}. but can't due to diversity of spectral morphologies.
+We wanted to create NIR templates that are anchored to the optical classification and reflect the typical spectral morphology of L dwarfs. 
 
+Using the sample and data described in \S~\ref{sec:sample}, we have combined the NIR spectra of objects of the same optical spectral type to make NIR spectral average templates for normal and low-gravity L~dwarfs at each integer spectral type, L0--L8. (Since our analysis is anchored in the optical, we do not have an L9.) 
+The ``optical-NIR sample'' of spectra, grouped by \emph{optical} spectral type, are shown in Figure~\ref{fig:field_templates}.
+Below, we describe the method used to construct the templates.
 
-% The variety of NIR spectral morphologies among L dwarfs of similar optical spectral type has been attributed to the NIR spectra being more sensitive to physical parameters such as gravity, clouds, and metallicity compared to higher-mass stars.
-% Optical spectra morphologies, on the other hand, are dominated by temperature and relatively insensitive to the higher order properties. As such, the spectra of so-called `red' and `blue' L dwarfs look peculiar in the NIR but relatively `normal' in the optical.
-% In addition, optical spectral types have been shown to be reliable temperature and absolute magnitude indicators \cite[Figure 7 and 9]{Kirkpatrick05},\cite{Faherty:2012cy}.
+\textbf{DUPLICATION WITH SAMPLE SECTION? IS THIS NECESSARY?}\\
+We started with the opt-NIR sample (180). 
+These were divided into two samples, 
+\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
+	\item the field gravity sample with 145 objects that are similar to the \citet{K99} field spectral standards.
+	\item and the low-gravity sample with 35 objects with low-gravity features like those described in \citet{Cruz09_lowg}.
+\end{enumerate}
 
-% In order to to disentangle the observational indicators of temperature, gravity, cloud, and metallicity properties in the NIR spectra of L~dwarfs, we have performed an analysis of NIR spectra using the optical spectra as an anchor.
-% That is, by studying the NIR spectra of objects with very similar optical spectra, we have controlled for temperature (as much as possible) and thus, the observed spectral differences in the NIR spectra are most likely attributable to the second order properties.
-%Further, unlike previous NIR spectral studies of low-mass stars and brown dwarfs, we plot and analyze the three NIR bands ($J$, $H$, and $K_S$) separately as described above in \S~\ref{sec:method}.
-%By examining the NIR spectra band-by-band, we are minimizing the effect of reddening on the spectral shape that is likely dominated by the gravity- and metallicity-sensitive clouds and not temperature.
-
-% As described above in \S~\ref{sec:sample}, we compiled a dataset of \sample~``normal'' L dwarfs (not suspected of youth, low metallicity, unresolved binarity, or peculiarity) with both high quality optical and NIR spectra. 
-The ``optical-NIR sample'' of spectra, grouped by \emph{optical} spectral type, are shown in Figure~\ref{fig:field_templates}. 
-
- we have combined the NIR spectra of objects of the same optical spectral type to make NIR spectral average templates for normal and low-gravity L~dwarfs at each integer spectral type, L0--L8. (Since our analysis is anchored in the optical, we do not have an L9.) 
-%We wanted to create NIR templates that are anchored to the optical classification and reflect the typical spectral morphology of L dwarfs. 
-
-Started with the opt-NIR sample (180). These were divided into two samples, the field gravity sample with 145 objects that are similar to the \citet{K99} field spectral standards.
- and the low-gravity sample with 35 objects with low-gravity features like those described in \citet{Cruz09_lowg}.
+Enough Betas and gammas in L0 and L1 to separate.
+Betas included in L2-L5 low gravity templates.
+while betas and gammas look different in the optical, they dont look that much different in the NIR
 
 For each spectral type, the NIR spectra were normalized and averaged together band-by-band to make first templates in each band. Objects with half-integer spectral types were rounded down to the integer type.
 The templates are calculated using the weighted average flux at each pixel. 
-
-
 The reduced $\chi^2$ was then calculated for each object compared to the template.
 Objects with reduced $\chi^2$ values greater than two in any band were excluded from the next calculation of the template for every band.
-This process iterated 3-6 times until the reduced $\chi^2$ value stabilize. The average chi2 values of the spectra included in the spectral averages are close to 0.9. A chi2 cutoff of 2 was chosen because it balanced our desire to 1) include more objects than exclude and 2) not include objects with peculiar spectral morphologies. 
+This process iterated 3-6 times until the reduced $\chi^2$ value stabilize. 
+The average $\chi^2$ values of the spectra included in the spectral averages are close to 0.9. 
+A $\chi^2$ cutoff of 2 was chosen because it balanced our desire to 1) include more objects than exclude and 2) not include objects with peculiar spectral morphologies. 
 This iterative process resulted in 133 objects being included in the spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 47 excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}). 
 
 For the L1 field gravity objects, a $\chi^2$ limit of 2 excluded mostly bluer objects and did not result representative sample of field L1s being included in the template.
@@ -392,19 +389,16 @@ L8 field used $\chi^2 > 1.4$ due to small number of objects.
 %Given the relatively large number of objects and $J-K_S$ colors spanned at each type, we expect that these strips encompass normal and that the spectra of all normal L dwarfs fall within this range. 
 %We also think the range is dominated by intrinsic properties, not instrumental or atmospheric effects.
 
-The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\# while the low-gravity templates are in Figure set~\ref{fig:lg_templates} and discussed in \S~\#. 
+The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg} while the low-gravity templates are in Figure Set~\ref{fig:lg_templates} and discussed in \S~\ref{sec:lowg}. 
 The average is is shown as a black line, the dark gray indicates the 1$\sigma$ variance at each pixel, and the light gray indicates the flux range (minimum and maximum flux values) at each pixel of the spectra used to calculate the template. 
 The optical spectra were smoothed to approximately match the resolution of the NIR spectra, and their flux range strip is indicated in light gray.
 Objects included in the template spectrum for each subtype are listed by increasing $J-K_S$ color to emphasize the range of colors spanned at each subtype.
 
 Within the population of normal L dwarfs at each spectral type, there is likely a range of underlying cloud and gravity properties amongst objects with similar temperatures.
-These same differences are also likely causing the different reddening terms that results in the range of $J-K_S$ colors. \citet[in prep.]{Hiranaka13} is using modeling to constrain the cloud properties that could be causing this range of effects.
+These same differences are also likely causing the different reddening terms that results in the range of $J-K_S$ colors. \citet{Hiranaka13,Marocco:2014kr} is using modeling to constrain the cloud properties that could be causing this range of effects.
 
 Spectra excluded from the templates are shown in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
 
-Enough Betas and gammas in L0 and L1 to separate.
-Betas included in L2-L5 low gravity templates.
-while betas and gammas look different in the optical, they dont look that much different in the NIR
 
 The analysis presented here is anchored in the optical and thus we do not have an L9 template.
 While the optical system of \cite{K99} only goes to L8, \cite{Geballe02} introduced an L9 type, mostly to maintain smoothly varying infrared spectral indices.
@@ -424,6 +418,16 @@ While we do see a larger variety of spectral morphologies in the NIR among the o
 \label{sec:fieldg}
 
 shown in Figures and summarized in tables.
+
+% The variety of NIR spectral morphologies among L dwarfs of similar optical spectral type has been attributed to the NIR spectra being more sensitive to physical parameters such as gravity, clouds, and metallicity compared to higher-mass stars.
+% Optical spectra morphologies, on the other hand, are dominated by temperature and relatively insensitive to the higher order properties. As such, the spectra of so-called `red' and `blue' L dwarfs look peculiar in the NIR but relatively `normal' in the optical.
+% In addition, optical spectral types have been shown to be reliable temperature and absolute magnitude indicators \cite[Figure 7 and 9]{Kirkpatrick05},\cite{Faherty:2012cy}.
+
+% In order to to disentangle the observational indicators of temperature, gravity, cloud, and metallicity properties in the NIR spectra of L~dwarfs, we have performed an analysis of NIR spectra using the optical spectra as an anchor.
+% That is, by studying the NIR spectra of objects with very similar optical spectra, we have controlled for temperature (as much as possible) and thus, the observed spectral differences in the NIR spectra are most likely attributable to the second order properties.
+%Further, unlike previous NIR spectral studies of low-mass stars and brown dwarfs, we plot and analyze the three NIR bands ($J$, $H$, and $K_S$) separately as described above in \S~\ref{sec:method}.
+%By examining the NIR spectra band-by-band, we are minimizing the effect of reddening on the spectral shape that is likely dominated by the gravity- and metallicity-sensitive clouds and not temperature.
+
 
 \subsection{Characterizing the Field Gravity Template Subsample}
 \label{sec:templates_normal}
