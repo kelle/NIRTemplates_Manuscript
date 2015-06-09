@@ -78,7 +78,6 @@ Natural History, New York, NY 10024}
 
 \begin{abstract}
 
-	 	
 We have used new and extant optical and NIR spectra to create a sample of \sample~L dwarfs with spectral coverage from 0.6--2.4$\micron$.
 Using the optical spectra as an anchor, we have used this sample to generate near-infrared spectral average templates for field gravity L0--L8 type dwarfs and low-gravity L0--L5 type dwarfs.
 
@@ -301,10 +300,15 @@ In the Appendix, we discuss objects that NIR spectra revealed to not be ultracoo
 %The data were acquired in a variety of weather and seeing conditions, but were uniformly observed using the 0.5 or 0.8-wide slit aligned at parallactic angle and generally at low airmass (sec z $<$ 2). Each target was observed with multiple exposures, dithering in an ABBA pattern along the slit, with total integration times of 240--1200~s depending on target brightness and weather conditions. Before or after each target observation, nearby A0 stars at a similar airmass to the target were observed for both telluric and flux calibration. Internal flat field and argon arc lamp calibration frames were obtained at each target position for pixel response and wavelength calibration. All data was extracted, flat fielded, wavelength calibrated, telluric corrected, and flux calibrated with the Spextool reduction package \citep{Cushing04,Spextool2}. 
 
 \clearpage
-\section{Method for Normalizing NIR Spectra}
+\section{Optically anchored NIR Spectral Analysis}
+
+L dwarfs exhibit a wide range of $J-K_S$ colors at each optical spectral type \cite[e.g.,]{Schmidt10, Faherty:2012cy} and this color spread poses challenges to the analysis of NIR spectra. The comparative methods commonly used for the analysis of optical data of L dwarfs simply do not work very well for their NIR spectra.
+Below, we describe a normalization method for NIR spectra which reduces this broad wavelength color term and how we used a sample of optical and NIR spectra to make optically-anchored spectral average templates. 
+Both the normalization method and the spectral templates greatly facilitate the comparative analysis of the NIR spectral morphology of L dwarfs.
+
+\subsection{Method for Normalizing NIR Spectra}
 \label{sec:method}
 
-L dwarfs exhibit a wide range of $J-K_S$ colors at each optical spectral type \cite[e.g.,]{Schmidt10, Faherty:2012cy} and this color spread has complicated the analysis of NIR spectra. 
 %since it makes it difficult to directly compare objects of similar spectral type
 %It is difficult to directly compare spectra of objects with disparate colors, but similar spectral types, estimatepecially when normalized at a single wavelength.
 Common practice is to normalize NIR spectra of L~dwarfs at the $J$-band peak (1.28--1.32~$\micron$) \citep[e.g.,][]{Kirkpatrick10}. 
@@ -317,24 +321,31 @@ This fanning effect makes analyzing the similarities or differences in the spect
 %We call the smooth function causing the fanning out effect, the ``reddening term''.
 %We hypothesize that the reddening is caused by a gravity-sensitive population of small dust grains ($<1$~\micron) intrinsic to the L~dwarfs atmosphere, not due to intervening interstellar dust, and will be discussed in detail by \citet[in prep.]{Hiranaka13}.
 
-As was pointed out by \citet{Leggett:2003tm}, despite the different spectral slopes, when the $H$ and $K$ bands of objects of the same optical spectral type are separately scaled and overlaid, the agreement between the spectral morphologies is excellent.
+As was pointed out over a decade ago by \citet{Leggett:2003tm}, despite the different spectral slopes, when the $H$ and $K$ bands of objects of the same optical spectral type are separately scaled and overlaid, the agreement between the spectral morphologies is excellent.
 In order to directly compare the absorption features in L~dwarf spectra, we utilize this plotting method where each NIR band is normalized separately, using most of the wavelength range of each band. 
-Specifically, we use the following normalization ranges: 0.87--1.39~$\micron$ for the $J$~band, 1.41--1.89~$\micron$ for the $H$~band, and 1.91--2.39~$\micron$ for the K~band, which excludes the noisiest parts of the spectra in the water bands.
+Specifically, we use the following normalization ranges: 
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item 0.87--1.39~$\micron$ for the $YJ$~band,
+\item 1.41--1.89~$\micron$ for the $H$~band, and 
+\item 1.91--2.39~$\micron$ for the $K$~band, 
+\end{itemize}
+which excludes the noisiest parts of the spectra in the water bands.
 These three regions were chosen because they are naturally separated by the strong water absorption bands present in both the L~dwarf's and Earth's atmospheres. 
 %We did not break up the spectrum into smaller regions in order to enable the comparison of the broad band absorption features (e.g., CO, FeH) and spectral morphology.
 Once normalized in this manner, the effect of the color term is substantially reduced and it becomes evident that the low-resolution spectral morphology among normal L~dwarfs of the same optical spectral type are very similar. 
 The same objects shown in the top panel of Figure~\ref{fig:L1fan} that fan out over the 0.8--2.4~$\micron$ range are shown in the bottom panel plotted band-by-band, using the above defined normalization ranges for each, and the spectral similarities between the objects stand out much more clearly.
 
-With this plotting method, the color term present in the NIR spectra of L~dwarfs is approximated as a three component piece-wise step function. Since the reddening contributing to the color term has been found to be well described by a smooth function \citep[in prep.]{Hiranaka13,Marocco:2014kr}, there is likely still a small amount of residual reddening remaining within each band.
-This normalization method can be used when comparing spectra of objects with very different colors but with similar absorption features. As discussed further in \S~\ref{sec:temp}, this normalization method minimizes the broad band effects likely due to cloud properties while highlighting the molecular absorption features most sensitive to effective temperature. 
+With this plotting method, the color term present in the NIR spectra of L~dwarfs is approximated as a three component piece-wise step function. Since the reddening contributing to the color term has been found to be well described by a smooth function \citep{Hiranaka13,Marocco:2014kr}, there is likely still a small amount of residual reddening remaining within each band.
+
+This normalization method can be used when comparing spectra of objects with very different colors but with similar absorption features. As discussed further in \S~\ref{sec:temp}, this normalization method minimizes the broad band effects likely due to cloud properties while highlighting the molecular absorption features. 
 
 \clearpage
-\section{Making Spectral Average Templates}
+\subsection{Making optically anchored NIR spectral average templates}
 \label{sec:templates}
 
-want to make spectral average tempaltes, similar to  what has been done in the optical
+want to make spectral average templates, similar to  what has been done in the optical
 --SDSS M and L dwarf templates in the optical \cite{Bochanski07_templates, Schmidt:2014jc}. but can't due to diversity of spectral morphologies.
-anchor to the optical and normalize band-by-band  has made it possible.
+
 
 % The variety of NIR spectral morphologies among L dwarfs of similar optical spectral type has been attributed to the NIR spectra being more sensitive to physical parameters such as gravity, clouds, and metallicity compared to higher-mass stars.
 % Optical spectra morphologies, on the other hand, are dominated by temperature and relatively insensitive to the higher order properties. As such, the spectra of so-called `red' and `blue' L dwarfs look peculiar in the NIR but relatively `normal' in the optical.
@@ -910,7 +921,8 @@ Facilities:
 \begin{figure}
 	\epsscale{0.70}
 	\plotone{figures/fan.pdf}
-	\caption{\emph{Top}: NIR spectral range of L1 type dwarfs normalized using the peak of the J band (1.28--1.32~$\micron$). Notice the fanning out of the spectra to the right and left of the normalizing section, making spectral comparisons of like L dwarfs difficult. \emph{Bottom}: Same data as in top panel but plotted band-by-band. The spectra are normalized individually by band (optical, $J$, $H$, and $K$ bands) using the entire band range. Superimposed in black on the NIR bands is the L1 field template spectrum, which is calculated using a weighted average of all the field objects plotted. The dispersion in the NIR bands is caused by different effects of dust and clouds on the atmospheres of the L dwarfs. The most prominent atomic and molecular features are indicated, as well as telluric correction artifacts due to poor line scaling of the A0 star's Hydrogen lines.}
+	\caption{\emph{Top}: NIR spectral range of L1 type dwarfs normalized using the peak of the $J$ band (1.28--1.32~$\micron$). The fanning out of the spectra to the right and left of the normalizing section makes spectral comparison difficult. \\
+	\emph{Bottom}: Same data as in top panel but normalized and plotted band-by-band. The spectra are normalized individually by band (optical, $YJ$, $H$, and $K$ bands) using nearly the entire band range. Prominent atomic and molecular features are indicated, as well as telluric correction artifacts due to poor line scaling of the A0 star's Hydrogen lines.}
 	\label{fig:L1fan}
 \end{figure}
 
