@@ -340,15 +340,15 @@ With this plotting method, the color term present in the NIR spectra of L~dwarfs
 This normalization method can be used when comparing spectra of objects with very different colors but with similar absorption features. As discussed further in \S~\ref{sec:temp}, this normalization method minimizes the broad band effects likely due to cloud properties while highlighting the molecular absorption features. 
 
 \clearpage
-\subsection{Making optically anchored NIR spectral average templates}
+\subsection{Making optically-anchored NIR spectral average templates}
 \label{sec:templates}
 
-want to make spectral average templates, similar to  what has been done in the optical--SDSS M and L dwarf templates in the optical \cite{Bochanski07_templates, Schmidt:2014jc}. but can't due to diversity of spectral morphologies.
-We wanted to create NIR templates that are anchored to the optical classification and reflect the typical spectral morphology of L dwarfs. 
+Spectral average templates are a common technique used in stellar and extragalactic spectroscopy to reveal the most common spectral morphologies and average out any variable effects.
+SDSS spectra have been used to make M and L dwarf templates in the far-red/optical wavelength regime \cite{Bochanski07_templates, Schmidt:2014jc} but no set of templates have been widely adopted for \emph{NIR} spectra of L dwarfs.
+In this section we describe how we used L dwarf spectral dataset to create spectral average templates which are anchored to the optical classification and accurately reflect both the typical spectral morphology of L dwarfs and the variations of their spectral morphology.
 
-Using the sample and data described in \S~\ref{sec:sample}, we have combined the NIR spectra of objects of the same optical spectral type to make NIR spectral average templates for normal and low-gravity L~dwarfs at each integer spectral type, L0--L8. (Since our analysis is anchored in the optical, we do not have an L9.) 
-The ``optical-NIR sample'' of spectra, grouped by \emph{optical} spectral type, are shown in Figure~\ref{fig:field_templates}.
-Below, we describe the method used to construct the templates.
+Using the sample and data described in \S~\ref{sec:sample}, we have combined the NIR spectra of objects of the same optical spectral type to make NIR spectral average templates for normal and low-gravity L~dwarfs at each integer spectral type, L0--L8. (Since our analysis is anchored in the optical, we do not have an L9.) The resulting templates, grouped by \emph{optical} spectral type, are shown in Figure Sets~\ref{fig:field_templates} and \ref{fig:lg_templates}.
+Below, we further describe the methods used to construct the templates.
 
 \textbf{DUPLICATION WITH SAMPLE SECTION? IS THIS NECESSARY?}\\
 We started with the opt-NIR sample (180). 
@@ -388,6 +388,8 @@ L8 field used $\chi^2 > 1.4$ due to small number of objects.
 %The width of the gray strip surrounding the template illustrates the range of spectral shapes found at each spectral type. 
 %Given the relatively large number of objects and $J-K_S$ colors spanned at each type, we expect that these strips encompass normal and that the spectra of all normal L dwarfs fall within this range. 
 %We also think the range is dominated by intrinsic properties, not instrumental or atmospheric effects.
+
+
 
 The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg} while the low-gravity templates are in Figure Set~\ref{fig:lg_templates} and discussed in \S~\ref{sec:lowg}. 
 The average is is shown as a black line, the dark gray indicates the 1$\sigma$ variance at each pixel, and the light gray indicates the flux range (minimum and maximum flux values) at each pixel of the spectra used to calculate the template. 
