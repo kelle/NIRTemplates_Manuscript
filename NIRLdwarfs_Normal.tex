@@ -13,7 +13,7 @@
 \newcommand{\sample}{180}
 
 \newcommand{\optNormal}{135}
-\newcommand{\optLowG}{31}
+\newcommand{\optLowG}{29}
 \newcommand{\optNoisy}{13}
 \newcommand{\optPec}{35}
 
@@ -211,12 +211,12 @@ Figures~\ref{fig:newdata_spthist}--\ref{fig:newopt}\\
 Appendix\\
 \\
 Sample bookkeeping:\\
-\optNormal~ L dwarfs with field optical\\
-\optLowG~ L dwarfs with lowg optical\\
+\optNormal~ L dwarfs with field optical =  \emph{optNormal}\\
+\optLowG~ L dwarfs with lowg optical = \emph{optLowG} \\
 %\optNoisy~ L dwarfs with  noisy optical\\
 %\optPec~ L dwarfs with  peculiar optical\\
 ====\\
-\sample~ L dwarfs with prism and optical=optNIR sample\\
+\sample~ L dwarfs with prism and optical=optNIR sample = \emph{sample}\\
 }
 
 We have combined extant spectra from the literature with new data to create a sample of \sample~L~dwarfs with both far-red optical (6000–-9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''. 
@@ -508,23 +508,29 @@ Finally, L8 is marked by the onset of methane absorption in the $K$-band.
 \section{Analysis: Low-Gravity L Dwarfs}
 \label{sec:lowg}
 
+Includes Figures~\ref{fig:spthist}, \ref{fig:JK_colors}, \ref{fig:beta_templates}--\ref{fig:gamma_templates} 
+Tables ~\ref{tab:lowg_template}, \ref{tab:lowg_excluded}.
 
 \subsection{Characterizing the Low Gravity Template Subsample}
 \label{sec:templates_lowg}
 
-In Figure~\ref{fig:spthist}, we show the spectral type distribution for the low-gravity objects included in the optical-NIR sample of L dwarfs as red and orange bars. L0$\gamma$--L4$\gamma$, L0$\beta$, and L1$\beta$ spectral average templates are shown in Figure Sets~\ref{fig:betaa_templates}--\ref{fig:gamma_templates} and listed in Table~\ref{tab:lowg_template}. The spectra rejected from the templates are shown in Figure Set~\ref{fig:lowg_excluded} and listed in Table~\ref{tab:lowg_excluded}.
+As described in \S~\ref{sec:templates}, we used the optical-NIR sample to make optically anchored spectral average templates for L0$\gamma$--L4$\gamma$, L0$\beta$, and L1$\beta$.
+The low-gravity templates are shown in Figure Sets~\ref{fig:beta_templates}--\ref{fig:gamma_templates} and the targets included in them are listed in Table~\ref{tab:lowg_template}.
+The spectra rejected from the low gravity templates are shown in Figure Set~\ref{fig:lowg_excluded} and listed in Table~\ref{tab:lowg_excluded}.
+
+In Figure~\ref{fig:spthist}, we show the spectral type distribution for the low-gravity objects included in the optical-NIR sample of L dwarfs as red and orange bars.
+Of the \sample~objects in the optical-NIR sample described in \S~\ref{sec:sample}, \optLowG~are objects with low-gravity features in their optical spectra.
+The low-gravity sample is composed of objects from \citet{Cruz09_lowg} and the new data described in \SS~\ref{sec:obs_new_opt} and~\ref{sec:obs_new_nir}.
+As described in \cite{Cruz09_lowg}, $\beta$ and $\gamma$ spectral type suffixes are used to indicate very low-gravity and intermediate-gravity spectral features respectively.
+
+The sample of low gravity objects is small and incomplete but the striking homogeneity of the NIR spectral morphologies amongst objects of the same optical spectral type provided strong motivation for making templates.
+
+Included in the \optLowG~objects are 23 L0--L4 objects with a $\gamma$ gravity classification and six L0--L1 $\beta$ type objects.
+Of the~\optLowG, only three were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, not because of their inconsistent spectral morphology (Table~\ref{tab:lowg_excluded}).
 
 In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the field (black and gray) and low gravity objects (red and orange) included in the optical-NIR sample of L~dwarfs. The mean color of the objects included in the templates is marked as a solid circle and box and whiskers are used to show the quartile ranges of the colors spanned at each spectral type. 
 
-objects selected from the opt-NIR sample classified on the \citet{Cruz09_lowg} scheme.
-
-sample mostly from \citet{Cruz09_lowg} but have included more objects as described in \SS~\ref{sec:obs_new_opt} and~\ref{sec:obs_new_nir} and listed in Table \#.
-
 Several low-gravity objects are not included in this analysis due to their southerly declinations and lack of SpeX Prism data. Future work will attempt to include data from a wider variety of NIR instruments.
-
-small numbers in many bins.
-
-based entirely on similar spectral morphology in the optical. nothing about age or group membership.
 
 The number of objects included in each template, the mean, minimum, maximum, and range of $J-K_S$ colors is listed in Table~\#. 
 
@@ -1074,7 +1080,7 @@ dwarfs. The spectra are normalized individually by band (optical, J, H, and K ba
 using the entire band range. The most prominent atomic and molecular features are indicated. Superimposed in black in the near-infrared
 bands is the template spectrum calculated using a weighted average of all the
 field objects plotted. \\
-\emph{fig:beta_templates}}
+\emph{fig:beta\_templates}}
 	\label{fig:beta_templates}
 \end{figure}
 
@@ -1088,7 +1094,7 @@ dwarfs. The spectra are normalized individually by band (optical, J, H, and K ba
 using the entire band range. The most prominent atomic and molecular features are indicated. Superimposed in black in the near-infrared
 bands is the template spectrum calculated using a weighted average of all the
 field objects plotted. \\
-\emph{fig:gamma_templates}}
+\emph{fig:gamma\_templates}}
 	\label{fig:gamma_templates}
 \end{figure}
 
@@ -1103,24 +1109,21 @@ field objects plotted. \\
 
 
 \begin{figure}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_b_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_g_excluded.pdf}
 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_g_excluded.pdf}
 	% \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_lg_excluded.pdf}
-	\caption{Spectra excluded from the low gravity templates. Also listed in Table~\ref{tab:lowg_excluded}. \\
-	\emph{fig:lowg_excluded}}
-	\label{fig:lowg_excluded}
-\end{figure}
-\begin{figure}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_g_excluded.pdf}
-	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L5strip_lg_excluded.pdf}		
-	
+	\caption{Spectra excluded from the low gravity templates. Also listed in Table~\ref{tab:lowg_excluded}. \\
+	\emph{fig:lowg\_excluded}}
+	\label{fig:lowg_excluded}
 \end{figure}
 
 \begin{figure}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_g.pdf}
 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence1_g.pdf}
 	\caption{The low gravity $\gamma$ L dwarf near-infrared spectral sequence. \\
-	\emph{fig:lg_sequence}}
+	\emph{fig:lg\_sequence}}
 	\label{fig:lg_sequence}
 \end{figure}
 	
