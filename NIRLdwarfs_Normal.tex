@@ -235,21 +235,18 @@ Specifically, we looked for L~dwarfs in the literature with $J-K_S$ colors bluer
 
 \subsection{Sample properties}
 
-
-
-The spectral type distribution of the optical-NIR sample is shown in Figure~\ref{fig:newdata_spthist}.
+The spectral type distribution of the optical-NIR sample is shown in Figure~\ref{fig:newdata_spthist} 
 The sample includes \optNormal~total field gravity objects with optical types spanning L0--L8 (gray and black).
 %With less than 15 objects, the L6--L8 bins suffer the most from small numbers.
 The sample also includes \optLowG~low-gravity objects from L0--L4 (orange, red). 
-(While there are more low-gravity objects known based on optical data, many lack SpeX Prism data due to their southerly declinations and inaccessibility from the IRTF.)
+While there are more low-gravity objects known based on optical data, many lack SpeX Prism data due to their southerly declinations and inaccessibility from the IRTF.
+Objects with new spectra presented in this paper are indicated with hatching.
 
-The $J-K_S$ color distribution of the optical-NIR sample is shown in Figure~\ref{fig:JK_colors}. 
-The color distribution of the low-gravity objects (red box and whisker) is significantly redder than the field gravity objects (black box and whisker) but they do overlap significantly.
-%Boxes, whiskers, and crosses are used to differentiate objects included or excluded from the spectral average templates and are discussed in more detail in \S~\ref{sec:templates_normal} and \ref{sec:templates_lowg}.
+The $J-K_S$ color distribution of the optical-NIR sample is shown in Figure~\ref{fig:JK_colors}.
+
+The properties of the field and low gravity samples are discussed in more detail in \S\S~\ref{sec:templates_normal} and~\ref{sec:templates_lowg}.
 
 \subsection{Far-Red Optical Spectra}
-
-
 
 %describe optical spectra
 For an L dwarf to be included in the optical-NIR sample, it is required to have an optical spectrum of high enough signal-to-noise ratio ($\gtrsim$50) to get a reliable spectral type.
@@ -508,8 +505,9 @@ Finally, L8 is marked by the onset of methane absorption in the $K$-band.
 \section{Analysis: Low-Gravity L Dwarfs}
 \label{sec:lowg}
 
-\emph{Includes Figures~\ref{fig:spthist}, \ref{fig:JK_colors}, \ref{fig:beta_templates}--\ref{fig:gamma_templates} 
-Tables ~\ref{tab:lowg_template}, \ref{tab:lowg_excluded}.}
+\emph{Includes //
+Figures~\ref{fig:spthist}, \ref{fig:JK_colors}, \ref{fig:beta_templates}, \ref{fig:gamma_templates} //
+Tables ~\ref{tab:lowg_template}, \ref{tab:lowg_excluded}, \ref{tab:}.}
 
 \subsection{Characterizing the Low Gravity Template Subsample}
 \label{sec:templates_lowg}
@@ -520,19 +518,18 @@ The spectra rejected from the low gravity templates are shown in Figure Set~\ref
 
 In Figure~\ref{fig:spthist}, we show the spectral type distribution for the low-gravity objects included in the optical-NIR sample of L dwarfs as red and orange bars.
 Of the \sample~objects in the optical-NIR sample described in \S~\ref{sec:sample}, \optLowG~are objects with low-gravity features in their optical spectra.
-The low-gravity sample is composed of objects from \citet{Cruz09_lowg} and the new data presented in \SS~\ref{sec:obs_new_opt} and~\ref{sec:obs_new_nir}.
+The low-gravity sample is composed of objects from \citet{Cruz07,Kirkpatrick08,Cruz09_lowg} and ten additional objects with new data presented in \S\S~\ref{sec:obs_new_opt} and~\ref{sec:obs_new_nir}.
+Several low-gravity objects are not included in this analysis due to their southerly declinations and lack of SpeX Prism data. Future work will attempt to include data from a wider variety of NIR instruments.
+This sample of low gravity objects is small and incomplete but the striking homogeneity of their NIR spectral morphologies amongst objects of the same optical spectral type provided strong motivation for making templates.
+
 As described in \cite{Cruz09_lowg}, $\beta$ and $\gamma$ suffixes are used on the spectral types to indicate very low-gravity and intermediate-gravity spectral features, respectively.
 Included in the \optLowG~objects are 23 L0--L4 objects with a $\gamma$ gravity classification and six L0--L1 $\beta$ type objects.
-Of the~\optLowG, only three were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, not because of their inconsistent spectral morphology (Figure Set~\ref{tab:lowg_excluded} and Table~\ref{tab:lowg_excluded}).
-The sample of low gravity objects is small and incomplete but the striking homogeneity of the NIR spectral morphologies amongst objects of the same optical spectral type provided strong motivation for making templates.
+Of the~\optLowG, only three (listed in Table~\ref{tab:lowg_excluded}) were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, not because of their inconsistent spectral morphology (Figure Set~\ref{tab:lowg_excluded}).
 
-
-
-In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the field (black and gray) and low gravity objects (red and orange) included in the optical-NIR sample of L~dwarfs. The mean color of the objects included in the templates is marked as a solid circle and box and whiskers are used to show the quartile ranges of the colors spanned at each spectral type. 
-
-Several low-gravity objects are not included in this analysis due to their southerly declinations and lack of SpeX Prism data. Future work will attempt to include data from a wider variety of NIR instruments.
-
-The number of objects included in each template, the mean, minimum, maximum, and range of $J-K_S$ colors is listed in Table~\#. 
+In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the field (black and gray) and low gravity objects (red and orange) included in the optical-NIR sample of L~dwarfs.
+The mean color of the objects included in the templates is marked as a solid circle and box and whiskers are used to show the quartile ranges of the colors spanned at each spectral type. Excluded objects are indicated by crosses.
+The number of objects included in each template, the mean, minimum, maximum, and range of $J-K_S$ colors is listed in Table~\ref{tab:lg_sample_prop}. 
+The color distribution of the low-gravity objects is significantly redder than the field gravity objects but the two distributions have significant overlap. 
 
 \subsection{The low-gravity spectral sequence}
 
@@ -898,7 +895,7 @@ Facilities:
 \begin{figure}
 		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/JK.pdf}
 		\caption{2MASS $J-K_S$ color versus spectral type for the L dwarfs in the optical-NIR sample. 
-		Quartile ranges (\emph{box and whisker}) and mean colors (\emph{solid circles}) are shown for the objects included in the field gravity (\emph{black}) and low gravity (\emph{red}) templates. The end caps mark the minimum and maximum of the distribution, the whiskers mark the bottom and top quartiles, the box indicates the locations of the 2nd and 3rd quartiles, and the median is indicated with a bar. The number of objects used in calculating the quartiles are indicated above the end caps.
+		Quartile ranges (\emph{box and whisker}) and mean colors (\emph{solid circles}) are shown for the objects included in the field gravity (\emph{black}) and low gravity (\emph{red}) templates. The boxes indicates the interquartile range which contains half of the data, the median is indicated with a bar, and the whiskers extend to the minimum and maximum of the distribution. The number of objects used in calculating the quartiles are indicated above the end caps.
 		Objects excluded from the templates are marked individually (\emph{crosses}, field g: \emph{gray}, low-g: \emph{orange}).
 		%All individual L dwarfs are drawn as gray circles, and the average color at each spectral type is drawn as a black bar. 		
 		The properties of the field and low-gravity template samples are summarized in Table~\ref{tab:sample_prop} and~\ref{tab:lg_sample_prop}, respectively. The individual objects included in the field and low gravity templates are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, while the excluded objects are listed in Tables~\ref{tab:field_excluded} and~\ref{tab:lowg_excluded}.\\
