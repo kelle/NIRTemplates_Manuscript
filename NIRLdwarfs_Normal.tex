@@ -42,7 +42,7 @@
 \begin{document}
 
 \title{
-Meeting the Cool Neighbors XII: Optically-Anchored Analysis of the Near-Infrared Spectra of L Dwarfs.
+Meeting the Cool Neighbors XII: An Optically-Anchored Analysis of the Near-Infrared Spectra of L Dwarfs.
 }
 
 \author{
@@ -93,7 +93,7 @@ include \# of new optically classified low-gravity L dwarfs.
 %the aim of this paper is to provide a means of deriving spectral types from NIR data that are more closely consistent with the optical scale. 
 %The approach adopted is to assume that the near-infrared spectra results from two factors: an overall slope, that we speculate is driven largely by continuum absorption due to dust within the atmosphere; and molecular absorption features, that are more closely tied to the temperature. 
 We introduce a new way to analyze the near-infrared spectra of L~dwarfs that removes the slope from the spectrum and highlights the similarities in the absorption feature strengths between objects of the same optical spectral type. 
-%We use these templates to describe the major temperature-dependent spectral features and the role of the underlying Plank function in shaping the spectra. We propose that the optical and $J$-band spectra are more sensitive to temperature because they are on the steep temperature-sensitive Wien tail.
+%We use these templates to describe the major temperature-dependent spectral features and the role of the underlying Plank function in shaping the spectra. We propose that the optical and $zJ$-band spectra are more sensitive to temperature because they are on the steep temperature-sensitive Wien tail.
 %We also use the templates to show the break in the NIR spectral sequence between types L5 and L6; the NIR spectra from L0--L5 form a morphological sequence while the L6--L8 spectra do not.
 We show optical types and near-infrared spectral morphologies are correlated when analyzed band-by-band.
 Finally, we build on the spectral typing method of \citet{Kirkpatrick10} to provide a method for estimating spectral types for normal L dwarfs when only $H$- or $K$-band data is available. In addition, we show the typical range of spectral morphologies spanned at each spectral type.
@@ -104,6 +104,8 @@ Finally, we build on the spectral typing method of \citet{Kirkpatrick10} to prov
 \keywords{Galaxy: stellar content --- solar neighborhood ---
 stars: late-type stars: low-mass, brown dwarfs}
 
+\clearpage
+\clearpage
 \section{Introduction}
 
 % What are L dwarfs
@@ -113,7 +115,7 @@ Building upon the initial discovery and classification of these objects \citep{K
 In this final paper of the series, we focus on the analysis of the NIR spectra of L dwarfs obtained while building that volume-limited sample.
 
 % L dwarf classification in the OPTICAL
-L dwarfs were first classified according to their spectral morphology at red-optical wavelengths using spectra typically covering 6000--9000~\AA at $R~1000$ \citep{K99,Kirkpatrick05}. 
+L dwarfs were first classified according to their spectral morphology at red-optical wavelengths using spectra typically covering 6000--9000~\AA~at $R\sim1000$ \citep{K99,Kirkpatrick05}. 
 Red-optical spectra of L dwarfs are on the Wien side of the underlying blackbody spectrum, and the spectral morphology in that wavelength regime is dominated by temperature effects, with surface gravity and metallicity making secondary contributions. 
 The effects on the optical spectra of L dwarfs due to low gravity are described by \citet{Cruz09_lowg}. 
 Building on the \citet{K99} scheme, \citet{Cruz09_lowg} also defined a classification scheme for low-gravity optical spectral types using $\beta$, $\gamma$, and $\delta$ suffixes. 
@@ -121,28 +123,25 @@ Building on the \citet{K99} scheme, \citet{Cruz09_lowg} also defined a classific
 
 % NEED FOR NIR CLASSIFICATION
 While the classification and analysis techniques in the optical are valuable, reliable diagnostics based on near-infrared (NIR) data are necessary for two primary reasons:
-1) With intrinsically cool surface temperatures (1500--2200~K) and low luminosities (RANGE), L dwarfs are comparably faint in the optical and emit most of their flux at near-infrared wavelengths. As a result, obtaining NIR spectra is far less resource intensive than obtaining optical data.
-2) The workhorse spectrographs of the next decade are optimized for the NIR, e.g., Near Infrared Spectrograph (NIRSPEC) on the James Webb Space Telescope (JWST), the Folded-port Infrared Echellette (FIRE) on Magellan, Near-Infrared Echelle Spectrograph (NIRES) on Keck, and the TripleSpec instruments on the ARC 3.5-m, Palomar 200-inch, and the Blanco 4-m.
-REFS
+First, with intrinsically cool surface temperatures (1500--2200~K) and low luminosities ($-5~\lesssim~log(L_*/L_\sun)~\lesssim~-3.5$), L dwarfs are comparably faint in the optical and emit most of their flux at near-infrared wavelengths \citep{Filippazzo:2015vd}. 
+As a result, obtaining NIR spectra is far less resource intensive than obtaining optical data.
+Second, the workhorse spectrographs of the next decade are optimized for the NIR, e.g., Near Infrared Spectrograph (NIRSPEC) on the James Webb Space Telescope \citep{Ferruit:2012em}, the Folded-port Infrared Echellette (FIRE) on Magellan \citep{Simcoe:2013kh}, Near-Infrared Echelle Spectrograph (NIRES) on Keck, and the TripleSpec instruments on the ARC 3.5-m, Palomar 200-inch, and the Blanco 4-m \citep{Wilson:2004he}.
 
 % Trouble with L dwarf spectral classification in the NIR
 Ever since their discovery, the NIR properties of L dwarfs have proved more complex to interpret than their behavior at optical wavelengths. 
 Spectral classification and inference of unambiguous physical properties based on near-infrared data has been fraught with inconsistencies and degeneracies.
-This was first recognized in their photometric properties where, unlike M~dwarfs, L~dwarfs of the same optically-based spectral type span a large range of $J-K$ colors \citep[e.g.,]{Leggett:2003tm}. 
-That is, we observe a wide range of spectral morphologies in the NIR for sources with similar optical spectral types.
-
+This was first recognized in their photometric properties where, unlike M~dwarfs, L~dwarfs of the same optically-based spectral type span a large range of $J-K$ colors \citep[e.g.,][]{Leggett:2003tm}. 
 % relevant work on NIR spectral classification
-While there were numerous efforts to classify L dwarfs with spectral indices \citep{Reid01_NIR, Testi01, Geballe02}, a classification system for L~dwarfs based on NIR data grounded in the Morgan Keenan system did not emerge until recently. 
-\citet{Kirkpatrick10} (hereafter K10) developed a classification scheme that focuses heavily on the $YJ$-band spectral morphology and results in types consistent with the optically-determined types. 
-\citet{Kirkpatrick10} defined L dwarf near-infrared spectral standards based on their spectral morphology in the $J$-band. 
-\citep{Allers13} defines quantitative spectral indices to identify spectral type and surface gravity class using low-resolution near-infrared spectra, but use of the entire spectral region to assign a type is necessary to parallel the MK system established for stars \citep{Morgan84}.
+While there have numerous efforts to classify the NIR spectra of L dwarfs \citep{Reid01_NIR, Testi01, Geballe02}, one of the most successful is the system of \citet{Allers:2013hk} which defines quantitative spectral indices to identify spectral type and surface gravity class.
+\citet{Kirkpatrick10} developed a classification scheme which does not rely on indices but rather utilizes the $zJ$-band spectral morphology to make a sequence and identify spectral standards.
+While both of these systems result in types broadly consistent with the optically-determined types, neither use the entire NIR spectral region which would be necessary to parallel the MK system established for stars \citep{Morgan:1984wy,Kirkpatrick05}.
 
 The relative difficulty of NIR spectral analysis compared to the optical can be attributed to two primary causes:
 1) The NIR spectra of L dwarfs are inherently more sensitive to underlying physical properties.
 While temperature dominates the spectral variations in the optical, gravity and condensate cloud differences playing a significant role on the observed NIR spectral features \citep{Knapp04}.
 Thus, different underlying masses and cloud properties cause a wider range of spectral morphologies at a given temperature (spectral type) resulting in the range of NIR colors. 
 This sensitivity of the NIR spectra to second order parameters in addition to temperature has made a satisfying NIR-based classification scheme for L dwarfs elusive and beguiled reliable and consistent interpretation of their spectra.
-2) Much of the NIR data for L dwarfs has been collected with the SpeX spectrograph in prism mode, covering 0.8--2.5~$\micron$ at $R~200$, a far larger wavelength regime and lower resolution than the optical.
+2) Much of the NIR data for L dwarfs has been collected with the SpeX spectrograph in prism mode, covering 0.8--2.5~$\micron$ at $R\sim200$, a far larger wavelength regime and lower resolution than the optical.
 The larger wavelength coverage in the NIR compared to the optical essentially provides more room for the diversity of spectra features to be apparent.
 
 The discord between the classification of L dwarfs at different wavelengths and resolutions is reminiscent of the parable of a group of investigators who are asked to describe an elephant based only on a small part of the animal's anatomy. 
@@ -157,7 +156,13 @@ From Neill:
 first, would it be correct to say that overall rationale for the paper is the hypothesis that optical spectral types for L dwarfs have a closer tie to fundamental parameters (notable effective temperature) than IR types, and the aim of this paper is to provide a means of deriving spectral types from near-IR data that are more closely consistent with the optical scale? The approach adopted is to assume that the near-infrared spectra results from two factors: an overall slope, that's driven largely by continuum emisson/absorption due to dust within the atmosphere; and features, that are more closely tied to the temperature. The spectral type calibration then follows from an empirical set of templates that are designed to put greater emphasis on the feature strength than the spectral slope.
 
 %TABLE OF CONTENTS
-Therefore we have developed an empirical, descriptive near-infrared spectral classification system for field and young L dwarfs. The system is derived from a sample of L dwarfs with both optical and near-infrared spectra (described in Section \ref{sec:sample}). We describe a method of normalizing in individual bands in order to remove color information and focus on characterization of morphology in the $J$, $H$, and $K$ bands individually (Section~\ref{sec:method}). In Section~\ref{sec:templates} we describe the creation of spectral temples for field L0--L8, low gravity L0--L4$\gamma$, and intermediate-gravity L0 \& L1$\beta$ spectral types, and in Sections~\ref{sec:fieldg} and \ref{sec:lowg} we analyze the spectral morphology of the templates. In Section~\ref{sec:classification} we detail our procedure for determining the spectral type of an object from the comparison of observed low-resolution $J$-, $H$-, and/or $K$-band spectra to our templates, and in Section\ref{sec:summary} we summarize our conclusions.
+In this paper, we present an empirical, descriptive near-infrared spectral analysis and classification system for field and low gravity L~dwarfs. 
+The sample of L dwarfs with both optical and near-infrared spectra which our analysis is based on is described in \S~ \ref{sec:sample}. 
+In \S~\ref{sec:templates} we describe the creation of spectral temples for field L0--L8, low gravity L0$\gamma$--L4$\gamma$, and intermediate-gravity L0$\beta$ \& L1$\beta$ spectral types, including a method of normalizing in individual bands in order to remove color information and focus on characterization of morphology in the $zJ$, $H$, and $K$ bands individually. 
+We analyze and discuss the field templates in \S\S~\ref{sec:fieldg}. 
+In \S~\ref{sec:lowg}, we discuss the low gravity templates and identify methods for distinguishing low gravity objects from field objects. 
+In \S~\ref{sec:classification} we detail a procedure for determining the spectral type of an object from the comparison of observed low-resolution $zJ$-, $H$-, and/or $K$-band spectra to our templates.
+Finally, in \S~\ref{sec:summary} we summarize our conclusions.
 
 
 % In \S~\ref{sec:obs} we present new low-resolution and moderate resolution near-infrared spectra of normal late-M and L~dwarfs and likely galaxies.  
@@ -332,7 +337,7 @@ Both the normalization method and the spectral templates greatly facilitate the 
 
 %since it makes it difficult to directly compare objects of similar spectral type
 %It is difficult to directly compare spectra of objects with disparate colors, but similar spectral types, estimatepecially when normalized at a single wavelength.
-Common practice is to normalize NIR spectra of L~dwarfs at the $J$-band peak (1.28--1.32~$\micron$) \citep[e.g.,][]{Kirkpatrick10}. 
+Common practice is to normalize NIR spectra of L~dwarfs at the $zJ$-band peak (1.28--1.32~$\micron$) \citep[e.g.,][]{Kirkpatrick10}. 
 In the top panel of Figure~\ref{fig:L1fan}, we show the 0.8--2.4~$\micron$ spectral range for 17 field gravity, optically-typed L1 dwarfs normalized in this manner.
 Despite all of the objects having the same optical spectral type and appearing to have similar NIR spectral morphology, the spectra `fan out'. 
 That is, while the spectra lie on top of each other near the normalization point, they gradually diverge from one another at both shorter and longer wavelengths, as would be expected for objects having a range of $J-K$ colors. 
@@ -346,7 +351,7 @@ As was pointed out over a decade ago by \citet{Leggett:2003tm}, despite the diff
 In order to directly compare the absorption features in L~dwarf spectra, we utilize this plotting method where each NIR band is normalized separately, using most of the wavelength range of each band. 
 Specifically, we use the following normalization ranges: 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-\item 0.87--1.39~$\micron$ for the $YJ$~band,
+\item 0.87--1.39~$\micron$ for the $zJ$~band,
 \item 1.41--1.89~$\micron$ for the $H$~band, and 
 \item 1.91--2.39~$\micron$ for the $K$~band, 
 \end{itemize}
@@ -448,7 +453,7 @@ shown in Figures and summarized in tables.
 
 % In order to to disentangle the observational indicators of temperature, gravity, cloud, and metallicity properties in the NIR spectra of L~dwarfs, we have performed an analysis of NIR spectra using the optical spectra as an anchor.
 % That is, by studying the NIR spectra of objects with very similar optical spectra, we have controlled for temperature (as much as possible) and thus, the observed spectral differences in the NIR spectra are most likely attributable to the second order properties.
-%Further, unlike previous NIR spectral studies of low-mass stars and brown dwarfs, we plot and analyze the three NIR bands ($J$, $H$, and $K_S$) separately as described above in \S~\ref{sec:method}.
+%Further, unlike previous NIR spectral studies of low-mass stars and brown dwarfs, we plot and analyze the three NIR bands ($zJ$, $H$, and $K_S$) separately as described above in \S~\ref{sec:method}.
 %By examining the NIR spectra band-by-band, we are minimizing the effect of reddening on the spectral shape that is likely dominated by the gravity- and metallicity-sensitive clouds and not temperature.
 
 
@@ -485,23 +490,23 @@ However, given the agreement between the spectral morphologies of these spectra,
 
 \subsection{Isolating Temperature: The Field L Dwarf Spectral Sequence}
 \label{sec:temp}
-The normal L dwarf $J$, $H$, and $K_S$ low-resolution spectral templates described in the previous subsection are shown overplotted on top of each other in Figure~\ref{fig:spec_sequence}. 
+The normal L dwarf $zJ$, $H$, and $K_S$ low-resolution spectral templates described in the previous subsection are shown overplotted on top of each other in Figure~\ref{fig:spec_sequence}. 
 The prominent atomic (\ion{K}{1}, \ion{Na}{1}) and molecular (FeH, H$_2$O) absorption spectral features from L0 to L5 form a clear sequence in all three bands (top panel).
 These same spectral features in the later type objects (L6--L8), however, saturate (H$_2$O) or disappear (FeH, \ion{K}{1}) and do not follow the same trends as the earlier type objects and are therefore plotted separately (bottom panel).
 
 %The blackbody curves for 2000, 1800, and 1600~K (with by-eye normalizations) are shown as dotted lines on the L0--L5 sequence. 
 %While there is likely molecular absorption at all wavelengths, the emergent spectra must still bear the imprint of the underlying blackbody spectrum.
-%The optical and $J$-band spectra are principally comprised of the steep Wien tail of the blackbody curve,
+%The optical and $zJ$-band spectra are principally comprised of the steep Wien tail of the blackbody curve,
 %the $H$ band is near the peak of the curve, while the $K$-band is comprised of the Rayleigh-Jeans tail.
-%Indeed, the Wien tail appears to be dominating the spectral slope of the $J$ band and the relative height of the $J$-band peak at 1.3~$\micron$.
-%Because the slope of the Wien tail is much more temperature sensitive than the shape of the blackbody peak or the Rayleigh-Jeans tail, this might substantially explain why the far-red optical and $J$-band spectra are more highly correlated with temperature.
+%Indeed, the Wien tail appears to be dominating the spectral slope of the $zJ$ band and the relative height of the $zJ$-band peak at 1.3~$\micron$.
+%Because the slope of the Wien tail is much more temperature sensitive than the shape of the blackbody peak or the Rayleigh-Jeans tail, this might substantially explain why the far-red optical and $zJ$-band spectra are more highly correlated with temperature.
 
 Below, we describe how the spectral features in the low-resolution L0--L5 template sequence change, as shown in the top panels of Figure~\ref{fig:spec_sequence}. (The L6--L8 spectra do not follow this sequence.)
 While these trends have been known since the early studies of L dwarfs in the NIR \citep{Testi01,Reid01_NIR,Geballe02}, we would like to call out their prominence in the optically-anchored templates.
 Since these templates are anchored to the optical spectral types, which has been shown to be primarily sensitive to temperature, we deduce that these NIR spectral changes are also primarily modulated by temperature.
 With later type (cooler temperature), 
 \begin{itemize}
-\item the spectral slope in $J$ band gets redder 
+\item the spectral slope in $zJ$ band gets redder 
 %likely due to the changing steep slope of the temperature-sensitive Wien tail of the underlying blackbody spectrum and the pressure-broadened K wing
 \item FeH absorption (1.0, 1.6~$\micron$) increases,
 \item VO absorption (1.06, 1.18~$\micron$) decreases,
@@ -515,7 +520,7 @@ With later type (cooler temperature),
 The transition to L6 in the NIR spectra is marked most notably by the reversal of FeH absorption (1.0, 1.6~$\micron$). 
 At L6 the FeH absorption begins to weaken and is not present by L7. 
 %(This feature is measured by the FeH$_z$ index defined by \citet{Allers:2013hk} and this trend is shown in their Figure~20 by the shaded gray region.) 
-The disappearance of FeH results in a smoother $J$ and $H$~band spectral shape in the later-type objects. In addition, the onset of water at 1.1~$\micron$ contributes to the smooth $J$-band shape in the later-type objects. Following the trend seen in L0--L5, the depth of the water bands continue to increase and \emph{narrow}---due to the fewer rotational transitions at lower temperatures---resulting in steeper slopes on the blue sides of the $H$~and $K$~bands. 
+The disappearance of FeH results in a smoother $zJ$ and $H$~band spectral shape in the later-type objects. In addition, the onset of water at 1.1~$\micron$ contributes to the smooth $zJ$-band shape in the later-type objects. Following the trend seen in L0--L5, the depth of the water bands continue to increase and \emph{narrow}---due to the fewer rotational transitions at lower temperatures---resulting in steeper slopes on the blue sides of the $H$~and $K$~bands. 
 %(The $H$-band slope is measured by the \citet{Allers07} H$_2$O index and this trend is shown in the top panel of their Figure~5 by red diamonds.) 
 In these later types, the $K$-band slope towards the CO is much steeper. 
 Finally, L8 is marked by the onset of methane absorption in the $K$-band. 
@@ -560,12 +565,12 @@ While diversity of cloud properties is often pointed to as the primary suspect f
 
 \subsection{The low-gravity spectral sequence}
 
-The optically anchored low gravity L0--L4 $\gamma$ dwarf $J$, $H$, and $K_S$ low-resolution spectral templates are shown overplotted on top of each other in Figure~\ref{fig:lg_sequence}. 
+The optically anchored low gravity L0--L4 $\gamma$ dwarf $zJ$, $H$, and $K_S$ low-resolution spectral templates are shown overplotted on top of each other in Figure~\ref{fig:lg_sequence}. 
 Compared to the field sequence shown in Figure~\ref{fig:spec_sequence}, the low gravity $\gamma$ sequence does not have as significant of spectral morphology changes between types.
 Many of the spectral trends with type in the low gravity sequence are similar to those in the field L0--L4 sequence but smaller in amplitude. And as with the field gravity objects, we deduce these changes are primarily temperature dependent. With later type, \emph{J} band gets redder, atomic lines (\ion{K}{1}, \ion{Na}{1}) get weaker, molecular FeH absorption gets weaker, and H$_2$O absorption gets stronger. The recognized gravity-sensitive features also change through the L0--L4 $gamma$ sequence, and again, we attribute these changes to cooler temperatures.
 In low gravity spectra, with later type (cooler temperature),
 \begin{itemize}
-\item the spectral slope in $J$ band gets redder 
+\item the spectral slope in $zJ$ band gets redder 
 \item FeH absorption (1.0~$\micron$) remains constant,
 \item VO absorption at 1.06~$\micron$ decreases and disappears by L4,
 \item VO absorption at 1.18~$\micron$ remains constant,
@@ -604,39 +609,39 @@ In the following subsections, we compare each low gravity template to the suite 
 \begin{description}
 \item[L0$\gamma$]{
 In Figure~\ref{fig:L0lg-field} the L0$\gamma$ spectral average template (blue) is compared to the field L dwarf templates (black,gray).  
-The $J$ and $H$ bands of the L0$\gamma$ template are distinctive from the field L dwarf templates. 
-In particular, the $J$ band of the L0$\gamma$ type displays weaker FeH absorption at 0.99--1.007 $\mu$m and stronger VO absorption at 1.05--1.08 $\mu$m and triangular-shaped H band compared to the field objects \citep{Kirkpatrick06}. 
-Aside from these notable differences, the $J$-band shape is most similar to L0 and L1 field templates, but with a slightly redder slope. 
+The $zJ$ and $H$ bands of the L0$\gamma$ template are distinctive from the field L dwarf templates. 
+In particular, the $zJ$ band of the L0$\gamma$ type displays weaker FeH absorption at 0.99--1.007 $\mu$m and stronger VO absorption at 1.05--1.08 $\mu$m and triangular-shaped H band compared to the field objects \citep{Kirkpatrick06}. 
+Aside from these notable differences, the $zJ$-band shape is most similar to L0 and L1 field templates, but with a slightly redder slope. 
 The L0$\gamma$ $K$-band shape, on the other hand, is only subtly different from the L0 and L1 field objects, with a slightly flatter and less round shape and weaker CO absorption band head at 2.3~$\mu$m. 
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L0$\gamma$ from a field object, a $K$-band spectrum is insufficient and $H$- and/or $J$-band data is required.}
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L0$\gamma$ from a field object, a $K$-band spectrum is insufficient and $H$- and/or $zJ$-band data is required.}
 }
 
 \item[L1$\gamma$]{
 In Figure~\ref{fig:L1lg-field} the L1$\gamma$ spectral average template (light blue) is compared to the field L dwarf templates (black,gray).
 
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L0$\gamma$ from a field object, a $K$-band spectrum is insufficient and $H$- and/or $J$-band data is required.}
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L0$\gamma$ from a field object, a $K$-band spectrum is insufficient and $H$- and/or $zJ$-band data is required.}
 
 }
 
 \item[L2$\gamma$]{
 In Figure~\ref{fig:L2lg-field} the L2$\gamma$ spectral average template (green) is compared to all the other field L dwarf templates (black,gray). 
-The L2$\gamma$ type is distinctive from field dwarfs in all three $J$, $H$, and $K$-bands. 
+The L2$\gamma$ type is distinctive from field dwarfs in all three $zJ$, $H$, and $K$-bands. 
 Even more pronounced than in the L0$\gamma$, the L2$\gamma$ J-band spectrum has weaker FeH and stronger VO molecular absorption compared to field L dwarfs. 
-In addition, there is also a hint of weaker \ion{K}{1} absorption at 1.25~$\mu$m. Aside from these differences in particular absorption features, the overall shape of the L2$\gamma$ $J$-band is most similar to the L5 field template.
+In addition, there is also a hint of weaker \ion{K}{1} absorption at 1.25~$\mu$m. Aside from these differences in particular absorption features, the overall shape of the L2$\gamma$ $zJ$-band is most similar to the L5 field template.
 The L2$\gamma$ $H$-band most closely resembles that of the L7 field template but with the hallmark  triangular-shape (not shown). 
 Finally, the L2$\gamma$ $K$-band shape resembles that of early-type (L0--L2) field objects, except with a redder overall slope and weaker CO at 2.3~$\mu$m. 
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L2$\gamma$ from a field object in the NIR, either a $J$, $H$, or $K$-band spectrum is sufficient.}
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L2$\gamma$ from a field object in the NIR, either a $zJ$, $H$, or $K$-band spectrum is sufficient.}
 }
 
 \item[L3$\gamma$]{
 In Figure~\ref{fig:L3lg-field} the L3$\gamma$ spectral average template (orange) is compared to all the other field L dwarf templates (black,gray). 
 
-The L2$\gamma$ type is distinctive from field dwarfs in all three $J$, $H$, and $K$-bands. 
+The L2$\gamma$ type is distinctive from field dwarfs in all three $zJ$, $H$, and $K$-bands. 
 Even more pronounced than in the L0$\gamma$, the L2$\gamma$ J-band spectrum has weaker FeH and stronger VO molecular absorption compared to field L dwarfs. 
-In addition, there is also a hint of weaker \ion{K}{1} absorption at 1.25~$\mu$m. Aside from these differences in particular absorption features, the overall shape of the L2$\gamma$ $J$-band is most similar to the L5 field template (not shown).
+In addition, there is also a hint of weaker \ion{K}{1} absorption at 1.25~$\mu$m. Aside from these differences in particular absorption features, the overall shape of the L2$\gamma$ $zJ$-band is most similar to the L5 field template (not shown).
 The L2$\gamma$ $H$-band most closely resembles that of the L7 field template but with the hallmark  triangular-shape. 
 Finally, the L2$\gamma$ $K$-band shape resembles that of early-type (L0--L2) field objects, except with a redder overall slope and weaker CO at 2.3~$\mu$m. 
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L2$\gamma$ from a field object in the NIR, either a $J$, $H$, or $K$-band spectrum is sufficient.}
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L2$\gamma$ from a field object in the NIR, either a $zJ$, $H$, or $K$-band spectrum is sufficient.}
 
 strong VO
 weak FeH
@@ -647,13 +652,13 @@ triangular H band
 \item[L4$\gamma$]{
 In Figure~\ref{fig:L4lg-field}, the L4$\gamma$ spectral average template (dark red) is compared to all the other field L dwarf templates (black, gray). 
 %The NIR spectra of the L4$\gamma$ is not as distinctive from the field objects as the earlier type $\gamma$ objects. 
-The $J$ band of the L4$\gamma$ template looks very similar to the field L4 but with weaker 1$\micron$ FeH absorption and a redder overall slope. 
+The $zJ$ band of the L4$\gamma$ template looks very similar to the field L4 but with weaker 1$\micron$ FeH absorption and a redder overall slope. 
 Just like the earlier-type $\gamma$ templates, the triangular-shaped H band is quite distinctive from the H band shape of the field objects. And similar to the L2$\gamma$, the H-band of the L4$\gamma$ template most resembles that of the L7 field template (not shown).
 Finally, the L4$\gamma$ $K$-band shape most resembles that of the earlier-type (L1--L3) field templates, but with weaker CO absorption at 2.3~$\mu$m.
 
 VO is gone.
 
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L4$\gamma$ from a field object in the NIR, a $K$-band spectrum is insufficient and $H$- and/or $J$-band data is required.}
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L4$\gamma$ from a field object in the NIR, a $K$-band spectrum is insufficient and $H$- and/or $zJ$-band data is required.}
 }
 \end{description}
 
@@ -681,12 +686,12 @@ In Figure~\ref{fig:L1b-field} the L1$\beta$ spectral average template (red) is c
 
 As discussed by \citet[\S~3.2]{Kirkpatrick05} and \citet[hereafter K10]{Kirkpatrick10}, several NIR spectral classification methods for L dwarfs have been proposed that rely on spectral indices and/or do not use the entire NIR spectral regime.
 % The \citet{Geballe02} system, one of the more popular systems to date, is insufficient for L dwarfs because it uses only one  index (H$_2$O 1.5$\micron$) for L dwarf classification based on NIR data.
-% More recently, \citet{Allers:2013hk} provided an index-based scheme to classify field gravity dwarfs which relies on four narrow-band indices from \cite{Allers07,McLean03,Slesnick04} measuring the slope of the water absorption bands separating the $J$, $H$, and $K$ bands.
+% More recently, \citet{Allers:2013hk} provided an index-based scheme to classify field gravity dwarfs which relies on four narrow-band indices from \cite{Allers07,McLean03,Slesnick04} measuring the slope of the water absorption bands separating the $zJ$, $H$, and $K$ bands.
 % \citet{Allers:2013hk} further provide an index based scheme to distinguish field, intermediate, and low-gravity spectra.
 While quantitative, index based schemes are useful, a scheme is also needed which uses spectral standards and the entirety of the spectrum to estimate a type, as in the MK system \citep{Morgan:1984wy}.
-K10 identified spectral standards, (hereafter, K10 standards) that provide a $J$-band sequence and a scheme which uses the $H$ and $K$ band data to assign `blue' and `red' suffixes. 
-% More recently, \cite{Kirkpatrick10} proposed a suite of NIR standards and a spectral typing scheme that compares the entire 1--2.5~$\micron$ region, normalized at 1.28 $\micron$ (resulting in the ``fan'' described above in \S~\ref{sec:method} and illustrated in Figure~\ref{fig:L1fan}), but only requiring a good match to the spectral standard in the $J$ band. 
-% Objects with a poor match to the standard in the $H$ and $K$ bands, despite a good $J$-band match, are given a `blue' or `red' suffix. 
+K10 identified spectral standards, (hereafter, K10 standards) that provide a $zJ$-band sequence and a scheme which uses the $H$ and $K$ band data to assign `blue' and `red' suffixes. 
+% More recently, \cite{Kirkpatrick10} proposed a suite of NIR standards and a spectral typing scheme that compares the entire 1--2.5~$\micron$ region, normalized at 1.28 $\micron$ (resulting in the ``fan'' described above in \S~\ref{sec:method} and illustrated in Figure~\ref{fig:L1fan}), but only requiring a good match to the spectral standard in the $zJ$ band. 
+% Objects with a poor match to the standard in the $H$ and $K$ bands, despite a good $zJ$-band match, are given a `blue' or `red' suffix. 
 Here, we build on the K10 scheme by proposing a method which is anchored in the optical and makes greater use of the spectral morphology in the $H$ and $K$ bands.
 Below, we describe a classification method for estimating optically-anchored spectral types for L dwarfs based on NIR data using field and low-gravity templates and/or field- and low-gravity spectral standards.
 
@@ -708,7 +713,7 @@ Six of the ten standards are included in the spectral average template calculati
 The other four, however, are not included in the template for the K10 assigned NIR spectral type:
 \begin{itemize}
 
-	\item The L2 NIR standard, \object{2M~1305$-$2541} Kelu-1, a confirmed binary, was rejected from the templates in $H$ and $K$ band, but not in $J$. As can be seen in Figure~\ref{fig:templates-stds}, the spectrum of Kelu-1 is slightly different from the standard: the blue slope of the $H$ band is steeper, the width of the $H$-band peak is narrower, and the $K$-band CO absorption is weaker than the template. While the spectrum is still the best fit to the L2 template at all bands and remains typed as an L2 in the NIR, it is not an ideal standard. Of the 13 L2s included in the template, we propose \object{2M~0408$-$1450} as an alternate L2 NIR spectral standard because it is bright, at moderate declination, and has a spectral morphology very similar to the L2 template (Figure~\ref{fig:templates-newstds}).
+	\item The L2 NIR standard, \object{2M~1305$-$2541} Kelu-1, a confirmed binary, was rejected from the templates in $H$ and $K$ band, but not in $zJ$. As can be seen in Figure~\ref{fig:templates-stds}, the spectrum of Kelu-1 is slightly different from the standard: the blue slope of the $H$ band is steeper, the width of the $H$-band peak is narrower, and the $K$-band CO absorption is weaker than the template. While the spectrum is still the best fit to the L2 template at all bands and remains typed as an L2 in the NIR, it is not an ideal standard. Of the 13 L2s included in the template, we propose \object{2M~0408$-$1450} as an alternate L2 NIR spectral standard because it is bright, at moderate declination, and has a spectral morphology very similar to the L2 template (Figure~\ref{fig:templates-newstds}).
 
 	\item The L5 NIR standard, \object{2M~0835+1953} is quite faint ($J=15.9$) and has no available optical spectrum. As a result, it is not included in the optical-NIR sample used as the basis for the template construction. As shown in Figure~\ref{fig:templates-stds}, despite not having a very high signal-to-noise ratio, the spectrum is a good match to the L5 template in all three bands. Since \object{2M~0835+1953} is so faint, we propose \object{2M~2137+0808} as a secondary L5 NIR standard. It is among the brightest objects included in the L5 template, is at moderate declination, and has a spectral morphology similar to the L5 template (Figure~\ref{fig:templates-newstds}). 
 
@@ -750,21 +755,21 @@ As noted by AL13, in general, the objects classified as $\beta$ show more divers
 
 In principle, we could set up three spectral typing schemes for the NIR, one for each band, but for simplicity, we propose one scheme that works for multiple or single band data.
 We propose a spectral typing scheme that takes advantage of normalizing band-by-band (as described above in \S~\ref{sec:method}), uses spectral standards and the optically-anchored spectral average templates (\S~\ref{sec:templates}), and provides a method to assign spectral types to L~dwarfs with only $H$-~or $K$-band data:
-%As illustrated in Figure~\ref{fig:sequence}, the $H$ and $K$ bands are not as diagnostic of an optically-anchored spectral type as the feature-rich $J$ band.
+%As illustrated in Figure~\ref{fig:sequence}, the $H$ and $K$ bands are not as diagnostic of an optically-anchored spectral type as the feature-rich $zJ$ band.
 
 \begin{itemize}
 	\item If $JHK$ spectra are available, normalize the data at 1.28~$\micron$ and compare to the NIR spectral standards as described in K10. Note if the spectrum is unusually red or blue.
 	
 	\item Normalize the spectra band-by-band as described in \S~\ref{sec:method} and compare to the spectral standards and/or the field- and low-gravity NIR templates to find the best matches in each band.
 	The `best' match is the subtype where the spectral shapes look the most similar. The best match is usually bracketed by fair-to-good matches one type later and earlier than the best match.
-	The fit in $J$-band is given the most weight, followed by $H$ and $K$ bands. The goodness of the $K$ band match is considered last and relatively poor K-band matches are tolerated if there are good matches in the $J$ and $H$ bands. 
-	The features in the $J$ band that determine a good match are the slope of the entire band and the strengths of the various absorption features; the 1.3~$\micron$ peak is not always matched well. 
+	The fit in $zJ$-band is given the most weight, followed by $H$ and $K$ bands. The goodness of the $K$ band match is considered last and relatively poor K-band matches are tolerated if there are good matches in the $zJ$ and $H$ bands. 
+	The features in the $zJ$ band that determine a good match are the slope of the entire band and the strengths of the various absorption features; the 1.3~$\micron$ peak is not always matched well. 
 	A good match in $H$ band is determined by matching the red and blue slopes on either side of the peak and the width of the peak; matching the steppe/shoulder or peak shape of the middle of the band is not as crucial as matching the slopes. 
 The features contributing to a good match in the $K$ band are both the blue and red slopes on either side of the 2.13~$\micron$ peak.	
-	\item If data are not available in all three bands, $J$ band in particular, there will likely be a range of types that have equally good matches and the spectral type can be reported as a range (e.g., L3--L5). In these cases, the range notation is preferred since L3--L5 implies the types L3, L4, and L5 are all equally probable, whereas L4$\pm$1 implies a best-fit type of L4 using a method with one spectral type precision.
+	\item If data are not available in all three bands, $zJ$ band in particular, there will likely be a range of types that have equally good matches and the spectral type can be reported as a range (e.g., L3--L5). In these cases, the range notation is preferred since L3--L5 implies the types L3, L4, and L5 are all equally probable, whereas L4$\pm$1 implies a best-fit type of L4 using a method with one spectral type precision.
 	\item If the target is not a good match to any available standards or field or low-gravity templates, consider a `pec' suffix to indicate the peculiarity of the spectrum. If the spectrum is also unusually red or blue when normalized at 1.28~$\micron$, consider a `red' and `blue' suffix.
 	\item Spectral types based on low signal-to-noise data ($S/N\sim15$) can be indicated with a `:' suffix or `::' for very-low signal-to-noise data ($S/N\sim5$). 
-	(The use of colons to indicate poor quality data is common practice in stellar astronomy, e.g., \citet{Sanduleak:1988fn}, \cite{Silvestri:2006el}, \citet[Table 12.1]{Gray:2009wd}, and \cite{Covey:2010de}.) For example, L1: could be used to describe a low signal-to-noise spectrum that matches the L1 template best in both $J$ and $H$ bands. L1--L3:: could be used to describe a very low signal-to-noise $K$-band spectrum that matches the L1, L2, and L3 templates all equally well. %($\pm$ is used to indicate the precision of the spectral typing method.)
+	(The use of colons to indicate poor quality data is common practice in stellar astronomy, e.g., \citet{Sanduleak:1988fn}, \cite{Silvestri:2006el}, \citet[Table 12.1]{Gray:2009wd}, and \cite{Covey:2010de}.) For example, L1: could be used to describe a low signal-to-noise spectrum that matches the L1 template best in both $zJ$ and $H$ bands. L1--L3:: could be used to describe a very low signal-to-noise $K$-band spectrum that matches the L1, L2, and L3 templates all equally well. %($\pm$ is used to indicate the precision of the spectral typing method.)
 
 \end{itemize}	
 
@@ -773,7 +778,7 @@ The features contributing to a good match in the $K$ band are both the blue and 
 % Since, the spectral slope of the object can be assessed via the $J-H$ and $J-K$ colors, we suggest that the bulk color properties of the optical-NIR sample be used to help objectively guide when a red or blue suffix is warranted.
 % In Figure~\ref{fig:JK_colors} and Table~\ref{tab:sample_prop}, we show the quartile ranges of the $J-K$ colors at each spectral type.
 % We suggest that field gravity objects with $J-K$ colors in the upper or lower quartiles of this distribution be considered for a red or blue suffix, respectively.
-% Color alone is not sufficient to warrant a blue or red suffix: the suffix is intended to be used for objects that, when normalized band-by-band, are good matches in $J$, $H$, and $K$ to the field gravity standards or templates but have an unusually steep or shallow spectral slope from $J$ to $K$.
+% Color alone is not sufficient to warrant a blue or red suffix: the suffix is intended to be used for objects that, when normalized band-by-band, are good matches in $zJ$, $H$, and $K$ to the field gravity standards or templates but have an unusually steep or shallow spectral slope from $zJ$ to $K$.
 % If the spectrum does not match the field gravity standards or templates, a low gravity or `pec' classification should be considered.
 
 Presently, we do not encourage the use of half-types for spectral types based on low-resolution NIR data.
@@ -790,20 +795,20 @@ Compared to the optical sequence, where half-types are warranted, the low-resolu
 %	\item Compare observations of the K10 spectral standards to the NIR templates described here. This comparison can test for and help diagnose any systematic problems with the target dataset.
 %	\item Visually compare the target to the entire suite of templates and/or spectral standards via normalizing band-by-band and overplotting in order to identify the best matches in all available bands. To find the best matches, consider the following guidelines. Perfect matches between the target and the templates or standards are not required in all three bands. A `good' match is one that lies within the range spanned by the template.
 %		\begin{itemize}
-%			\item The $J$-band match has the greatest weight since all the subtypes are well distinguished from each other in the $J$ band and many $J$-band observations include part of the optical spectrum (which we want to anchor to). 
-%			In addition, as discussed above in \S~\ref{sec:temp}, the $J$-band slope appears to be dominated by the steep Wien tail of the blackbody spectrum and is thus more temperature-sensitive than the $H$ or $K$ bands.
-%			The features in the $J$ band that determine a good match are the slope of the entire band and the strengths of the various absorption features. 
+%			\item The $zJ$-band match has the greatest weight since all the subtypes are well distinguished from each other in the $zJ$ band and many $zJ$-band observations include part of the optical spectrum (which we want to anchor to). 
+%			In addition, as discussed above in \S~\ref{sec:temp}, the $zJ$-band slope appears to be dominated by the steep Wien tail of the blackbody spectrum and is thus more temperature-sensitive than the $H$ or $K$ bands.
+%			The features in the $zJ$ band that determine a good match are the slope of the entire band and the strengths of the various absorption features. 
 %			Oftentimes, the 1.3~$\micron$ peak is not matched well (possibly due to temperature differences smaller than the temperature resolution of this spectral typing scheme).
 %			\item The $H$ band match is considered second after the J band. A good match in $H$ band is determined by matching the red and blue slopes on either side of the peak and the width of the peak. 
 %			This is due to the temperature-sensitivity of the shape of the H$_2$O absorption feature.
 %			Matching the steppe/shoulder or peak shape of the middle of the band is not as crucial as matching the slopes.
 %			Poor matches to the $H$-band slope by the normal templates and/or standards is a strong indicator for considering a low gravity, `blue', or `pec' type.
-%			\item The goodness of the $K$ band match is considered last and relatively poor K-band matches are tolerated if there are good matches in the $J$ and $H$ bands. 
+%			\item The goodness of the $K$ band match is considered last and relatively poor K-band matches are tolerated if there are good matches in the $zJ$ and $H$ bands. 
 %			The features contributing to a good match in the $K$ band are both the blue and red slopes on either side of the peak.	
 %		\end{itemize}
 %	\item Adopt a type range
 %		\begin{itemize}
-%		\item If data are not available in all three bands, $J$ band in particular, there will likely be a range of good matches and the spectral type can be reported as a range (e.g., L3--L5). In these cases, the range notation is preferred since L3--L5 implies the types L3, L4, and L5 are all equally probable, whereas L4$\pm$1 implies a best-fit type of L4 using a method with one spectral type precision.
+%		\item If data are not available in all three bands, $zJ$ band in particular, there will likely be a range of good matches and the spectral type can be reported as a range (e.g., L3--L5). In these cases, the range notation is preferred since L3--L5 implies the types L3, L4, and L5 are all equally probable, whereas L4$\pm$1 implies a best-fit type of L4 using a method with one spectral type precision.
 %	\item If the target is not a good match to any available templates or standards, consider a `blue', `red', `pec' type and indicate with an appropriate suffix. (Templates for these peculiar classes are forthcoming, \citet[in prep.]{Cruz14_young} and preliminary versions are available upon request.)
 	
 %	\end{itemize}
@@ -820,9 +825,9 @@ Compared to the optical sequence, where half-types are warranted, the low-resolu
 %Below we briefly outline some notes on spectral typing.
 
 %\begin{itemize}
-	%\item{\textbf{Colons for Low S/N:}} Spectral types based on low signal-to-noise data ($S/N\sim15$), as is common practice, can be indicated with a `:' suffix or `::' for very-low signal-to-noise ($S/N\sim5$) data. For example, ``L1:'' could be used to describe a low signal-to-noise spectrum that still matches the L1 template best in both $J$ and $H$ bands. ``L1--L3::'' could be used to describe a very low signal-to-noise spectrum that fits the L1, L2, and L3 templates all equally.
+	%\item{\textbf{Colons for Low S/N:}} Spectral types based on low signal-to-noise data ($S/N\sim15$), as is common practice, can be indicated with a `:' suffix or `::' for very-low signal-to-noise ($S/N\sim5$) data. For example, ``L1:'' could be used to describe a low signal-to-noise spectrum that still matches the L1 template best in both $zJ$ and $H$ bands. ``L1--L3::'' could be used to describe a very low signal-to-noise spectrum that fits the L1, L2, and L3 templates all equally.
 	
-	%\item{\textbf{Adopt Ranges:}} Since the typing scheme described above is anchored to the optical, we do not think a `nir' suffix is necessary, as has been advocated for in the past (REF?). Instead, since the NIR types are not as precise, especially when $J$-band data is not available, we strongly encourage the use of adopting a range of spectral types for individual L~dwarfs in order to accurately reflect the imprecision and uncertainty in the type and to enable realistic uncertainty estimates on any resulting values based on the type. 
+	%\item{\textbf{Adopt Ranges:}} Since the typing scheme described above is anchored to the optical, we do not think a `nir' suffix is necessary, as has been advocated for in the past (REF?). Instead, since the NIR types are not as precise, especially when $zJ$-band data is not available, we strongly encourage the use of adopting a range of spectral types for individual L~dwarfs in order to accurately reflect the imprecision and uncertainty in the type and to enable realistic uncertainty estimates on any resulting values based on the type. 
 
 %	\item{\textbf{Half types not supported:}} The methodology we describe here uses low-resolution data and does not support finer precision than integer types. Large datasets and templates of higher-resolution spectra may warrant the introduction of half types in the future.
 %\end{itemize}
@@ -875,8 +880,8 @@ As will be discussed in detail by \citet[in prep.]{Hiranaka13}, this reddening i
 
 In order to attempt to disentangle the observational indicators of temperature, gravity, cloud, and metallicity properties in the NIR spectra of L~dwarfs, we have performed an analysis of NIR spectra using the optical spectra as an anchor.
 Anchoring to the optical and analyzing the spectra band-by-band enabled us to show that L dwarfs of the same optical spectral type do indeed have the common spectral morphologies in the NIR even though they span a wide range of colors.
-We combined the relatively large number of optically-anchored L~dwarfs at each spectral type to generate $J$, $H$, and $K$ band spectral average templates. We expect that the spectral morphologies of all normal L dwarfs fall within the range of the objects used to generate the templates. We also think the range is dominated by intrinsic properties, such as cloud and gravity properties, and not instrumental or atmospheric effects.
-We demonstrated how the shape of the underlying plank function provides an explanation for the temperature-sensitivity of the optical and $J$-band spectral regions compared to the $H$ and $K$ bands.
+We combined the relatively large number of optically-anchored L~dwarfs at each spectral type to generate $zJ$, $H$, and $K$ band spectral average templates. We expect that the spectral morphologies of all normal L dwarfs fall within the range of the objects used to generate the templates. We also think the range is dominated by intrinsic properties, such as cloud and gravity properties, and not instrumental or atmospheric effects.
+We demonstrated how the shape of the underlying plank function provides an explanation for the temperature-sensitivity of the optical and $zJ$-band spectral regions compared to the $H$ and $K$ bands.
 
 described low-gravity templates
 
@@ -982,22 +987,22 @@ Facilities:
 
 \begin{figure}
 	\epsscale{0.25}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/1093.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/1103.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/470.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/1093.pdf} %0210
-		\plotone{/Users/kelle/Dropbox/Temp/opt/496.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/580.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/586.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/1301.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/400.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/401.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/403.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/404.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/405.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/421.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/985.pdf}
-		\plotone{/Users/kelle/Dropbox/Temp/opt/1503.pdf}	
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1093.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1103.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/470.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1093.pdf} %0210
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/496.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/580.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/586.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1301.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/400.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/401.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/403.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/404.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/405.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/421.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/985.pdf}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1503.pdf}	
 		\caption{Figure set for new optical spectra listed in Table~\ref{tab:newopt}.}
 	\label{fig:newopt}
 \end{figure}
@@ -1005,32 +1010,37 @@ Facilities:
 
 
 \begin{figure}
-	\epsscale{0.70}
-	\plotone{figures/fan.pdf}
-	\caption{\emph{Top}: NIR spectral range of L1 type dwarfs normalized using the peak of the $J$ band (1.28--1.32~$\micron$). The fanning out of the spectra to the right and left of the normalizing section makes spectral comparison difficult. \\
-	\emph{Bottom}: Same data as in top panel but normalized and plotted band-by-band. The spectra are normalized individually by band (optical, $YJ$, $H$, and $K$ bands) using nearly the entire band range. Prominent atomic and molecular features are indicated, as well as telluric correction artifacts due to poor line scaling of the A0 star's Hydrogen lines.}
+	\epsscale{0.90}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1F_fan.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1F.pdf}
+	\caption{\emph{Top}: NIR spectral range of L1 type dwarfs normalized using the peak of the $zJ$ band (1.28--1.32~$\micron$). The fanning out of the spectra to the right and left of the normalizing section makes spectral comparison difficult. \\
+	\emph{Bottom}: Same data as in top panel but normalized and plotted band-by-band. The spectra are normalized individually by band (optical, $zJ$, $H$, and $K$ bands) using nearly the entire band range. Prominent atomic and molecular features are indicated, as well as telluric correction artifacts due to poor line scaling of the A0 star's Hydrogen lines.}
 	\label{fig:L1fan}
 \end{figure}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % FIELD TEMPLATE FIGURES %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}
+	\epsscale{0.9}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_f.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_f.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_f.pdf}
-	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L3strip_f.pdf}
-	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_f.pdf}
-	\caption{templates}
+	\caption{field templates.}
 	\label{fig:field_templates}
 \end{figure}
 
 \begin{figure}
-	\figurenum{5.1}
+	\figurenum{5.2}	
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L3strip_f.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_f.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L5strip_f.pdf}
+	\caption{field templates continued.}
+\end{figure}
+
+\begin{figure}
+	\figurenum{5.3}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L6strip_f.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L7strip_f.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L8strip_f.pdf}
@@ -1096,18 +1106,24 @@ Facilities:
 \clearpage
 
 \begin{figure}
+	\epsscale{0.9}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_f_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_f_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_f_excluded.pdf}
-	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L3strip_f_excluded.pdf}
-	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_f_excluded.pdf}
 	\caption{Spectra excluded from the field gravity templates.}
 	\label{fig:field_excluded}
 \end{figure}
 
 \begin{figure}
 	\figurenum{6.1}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L3strip_f_excluded.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_f_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L5strip_f_excluded.pdf}
+	\caption{field excluded continued.}
+\end{figure}
+
+\begin{figure}
+	\figurenum{6.2}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L6strip_f_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L7strip_f_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L8strip_f_excluded.pdf}
@@ -1117,6 +1133,7 @@ Facilities:
 %\end{landscape}
 
 \begin{figure}
+	\epsscale{1}
 		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/JK_JF.pdf}
 		\caption{Average 2MASS $J-K_S$ color versus spectral type for two samples of L dwarfs. The squares are the averages $J-K_S$ colors of the L dwarfs in our normal optical-NIR sample, and the circles are the average $J-K_S$ colors of the \citet{Faherty13_0355} compilation of field L dwarfs. The extent of the vertical lines indicates the range of $J-K_S$ colors spanned by each sample at each spectral type. The number of L dwarfs used to calculate the average $J-K_S$ color at each spectral type is indicated above the range. Both samples only include L dwarfs that have photometric uncertainties smaller than 0.1~mag. For spectral types L0--L5, the mean colors of our normal optical-NIR sample are consistent with those of Faherty's larger sample. The difference in color ranges spanned by the two samples is due to the much stricter spectroscopic selection criteria imposed for the optical-NIR sample compared to the photometrically-selected Faherty et al. sample. 
 }
@@ -1128,7 +1145,7 @@ Facilities:
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_f.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence1_f.pdf}
 	\caption{Spectral band templates overplotted, L0--L5 on the top panels, and L6--L8 on the bottom panels. %The blackbody curves for 2000 (purple), 1800 (blue), and 1600~K (red) (with arbitrary normalizations) are shown as dotted lines on the L0--L5 sequence. 
-	The L0--L5 spectra form an organized sequence in the $J$, $H$, and $K$ bands, whereas the L6--L8 spectra do not follow the same trend as the earlier types and are, therefore, plotted separately.}
+	The L0--L5 spectra form an organized sequence in the $zJ$, $H$, and $K$ bands, whereas the L6--L8 spectra do not follow the same trend as the earlier types and are, therefore, plotted separately.}
 	\label{fig:spec_sequence}
 \end{figure}
 
@@ -1146,7 +1163,7 @@ Facilities:
 %\begin{landscape}
 
 \begin{figure}
-	\epsscale{1.0}
+	\epsscale{0.9}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_b.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_b.pdf}
 	\caption{Normalized optical and near-infrared low resolution spectra of low-gravity $\beta$-type L
@@ -1159,7 +1176,7 @@ field objects plotted. \\
 \end{figure}
 
 \begin{figure}
-	\epsscale{1.0}
+	\epsscale{0.9}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_g.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_g.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_g.pdf}	
@@ -1183,6 +1200,7 @@ field objects plotted. \\
 
 
 \begin{figure}
+	\epsscale{0.9}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_b_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_g_excluded.pdf}
 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_g_excluded.pdf}
@@ -1194,6 +1212,7 @@ field objects plotted. \\
 \end{figure}
 
 \begin{figure}
+	\epsscale{1}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_g.pdf}
 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence1_g.pdf}
 	\caption{The low gravity $\gamma$ L dwarf near-infrared spectral sequence. \\
@@ -1208,6 +1227,7 @@ field objects plotted. \\
 %%%%%%%%%%%%%%%%%%
 
 \begin{figure}
+	\epsscale{1}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L0g.pdf}
 	\caption{The L0$\gamma$ spectral average template (blue) compared to the field L dwarf templates and their 1$\sigma$ variance (black, gray). The field templates that most resemble the L0$\gamma$ are plotted with thicker lines. We assert that in order to use NIR spectra to credibly distinguish an L0$\gamma$ from a field object in the NIR, a \emph{K}-band spectrum is insufficient and \emph{H} and/or \emph{J}-band data is required.\\
 	\emph{fig:L0lg-field}}
@@ -1268,7 +1288,7 @@ field objects plotted. \\
 \begin{figure}
 		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-stds.pdf}
 		\caption{
-	L dwarf $J$, $H$, and $K$-band spectral templates (in black) with their flux range strips ---as described in \S~\ref{sec:templates}---overplotted with their respective NIR spectral standard (in colors; \cite{Kirkpatrick10}). 
+	L dwarf $zJ$, $H$, and $K$-band spectral templates (in black) with their flux range strips ---as described in \S~\ref{sec:templates}---overplotted with their respective NIR spectral standard (in colors; \cite{Kirkpatrick10}). 
 	The width of the range (gray strips) indicates the range of spectral morphologies spanned by of the objects included in the template at each spectral type.
 	Spectra are normalized over the entire band and offset to separate the spectra vertically.
 	%The L8 template is compared to both the L8 and L9 spectral standards. 
