@@ -143,7 +143,7 @@ While temperature dominates the spectral variations in the optical, gravity and 
 Thus, different underlying masses and cloud properties cause a wider range of spectral morphologies at a given temperature (spectral type) resulting in the range of NIR colors. 
 This sensitivity of the NIR spectra to second order parameters in addition to temperature has made a satisfying NIR-based classification scheme for L dwarfs elusive and beguiled reliable and consistent interpretation of their spectra.
 Second, much of the NIR data for L dwarfs has been collected with the SpeX spectrograph in prism mode, covering 0.8--2.5~$\micron$ at $R\sim200$, a far larger wavelength regime and lower resolution than the optical.
-The larger wavelength coverage in the NIR compared to the optical essentially provides more room for the diversity of spectra features to be apparent.
+The larger wavelength coverage in the NIR compared to the optical essentially provides more room for the diversity of spectral features to be apparent.
 
 The discord between the classification of L dwarfs at different wavelengths and resolutions is reminiscent of the parable of a group of investigators who are asked to describe an elephant based only on a small part of the animal's anatomy. 
 Each one describes an entirely different part (tusk, trunk, ears, legs) and while none of them are wrong, they are unable to form a coherent description of the elephant.
@@ -248,19 +248,19 @@ Sample bookkeeping:\\
 \sample~ L dwarfs with prism and optical=optNIR sample = \emph{sample}\\
 }
 
-We have combined extant spectra from the literature with new data to create a sample of \sample~L~dwarfs with both far-red optical (6000–-9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''. 
-Of these, \NewOptSpectra~optical spectra for \NewOptObjects~objects and \NewPrismSpectra~SpeX prism spectra for \NewPrismObjects~objects are published here for the first time and are listed in Tables~\ref{tab:newopt} and~\ref{tab:newnir}. 
-% : \newopt~new optical spectra  are listed in 
-% and \prismspectra~new SpeX prism NIR spectra are listed in 
-The full sample used for this paper is divvied up into Tables~\ref{tab:field_template}--\ref{tab:lowg_excluded} based on analysis described in \S~\ref{sec:templates}.
-
 Our campaign to obtain spectroscopy of L dwarfs was initiated as part of our effort to complete the 20~pc census of nearby ultracool dwarfs using 2MASS. 
 Photometric selection criteria were used to identify candidate nearby ultracool dwarfs in the 2MASS catalog. 
 The selection criteria and sample creation are described extensively in \cite[Papers~III, V, and IX]{Cruz03,Cruz07,Reid08}. 
 Candidate objects were targeted for far-red optical and/or near-infrared spectroscopic follow-up to obtain spectral types and photometric distances. 
 %Our NIR follow-up campaign was focused on candidate nearby ultracool dwarfs that were too faint for optical follow-up.
 During these observing runs, we also targeted confirmed nearby M and L dwarfs from the literature that lacked optical and/or NIR spectra.
-This large spectral dataset forms the basis of the optical-NIR sample.
+%This large spectral dataset forms the basis of the ``optical-NIR sample''.
+
+We have combined extant spectra from the literature with new data to create a sample of \sample~L~dwarfs with both far-red optical (6000–-9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''. 
+Of these, \NewOptSpectra~optical spectra for \NewOptObjects~objects and \NewPrismSpectra~SpeX prism spectra for \NewPrismObjects~objects are published here for the first time and are listed in Tables~\ref{tab:newopt} and~\ref{tab:newnir}. 
+% : \newopt~new optical spectra  are listed in 
+% and \prismspectra~new SpeX prism NIR spectra are listed in 
+The full sample used for this paper is collectively listed in Tables~\ref{tab:field_template}--\ref{tab:lowg_excluded} based on analysis described in \S~\ref{sec:templates}.
 
 We make no specific effort to ensure the optical-NIR sample is complete in any dimension, but we do want it to be as representative as possible of the known L~dwarf population.
 Because of the known red bias of the photometrically selected 2MASS-based samples \cite[Figure 3]{Schmidt10}, we made a concerted effort to identify L dwarfs in the literature with $J-K_S$ colors bluer than the range of colors spanned by the 2MASS-selected sample and with both optical and SpeX Prism spectra. 
@@ -274,7 +274,6 @@ The sample includes \optNormal~total field gravity objects with optical types sp
 %With less than 15 objects, the L6--L8 bins suffer the most from small numbers.
 and \optLowG~low-gravity objects from L0--L4 (orange, red). 
 While there are more low-gravity objects known, many lack SpeX Prism data due to their southerly declinations and inaccessibility from the IRTF.
-
 The $J-K_S$ color distribution of the optical-NIR sample is shown in Figure~\ref{fig:JK_colors}. 
 The color properties of the field and low gravity samples are discussed in more detail in \S\S~\ref{sec:templates_normal} and~\ref{sec:templates_lowg}.
 
@@ -325,7 +324,7 @@ The data were flat-fielded, extracted, wavelength calibrated, and telluric corre
 In the spectral type distribution of the entire optical-NIR sample shown in Figure~\ref{fig:spthist}, objects with new NIR SpeX Prism data are indicated with right hatching.
 %The spectra are not shown individually but are included in Figures~\ref{fig:field_templates}--\ref{fig:field_excluded} and \ref{fig:beta_templates}--\ref{fig:lowg_excluded}.
 
-In the Appendix, we discuss objects that NIR spectra revealed to not be ultracool dwarfs and instead are suspected to be galaxies.
+In the Appendix, we show the NIR spectra of objects that were revealed to not be ultracool dwarfs and instead are suspected to be galaxies.
 
 %The data were acquired in a variety of weather and seeing conditions, but were uniformly observed using the 0.5 or 0.8-wide slit aligned at parallactic angle and generally at low airmass (sec z $<$ 2). Each target was observed with multiple exposures, dithering in an ABBA pattern along the slit, with total integration times of 240--1200~s depending on target brightness and weather conditions. Before or after each target observation, nearby A0 stars at a similar airmass to the target were observed for both telluric and flux calibration. Internal flat field and argon arc lamp calibration frames were obtained at each target position for pixel response and wavelength calibration. All data was extracted, flat fielded, wavelength calibrated, telluric corrected, and flux calibrated with the Spextool reduction package \citep{Cushing04,Spextool2}. 
 
@@ -374,7 +373,7 @@ With this plotting method, the color term present in the NIR spectra of L~dwarfs
 \subsection{Making optically-anchored NIR spectral average templates}
 \label{sec:templates}
 
-Spectral average templates are a common technique used in stellar and extragalactic spectroscopy to reveal the most common spectral morphologies and average out any defects.
+Spectral average templates are a common technique used in stellar and extragalactic spectroscopy to reveal the most common spectral morphologies, average out any defects, and to provide data with high signal-to-noise ratios.
 SDSS spectra have been used to make M and L dwarf templates in the far-red/optical wavelength regime \citep{Bochanski07_templates, Schmidt:2014jc} but no set of templates have been widely adopted for the NIR spectra of L dwarfs.
 In this section, we describe how we used the optical-NIR sample of L dwarf spectra to generate spectral average templates which are anchored to the optical classification and accurately reflect both the typical spectral morphology of L dwarfs and the variations of their spectral morphology.
 
@@ -397,28 +396,26 @@ The reduced $\chi^2$ was then calculated for each object compared to the templat
 Objects with reduced $\chi^2 > 2$ in any band were excluded from the next calculation of the template for every band.
 This process iterated 3--6 times until the reduced $\chi^2$ value stabilized. 
 The average $\chi^2$ values of the spectra included in the spectral averages are close to 0.9. 
-A $\chi^2$ cutoff of 2 was chosen because it balanced our desire to 1) include more objects than exclude from the templates and 2) not include objects with peculiar spectral morphologies. 
-This iterative process resulted in 133 objects being included in the spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 47 being excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}). 
+A $\chi^2$ cutoff of two was chosen because it balanced our desires to include more objects than exclude from the templates and to not include objects with peculiar spectral morphologies. 
+This iterative process resulted in 133 objects being included in the spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 47 being excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}).
 
 %details for each subtype where necessary
-While $\chi^2 > 2$ worked for most subtypes, it needed to be adjusted for some.
-For the L1 field gravity objects, a $\chi^2$ limit of 2 excluded mostly bluer objects and did not result representative sample of field L1s being included in the template.
-In order to accurately reflect the range of spectral morphologies spanned by L1, the $\chi^2$ limit was increased to 2.3.
-L1 field gravity - using $\chi^2 > 2.3$ due to large number of objects.
-L1 low gravity - rejected one object by eye. 2M0227-1624. four objects total, 3 kept, 1 rejected. 
-Only one L3 and L4 beta, G19-3B and 04070752+1546457, so didnt make a template.
+While the $\chi^2 > 2$ criterion worked for most subtypes, it needed to be adjusted for some.
+For L1 field gravity, a $\chi^2$ limit of two excludes mostly bluer objects and does not result in a representative sample of field L1s being included in the template.
+We found that $\chi^2 > 2.3$ resulted in a template that more accurately reflects the range of spectral morphologies included in the L1 subtype.
+There are only four L1$\gamma$ objects and the iterative $\chi^2$ method was ineffective at identifying 2M0227-1624 as an obvious outlier. Based on a by-eye analysis, we rejected this one object. 
+Due to the small number of late-type objects in the sample, $\chi^2 > 1.4$ was used for the L7 and L8 field gravity template.
+%Only one L3 and L4 beta, G19-3B and 04070752+1546457, so didnt make a template.
 %L5 low gravity used $\chi^2 > 1.7$ due to small number of objects.
-L7 and L8 field used $\chi^2 > 1.4$ due to small number of objects.
 
 %The width of the gray strip surrounding the template illustrates the range of spectral shapes found at each spectral type. 
 %Given the relatively large number of objects and $J-K_S$ colors spanned at each type, we expect that these strips encompass normal and that the spectra of all normal L dwarfs fall within this range. 
 %We also think the range is dominated by intrinsic properties, not instrumental or atmospheric effects.
 
-The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg} while the low-gravity templates are in Figure Sets~\ref{fig:beta_templates} and~\ref{fig:beta_templates} and discussed in \S~\ref{sec:lowg}. 
+The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg} while the low-gravity templates are in Figure Sets~\ref{fig:beta_templates} and~\ref{fig:gamma_templates} and discussed in \S~\ref{sec:lowg}. 
 The average is is shown as a black line, the dark gray indicates the 1$\sigma$ variance at each pixel, and the light gray indicates the flux range (minimum and maximum flux values) at each pixel of the spectra used to calculate the template. 
 The optical spectra were smoothed to approximately match the resolution of the NIR spectra, and their flux range strip is indicated in light gray.
 Objects included in the template spectrum for each subtype are listed by increasing $J-K_S$ color to emphasize the range of colors spanned at each subtype.
-
 Spectra excluded from the templates are shown in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
 
 
@@ -433,7 +430,6 @@ Spectra excluded from the templates are shown in Figures~\ref{fig:field_excluded
 \section{Analysis: Field Gravity L Dwarfs}
 \label{sec:fieldg}
 
-shown in Figures and summarized in tables.
 
 % The variety of NIR spectral morphologies among L dwarfs of similar optical spectral type has been attributed to the NIR spectra being more sensitive to physical parameters such as gravity, clouds, and metallicity compared to higher-mass stars.
 % Optical spectra morphologies, on the other hand, are dominated by temperature and relatively insensitive to the higher order properties. As such, the spectra of so-called `red' and `blue' L dwarfs look peculiar in the NIR but relatively `normal' in the optical.
@@ -449,9 +445,7 @@ shown in Figures and summarized in tables.
 \label{sec:templates_normal}
 
 In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the entire optical-NIR sample of L~dwarfs. The plot shows the colors of the individual L dwarfs (filled circles) as well as the average color at each spectral type (black bar). All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag. 
-
 The end caps mark the minimum and maximum of the distribution, the whiskers mark the bottom and top quartiles, the box indicates the locations of the 2nd and 3rd quartiles, and the median is indicated with a bar. The number of objects used in calculating the quartiles are indicated above the end caps.
-
 The number of objects included in each template, the mean, minimum, maximum, and range of $J-K_S$ colors is listed in Table~\ref{tab:sample_prop}. 
 
 In order to put the field-gravity optical-NIR sample in the context of the larger normal L~dwarf population, we compare our $J-K_S$ color averages with those of \citet{Faherty13_0355}. 
@@ -702,7 +696,7 @@ Since our analysis is anchored in the optical and the L9 subclass is only define
 %We show the L8 template compared to both the L8 and L9 K10 spectral type standards.
 Except at L2 and L7, as described below, the agreement between the standards and the templates is excellent.
 
-The K10 standards were not treated any differently than the rest of L dwarfs when determining their inclusion in the optical-NIR sample used to calculate the NIR templates. 
+The K10 standards were treated identically to the rest of L dwarfs when determining their inclusion in the optical-NIR sample used to calculate the NIR templates. 
 Six of the ten standards are included in the spectral average template calculation for their spectral type: 2M~0345+2540 (L0), 2M~2130-0845 (L1), 2M~1506+1321 (L3), 2M~2158-1550 (L4), 2M~1010-0406 (L6), and 2M~1632+1904 (L8).
 The other four, however, are not included in the template for the K10 assigned NIR spectral type:
 \begin{itemize}
@@ -775,7 +769,7 @@ The features contributing to a good match in the $K$ band are both the blue and 
 % Color alone is not sufficient to warrant a blue or red suffix: the suffix is intended to be used for objects that, when normalized band-by-band, are good matches in $zJ$, $H$, and $K$ to the field gravity standards or templates but have an unusually steep or shallow spectral slope from $zJ$ to $K$.
 % If the spectrum does not match the field gravity standards or templates, a low gravity or `pec' classification should be considered.
 
-Presently, we do not encourage the use of half-types for spectral types based on low-resolution NIR data.
+Presently, we do not encourage the use of half-types (or any further gradation) for spectral types based on low-resolution NIR data.
 Compared to the optical sequence, where half-types are warranted, the low-resolution NIR data display a greater diversity of spectral morphologies at each type and the resulting sequence is coarser.
 %As a result, the NIR spectral sequence of L dwarfs based on SpeX prism data is coarser and less precise than the optical sequence.
 %A NIR spectral sequence based on moderate-resolution spectra may facilitate the introduction of half types in the future.
