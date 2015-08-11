@@ -343,7 +343,7 @@ Both the normalization method and the spectral templates greatly facilitate the 
 Common practice is to normalize NIR spectra of L~dwarfs at the $zJ$-band peak (1.28--1.32~$\micron$) \citep[e.g.,][]{Kirkpatrick10}. 
 In the top panel of Figure~\ref{fig:L1fan}, we show the 0.8--2.4~$\micron$ spectral range for 17 field gravity, optically-typed L1 dwarfs normalized in this manner.
 Despite all of the objects having the same optical spectral type and appearing to have similar NIR spectral morphology, the spectra `fan out'. 
-That is, while the spectra lie on top of each other near the normalization point, they gradually diverge from one another at both shorter and longer wavelengths, as would be expected for objects having a range of $J-K$ colors. 
+That is, while the spectra lie on top of each other near the normalization point, they gradually diverge from one another at both shorter and longer wavelengths, as would be expected for objects having a range of $J-K_S$ colors. 
 This fanning effect makes analyzing the similarities or differences in the spectral shapes and absorption features difficult no matter where the spectra are normalized.
 
 %Despite the fanning out, it appears as though the spectra share very similar absorption features, but each is modified by a smooth function that affects the entire 0.8--2.4~$\micron$ wavelength range. 
@@ -352,72 +352,75 @@ This fanning effect makes analyzing the similarities or differences in the spect
 
 As was pointed out over a decade ago by \citet{Leggett:2003tm}, despite the different spectral slopes, when the $H$ and $K$ bands of objects of the same optical spectral type are separately scaled and overlaid, the agreement between the spectral morphologies is excellent.
 In order to directly compare the absorption features in L~dwarf spectra, we utilize this plotting method where each NIR band is normalized separately, using most of the wavelength range of each band. 
-Specifically, we use the following normalization ranges: 
+Specifically, we use the following normalization ranges, which exclude the low signal-to-noise regions in the water bands, to divide the spectra into three sections: 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 \item 0.87--1.39~$\micron$ for the $zJ$~band,
 \item 1.41--1.89~$\micron$ for the $H$~band, and 
-\item 1.91--2.39~$\micron$ for the $K$~band, 
+\item 1.91--2.39~$\micron$ for the $K$~band.
 \end{itemize}
-which excludes the noisiest parts of the spectra in the water bands.
 These three regions were chosen because they are naturally separated by the strong water absorption bands present in both the L~dwarf's and Earth's atmospheres. 
 %We did not break up the spectrum into smaller regions in order to enable the comparison of the broad band absorption features (e.g., CO, FeH) and spectral morphology.
 Once normalized in this manner, the effect of the color term is substantially reduced and it becomes evident that the low-resolution spectral morphology among normal L~dwarfs of the same optical spectral type are very similar. 
 The same objects shown in the top panel of Figure~\ref{fig:L1fan} that fan out over the 0.8--2.4~$\micron$ range are shown in the bottom panel plotted band-by-band, using the above defined normalization ranges for each. 
-Not only do the the spectral similarities between the objects stand out more clearly in this visualization, it is also easier to distinguish truly peculiar (e.g, ``red'' and ``blue'') spectra from the bulk population.
+Not only do the the spectral similarities between the objects stand out more clearly in this visualization, it is also easier to distinguish truly peculiar (e.g, `red' and `blue') spectra from the bulk population.
 
 With this plotting method, the color term present in the NIR spectra of L~dwarfs is approximated as a three component piece-wise step function. Since the reddening contributing to the color term has been found to be well described by a smooth function \citep{Marocco:2014kr,Hiranaka:2015va}, there is likely still a small amount of residual reddening remaining within each band.
-
-%This normalization method can be used when comparing spectra of objects with very different colors but with similar absorption features. As discussed further in \S~\ref{sec:temp}, this normalization method minimizes the broad band effects likely due to cloud properties while highlighting the molecular absorption features. 
 
 \clearpage
 \subsection{Making optically-anchored NIR spectral average templates}
 \label{sec:templates}
 
 Spectral average templates are a common technique used in stellar and extragalactic spectroscopy to reveal the most common spectral morphologies, average out any defects, and to provide data with high signal-to-noise ratios.
-SDSS spectra have been used to make M and L dwarf templates in the far-red/optical wavelength regime \citep{Bochanski07_templates, Schmidt:2014jc} but no set of templates have been widely adopted for the NIR spectra of L dwarfs.
+SDSS spectra have been used to make M and L dwarf templates in the far-red optical wavelength regime \citep{Bochanski07_templates, Schmidt:2014jc} but no set of templates have been widely adopted for the NIR spectra of L dwarfs.
 In this section, we describe how we used the optical-NIR sample of L dwarf spectra to generate spectral average templates which are anchored to the optical classification and accurately reflect both the typical spectral morphology of L dwarfs and the variations of their spectral morphology.
 
 Using the sample and data described in \S~\ref{sec:sample}, we have combined the NIR spectra of objects of the same optical spectral type to make NIR spectral average templates for field and low-gravity L~dwarfs at each integer spectral type, L0--L8. Objects with half-integer spectral types were rounded down to the integer type and since our analysis is anchored in the optical, we do not have an L9.
-The resulting templates, grouped by \emph{optical} spectral type, are shown in Figure Sets~\ref{fig:field_templates}, \ref{fig:beta_templates}, and \ref{fig:gamma_templates}.
+%The resulting templates, grouped by \emph{optical} spectral type, are shown in Figure Sets~\ref{fig:field_templates}, \ref{fig:beta_templates}, and \ref{fig:gamma_templates}.
 Below, we describe the methods used to construct the templates.
 
 %three samples
-We started with the opt-NIR sample (180). 
-These were divided into three samples based on their optical spectral morphology, 
+We divided the optical-NIR sample (180) into three subsamples based on their optical spectral morphology: 
 \begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-	\item the field gravity sample with 145 objects that are similar to the \citet{K99} field spectral standards.
-	\item and the low-gravity beta sample with \# objects with low-gravity features like those described in \citet{Cruz09_lowg}.
-	\item and the low-gravity gamma sample with \# objects with low-gravity features like those described in \citet{Cruz09_lowg}.
+	\item a field gravity sample with 145 objects that are similar to the \citet{K99} field spectral standards.
+	\item a low-gravity $\beta$ sample with \# objects with intermediate-strength low-gravity features as described in \citet{Cruz09_lowg}.
+	\item low-gravity $\gamma$ sample with \# objects with very strong low-gravity features as described in \citet{Cruz09_lowg}.
 \end{enumerate}
 
-For each spectral type, the NIR spectra were normalized and averaged together band-by-band to make first templates in each band. 
-The templates are calculated using the weighted average flux at each pixel. 
-The reduced $\chi^2$ was then calculated for each object compared to the template.
-Objects with reduced $\chi^2 > 2$ in any band were excluded from the next calculation of the template for every band.
-This process iterated 3--6 times until the reduced $\chi^2$ value stabilized. 
-The average $\chi^2$ values of the spectra included in the spectral averages are close to 0.9. 
-A $\chi^2$ cutoff of two was chosen because it balanced our desires to include more objects than exclude from the templates and to not include objects with peculiar spectral morphologies. 
-This iterative process resulted in 133 objects being included in the spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 47 being excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}).
+All of the NIR spectra of the same optical spectral type are used to make the first pass at the template.
+The spectra are normalized band-by-band and combined using the weighted average flux at each pixel.
+The reduced $\chi^2$ is then calculated for each spectrum compared to the template.
+Spectra with reduced $\chi^2 > 2$ in any band are excluded and the template is calculated again with the remaining spectra.
+This process is iterated 3--6 times until the reduced $\chi^2$ value stabilizes.
+The average $\chi^2$ values of the spectra included in the templates is $\sim0.9$.
+A $\chi^2$ cutoff of two balances our desire to include more spectra than exclude from the templates while also excluding objects with peculiar spectral morphologies.
 
 %details for each subtype where necessary
-While the $\chi^2 > 2$ criterion worked for most subtypes, it needed to be adjusted for some.
-For L1 field gravity, a $\chi^2$ limit of two excludes mostly bluer objects and does not result in a representative sample of field L1s being included in the template.
-We found that $\chi^2 > 2.3$ resulted in a template that more accurately reflects the range of spectral morphologies included in the L1 subtype.
-There are only four L1$\gamma$ objects and the iterative $\chi^2$ method was ineffective at identifying 2M0227-1624 as an obvious outlier. Based on a by-eye analysis, we rejected this one object. 
-Due to the small number of late-type objects in the sample, $\chi^2 > 1.4$ was used for the L7 and L8 field gravity template.
+While the $\chi^2 > 2$ criterion was appropriate for most subtypes, a few required adjusting.
+For field gravity L1 template, a $\chi^2$ limit of two excludes mostly bluer objects and does not result in a representative sample of field L1s being included in the template.
+We instead used a $\chi^2 > 2.3$ criterion which results in a template that more accurately reflects the range of spectral morphologies included in the L1 subtype.
+There are only four L1$\gamma$ objects and the iterative $\chi^2$ method is ineffective at identifying \object[2M0227-1624]{2M0227-1624} as an obvious outlier. 
+Based on a by-eye analysis, this one object was excluded from the template calculation.
+Due to the small number of late-type objects in the sample, $\chi^2 > 1.4$ was used for the L7 and L8 field gravity templates.
 %Only one L3 and L4 beta, G19-3B and 04070752+1546457, so didnt make a template.
-%L5 low gravity used $\chi^2 > 1.7$ due to small number of objects.
+
+This iterative process resulted in 133 objects being included in 16 spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 47 being excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}).
+The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg}; the low-gravity templates are in Figure Sets~\ref{fig:beta_templates} and~\ref{fig:gamma_templates} and discussed in \S~\ref{sec:lowg}. 
+Shading is used to indicate the 1$\sigma$ variance (dark gray) and range of flux values (light gray) used to calculate the template at each pixel.
+We also show spectral averages of the optical spectra along with the NIR templates. The optical spectra were smoothed to approximately match the resolution of the NIR spectra and light gray shading indicates the range of flux values used at each pixel.
+%Objects included in the template spectrum for each subtype are listed by increasing $J-K_S$ color to emphasize the range of colors spanned at each subtype.
+Spectra excluded from the templates are displayed in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
+
+As yet, our optical-NIR sample does not include an L2$\beta$ and only includes one each of L3$\beta$ and L4$\beta$, \object[2Mblah]{2Mblah} and \object[2Mblah2]{2Mblah} \citep{Cruz09_lowg}.
+Even though these individual objects cannot be considered representative of this spectral type, we display these data in Figure \ref{fig:beta_templates}.
+We expect the $\beta$ sequence to be filled in as more spectra are acquired, especially in the southern hemisphere.
+
+\clearpage
+\section{Analysis: Field Gravity L Dwarfs}
+\label{sec:fieldg}
 
 %The width of the gray strip surrounding the template illustrates the range of spectral shapes found at each spectral type. 
 %Given the relatively large number of objects and $J-K_S$ colors spanned at each type, we expect that these strips encompass normal and that the spectra of all normal L dwarfs fall within this range. 
 %We also think the range is dominated by intrinsic properties, not instrumental or atmospheric effects.
-
-The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg} while the low-gravity templates are in Figure Sets~\ref{fig:beta_templates} and~\ref{fig:gamma_templates} and discussed in \S~\ref{sec:lowg}. 
-The average is is shown as a black line, the dark gray indicates the 1$\sigma$ variance at each pixel, and the light gray indicates the flux range (minimum and maximum flux values) at each pixel of the spectra used to calculate the template. 
-The optical spectra were smoothed to approximately match the resolution of the NIR spectra, and their flux range strip is indicated in light gray.
-Objects included in the template spectrum for each subtype are listed by increasing $J-K_S$ color to emphasize the range of colors spanned at each subtype.
-Spectra excluded from the templates are shown in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
-
 
 %As more and higher signal-to-noise SpeX Prism spectra of L~dwarfs with both optical and NIR data become available, especially at later spectral types, we intend to update the templates. 
 %As more objects are added and lower signal-to-noise data are replaced, the templates will provide a more accurate reflection of the spectral morphologies spanned at each spectral type.
@@ -425,11 +428,6 @@ Spectra excluded from the templates are shown in Figures~\ref{fig:field_excluded
 %Specifically, we expect the variance to decrease as more objects are added. The range could increase as more objects are added or could decrease as higher signal-to-noise data are obtained.
 
 %We discuss how these templates can be used to spectral type in later sections.
-
-\clearpage
-\section{Analysis: Field Gravity L Dwarfs}
-\label{sec:fieldg}
-
 
 % The variety of NIR spectral morphologies among L dwarfs of similar optical spectral type has been attributed to the NIR spectra being more sensitive to physical parameters such as gravity, clouds, and metallicity compared to higher-mass stars.
 % Optical spectra morphologies, on the other hand, are dominated by temperature and relatively insensitive to the higher order properties. As such, the spectra of so-called `red' and `blue' L dwarfs look peculiar in the NIR but relatively `normal' in the optical.
@@ -1005,7 +1003,7 @@ Facilities:
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-% FIELD TEMPLATE FIGURES %
+% FIELD TEMPLATES %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}
@@ -1033,62 +1031,6 @@ Facilities:
 	\caption{field templates continued.}
 \end{figure}
 
-
-% 	\begin{figure}
-% 		\epsscale{1}
-% 		\plotone{}
-% 		\caption{Field gravity L0 type dwarfs. }
-% 		\label{fig:L0field}
-% 	\end{figure}
-%
-% \begin{figure}
-% 	\epsscale{1}
-% 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_f.pdf}
-% 	\caption{A different visualization of the data shown in Figure 2. The L1 field template spectrum is shown in black, which is calculated using a weighted average of all the L1 field objects included in Figure 2. The gray strip surrounding the template indicates the flux range (minimum and maximum flux values) at each pixel for the set of spectra used to calculate the template. The gray shading of the strip indicates the variance of the weighted mean flux at each pixel. Darker gray indicates smaller variance. For the optical band, the spectra were smoothed down to a resolution similar to that of the NIR spectra, and their flux range strip is included in light gray ---and not shade-coded as in the NIR bands--- only as illustration. The most prominent atomic and molecular features are indicated, as well as telluric correction artifacts due to poor line scaling of the A0 star's Hydrogen lines. Objects included in the template are: 0141+1804, 0235-2331, 0543+6422, 0602+6336, 0723+5727, 1045-0149, 1048+0111, 1807+5015, 2034+0827, 2130-0845, 2330-0347, and 2238+4353.}
-% 	\label{fig:L1field}
-% \end{figure}
-%
-% \begin{figure}
-% 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_f.pdf}
-% 	\caption{Same as Figure 3, for normal L2 type dwarfs. Objects included in the template are: 0015+3516, 0241-1241, 0408-1450, 0523-1403, 0823+6125, 0835+0548, 1409-3357, 1430+2915, 1657+1054, 2028+0052, 2041-3506, 2104-1037, and 2137+1450.}
-% 	\label{fig:L2field}
-% \end{figure}
-%
-% \begin{figure}
-% 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L3strip_f.pdf}
-% 	\caption{Same as Figure 3, for normal L3 type dwarfs. Objects included in the template are: 0034-0706, 0036+1821, 0218-3133, 0325+2253, 0700+3157, 0823+2428, 1058-1548, 1100+4957, 1146+2230, 1207-3151, 1506+1321, 1645+3004, 2036+1051, and 2242+2542.}
-% 	\label{fig:L3field}
-% \end{figure}
-%
-% \begin{figure}
-% 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_f.pdf}
-% 	\caption{Same as Figure 3, for normal L4 type dwarfs. Objects included in the template are: .}
-% 	\label{fig:L4field}
-% \end{figure}
-%
-% \begin{figure}
-% 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L5strip_f.pdf}
-% 	\caption{Same as Figure 3, for normal L5 type dwarfs. Objects included in the template are: .}
-% 	\label{fig:L5field}
-% \end{figure}
-%
-% \begin{figure}
-% 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L6strip_f.pdf}
-% 	\caption{Same as Figure 3, for normal L6 type dwarfs. Objects included in the template are: .}
-% 	\label{fig:L6field}
-% \end{figure}
-%
-% \begin{figure}
-% 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L7strip_f.pdf}
-% 	\caption{Same as Figure 3, for normal L7 type dwarfs. Objects included in the template are:.}
-% 	\label{fig:L7field}
-% \end{figure}
-%
-% \begin{figure}
-% 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L8strip_f.pdf}
-% 	\caption{Same as Figure 3, for normal L8 type dwarfs. Objects included in the template are: .}
-% 	\label{fig:L8field}
-% \end{figure}
 \clearpage
 
 \begin{figure}
@@ -1101,7 +1043,7 @@ Facilities:
 \end{figure}
 
 \begin{figure}
-	\figurenum{6.1}
+	\figurenum{6.2}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L3strip_f_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_f_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L5strip_f_excluded.pdf}
@@ -1109,44 +1051,16 @@ Facilities:
 \end{figure}
 
 \begin{figure}
-	\figurenum{6.2}
+	\figurenum{6.3}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L6strip_f_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L7strip_f_excluded.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L8strip_f_excluded.pdf}
 	\caption{field excluded continued.}
 \end{figure}
 
-%\end{landscape}
-
-\begin{figure}
-	\epsscale{1}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/JK_JF.pdf}
-		\caption{Average 2MASS $J-K_S$ color versus spectral type for two samples of L dwarfs. The squares are the averages $J-K_S$ colors of the L dwarfs in our normal optical-NIR sample, and the circles are the average $J-K_S$ colors of the \citet{Faherty13_0355} compilation of field L dwarfs. The extent of the vertical lines indicates the range of $J-K_S$ colors spanned by each sample at each spectral type. The number of L dwarfs used to calculate the average $J-K_S$ color at each spectral type is indicated above the range. Both samples only include L dwarfs that have photometric uncertainties smaller than 0.1~mag. For spectral types L0--L5, the mean colors of our normal optical-NIR sample are consistent with those of Faherty's larger sample. The difference in color ranges spanned by the two samples is due to the much stricter spectroscopic selection criteria imposed for the optical-NIR sample compared to the photometrically-selected Faherty et al. sample. 
-}
-	\label{fig:JK_colors_F13}
-\end{figure}
-
-\begin{figure}
-	\epsscale{1}
-	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_f.pdf}
-	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence1_f.pdf}
-	\caption{Spectral band templates overplotted, L0--L5 on the top panels, and L6--L8 on the bottom panels. %The blackbody curves for 2000 (purple), 1800 (blue), and 1600~K (red) (with arbitrary normalizations) are shown as dotted lines on the L0--L5 sequence. 
-	The L0--L5 spectra form an organized sequence in the $zJ$, $H$, and $K$ bands, whereas the L6--L8 spectra do not follow the same trend as the earlier types and are, therefore, plotted separately.}
-	\label{fig:spec_sequence}
-\end{figure}
-
-% \begin{figure}
-% \plotone{figures/AllersH2OHpolyplot_kc.pdf}
-% 	\caption{}
-% 	\label{fig:allers}
-% \end{figure}
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% LOW GRAVITY TEMPLATE FIGURES %
+% LOW GRAVITY TEMPLATES    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{landscape}
 
 \begin{figure}
 	\epsscale{0.9}
@@ -1159,6 +1073,15 @@ bands is the template spectrum calculated using a weighted average of all the
 field objects plotted. \\
 \emph{fig:beta\_templates}}
 	\label{fig:beta_templates}
+\end{figure}
+
+\begin{figure}
+	\epsscale{0.9}
+	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_b.pdf}
+	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_b.pdf}
+	\caption{Spectra of individual L3 and L4 $\beta$} \\
+\emph{fig:beta\_spectra}}
+	\label{fig:beta_spectra}
 \end{figure}
 
 \begin{figure}
@@ -1176,14 +1099,12 @@ field objects plotted. \\
 \end{figure}
 
 \begin{figure}
-	\figurenum{10.1}
+	\figurenum{9.2}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L3strip_g.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_g.pdf}
 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L5strip_lg.pdf}	
 	\caption{Low gravity templates continued.}
 \end{figure}
-%=================
-
 
 \begin{figure}
 	\epsscale{0.9}
@@ -1197,6 +1118,36 @@ field objects plotted. \\
 	\label{fig:lowg_excluded}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SAMPLE COLOR ANALYSIS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+	\epsscale{1}
+		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/JK_JF.pdf}
+		\caption{Average 2MASS $J-K_S$ color versus spectral type for two samples of L dwarfs. The squares are the averages $J-K_S$ colors of the L dwarfs in our normal optical-NIR sample, and the circles are the average $J-K_S$ colors of the \citet{Faherty13_0355} compilation of field L dwarfs. The extent of the vertical lines indicates the range of $J-K_S$ colors spanned by each sample at each spectral type. The number of L dwarfs used to calculate the average $J-K_S$ color at each spectral type is indicated above the range. Both samples only include L dwarfs that have photometric uncertainties smaller than 0.1~mag. For spectral types L0--L5, the mean colors of our normal optical-NIR sample are consistent with those of Faherty's larger sample. The difference in color ranges spanned by the two samples is due to the much stricter spectroscopic selection criteria imposed for the optical-NIR sample compared to the photometrically-selected Faherty et al. sample. 
+}
+	\label{fig:JK_colors_F13}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%
+% FIELD SEQUENCE %
+%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+	\epsscale{1}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_f.pdf}
+	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence1_f.pdf}
+	\caption{Spectral band templates overplotted, L0--L5 on the top panels, and L6--L8 on the bottom panels. %The blackbody curves for 2000 (purple), 1800 (blue), and 1600~K (red) (with arbitrary normalizations) are shown as dotted lines on the L0--L5 sequence. 
+	The L0--L5 spectra form an organized sequence in the $zJ$, $H$, and $K$ bands, whereas the L6--L8 spectra do not follow the same trend as the earlier types and are, therefore, plotted separately.}
+	\label{fig:spec_sequence}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%
+% GAMMA SEQUENCE %
+%%%%%%%%%%%%%%%%%%
+
+
 \begin{figure}
 	\epsscale{1}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_g.pdf}
@@ -1205,12 +1156,12 @@ field objects plotted. \\
 	\emph{fig:lg\_sequence}}
 	\label{fig:lg_sequence}
 \end{figure}
-	
-%\end{landscape}
 
 %%%%%%%%%%%%%%%%%%
 % LOW GRAVITY COMPARISIONS
 %%%%%%%%%%%%%%%%%%
+
+
 
 \begin{figure}
 	\epsscale{1}
