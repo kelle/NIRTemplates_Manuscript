@@ -427,12 +427,33 @@ We expect the $\beta$ sequence to be filled in as more spectra are acquired, esp
 %By examining the NIR spectra band-by-band, we are minimizing the effect of reddening on the spectral shape that is likely dominated by the gravity- and metallicity-sensitive clouds and not temperature.
 
 
-\subsection{Characterizing the Field Gravity Template Subsample}
+\subsection{The Field Gravity Template Subsample}
 \label{sec:templates_normal}
 
-In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the entire optical-NIR sample of L~dwarfs. The plot shows the colors of the individual L dwarfs (filled circles) as well as the average color at each spectral type (black bar). All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag. 
+Our goal is to create spectral average templates that are representative of the field population of L dwarfs and which reflect intrinsic spreads in spectral morphology due to the age and metallicity spread of the thin disk.
+However, the statistics and biases at each spectral type are different and the resulting templates likely do not represent the same segment of the bulk population.
+
+The spectral type distribution of the optical-NIR sample is shown in Figure~\ref{fig:spthist}. 
+The field gravity objects that are included in the templates are shown as black bars while the excluded objects are gray bars.
+At each type, there are at least eight objects included in the template.
+However, at the earlier types (L0--L3), more objects were considered and a higher fraction were rejected compared to the later types (L4, L6--L8).
+With more objects, the $\chi^2$ rejection method is more effective at identifying subtle outliers.
+This suggests that the later type templates could potentially reflect a wider range of spectral morphologies compared to the earlier types.
+
+
+something different between L3 and L4 related to number of objects.
+
+
+In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the optical-NIR sample of L~dwarfs. The plot shows the colors of the individual L dwarfs (filled circles) as well as the average color at each spectral type (black bar). All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag. 
 The end caps mark the minimum and maximum of the distribution, the whiskers mark the bottom and top quartiles, the box indicates the locations of the 2nd and 3rd quartiles, and the median is indicated with a bar. The number of objects used in calculating the quartiles are indicated above the end caps.
 The number of objects included in each template, the mean, minimum, maximum, and range of $J-K_S$ colors is listed in Table~\ref{tab:sample_prop}. 
+
+excluded/peculiar spectra are not necessarily color outliers. 
+
+dispersion among color of objects with typical spectral morphorolgy
+
+middle 50\% much tighter for L0-L3 compared to L4-L8. Not likely due to small numbers, because L4 and L5 have lots of objects.
+maybe dust turning on or seeing range of underlying masses, ages, gravities in the brown dwarfs compared to the stellar dominated earlier types (~70 M_Jup)
 
 In order to put the field-gravity optical-NIR sample in the context of the larger normal L~dwarf population, we compare our $J-K_S$ color averages with those of \citet{Faherty13_0355}. 
 They compiled a sample of photometrically-defined normal field L~dwarfs with photometric uncertainties smaller than 0.1~mag. 
@@ -512,7 +533,7 @@ Finally, L8 is marked by the onset of methane absorption in the $K$-band.
 Figures~\ref{fig:spthist}, \ref{fig:JK_colors}, \ref{fig:beta_templates}, \ref{fig:gamma_templates}, \ref{fig:lowg_excluded}, \ref{fig:lg_sequence}, \ref{fig:L0lg-field}--\ref{fig:L4lg-field}\\
 Tables ~\ref{tab:lowg_template}, \ref{tab:lowg_excluded}, \ref{tab:lg_sample_prop}.}
 
-\subsection{Characteristics of the Low Gravity Template Subsample}
+\subsection{The Low Gravity Template Subsample}
 \label{sec:templates_lowg}
 
 As described in \S~\ref{sec:templates}, we used the optical-NIR sample to generate optically anchored spectral average templates for L0$\gamma$--L4$\gamma$, L0$\beta$, and L1$\beta$.
@@ -847,15 +868,17 @@ Compared to the optical sequence, where half-types are warranted, the low-resolu
 \label{sec:summary}
 
 We have presented \# new low-resolution spectra of late-M and L dwarfs obtained with the SpeX spectrograph.
-After defining ``normal'', we have created a sample of \# normal L dwarfs with both high quality optical and NIR spectra that is representative of normal L dwarfs from L0--L5.
+We have created a sample of \# normal L dwarfs with both high quality optical and NIR spectra that is representative of normal L dwarfs from L0--L5.
 We have introduced a new method to analyze the NIR spectra of L dwarfs that effectively removes the reddening term and highlights the spectral features due primarily to temperature. 
 This method reveals that the $J-K$ color scatter amongst L dwarfs of the same spectral type is attributable to the spectra having different smooth functions across the entire 1--2.5~$\micron$ range rather than differences amongst individual absorption features.
-As will be discussed in detail by \citet[in prep.]{Hiranaka:2015va}, this reddening is most likely due to small dust grains intrinsic to the L~dwarfs atmosphere and not due to intervening interstellar dust, is best described by a power law, and is consistent with being caused by a gravity- and metallicity-sensitive population of small dust grains ($<1$~\micron).
+%As discussed by \citet{Hiranaka:2015va}, this reddening is most likely due to small dust grains intrinsic to the L~dwarfs atmosphere and not due to intervening interstellar dust, is best described by a power law, and is consistent with being caused by a gravity- and metallicity-sensitive population of small dust grains ($<1$~\micron).
 
 In order to attempt to disentangle the observational indicators of temperature, gravity, cloud, and metallicity properties in the NIR spectra of L~dwarfs, we have performed an analysis of NIR spectra using the optical spectra as an anchor.
 Anchoring to the optical and analyzing the spectra band-by-band enabled us to show that L dwarfs of the same optical spectral type do indeed have the common spectral morphologies in the NIR even though they span a wide range of colors.
-We combined the relatively large number of optically-anchored L~dwarfs at each spectral type to generate $zJ$, $H$, and $K$ band spectral average templates. We expect that the spectral morphologies of all normal L dwarfs fall within the range of the objects used to generate the templates. We also think the range is dominated by intrinsic properties, such as cloud and gravity properties, and not instrumental or atmospheric effects.
-We demonstrated how the shape of the underlying plank function provides an explanation for the temperature-sensitivity of the optical and $zJ$-band spectral regions compared to the $H$ and $K$ bands.
+We combined the relatively large number of optically-anchored L~dwarfs at each spectral type to generate $zJ$, $H$, and $K$ band spectral average templates. 
+We expect that the spectral morphologies of all normal L dwarfs fall within the range of the objects used to generate the templates. 
+We also think the range is dominated by intrinsic properties, such as cloud and gravity properties, and not instrumental or atmospheric effects.
+%We demonstrated how the shape of the underlying plank function provides an explanation for the temperature-sensitivity of the optical and $zJ$-band spectral regions compared to the $H$ and $K$ bands.
 
 We construct low-gravity templates for L0--L4$\gamma$ and L0--L1$\beta$ spectral types. 
 We lack sufficient data for other the later low gravity. 
@@ -865,33 +888,6 @@ We described a spectral typing scheme for L~dwarfs based on NIR data that is 1) 
 Future papers to focus on low-gravity, low-metallicity, and multiple, and peculiar objects. and much further in the future, higher resolution.
 
 The results presented here will make it easier to reliably and consistently identify and classify red, blue, and peculiar objects and represent significant progress in our ability to decode NIR spectra to reveal the underlying physics of L dwarf atmospheres and, in turn, planetary atmospheres.
-Spectra can be downloaded from...
-
-% \subsection{Defining ``Normal''}
-% \label{sec:normal}
-% In this paper, we focus on characterizing the population of so-called ``normal'' L dwarfs.
-% Ideally, a normal L dwarf is fully contracted, field-age, near-solar metallicity, and has typical cloud properties. 
-% However, this is currently not a practical definition since we do not have reliable methods to determine age, metallicity, or cloud properties of L dwarfs.
-% One observational definition of normal L dwarfs is objects with photometric and spectroscopic properties consistent with the majority of other L dwarfs.
-% In order to be more specific about what is meant by ``normal'' in practice, we provide a brief overview of the language currently in use to describe L dwarfs.
-%  
-% Objects with $J-K$ colors at the extrema of the range spanned by objects of the same spectral type are the so-called ``red'' and ``blue'' L dwarfs, respectively (see Figure~14 of \citet{Kirkpatrick10} and Figure~9 of \citet{Faherty09}). Some red L dwarfs, but not all, have spectroscopic and kinematic properties consistent with low-gravities and young ages \citep{Cruz09_lowg, Faherty09, Kirkpatrick06, Kirkpatrick08, Kirkpatrick10, Faherty13_0355}. Other red L dwarfs lack any indicators of low-gravity or youth and are instead thought to possibly have thicker, dustier, clouds \citep[e.g.,][]{Looper08_dusty}. Thus, ``red'' is oftentimes synonymous with ``young'' and/or ``dusty''. 
-% Similarly, some blue L dwarfs have spectroscopic and/or kinematic properties consistent with high-gravities, thin clouds, and old ages and thus, ``blue'' is typically synonymous with ``old'' \citep{Burgasser08_blue, Faherty09, Kirkpatrick10}. 
-% Further, oftentimes red, blue, and L dwarfs with unusual spectral features are collectively called ``peculiar'' L dwarfs because their photometric and/or spectral properties are not typical with the bulk properties of the L dwarf population. 
-% 
-% A major goal of this paper is to define and characterize normal L dwarfs in order to anchor the analysis and physical intrepretation of the peculiar, and very interesting, L dwarfs.
-% 
-% Below we outline the exclusive selection criteria that we have used for calling an L dwarf ``normal'':
-% \begin{itemize}
-% 	\item \textbf{Not Young or Low-Gravity}: Normal objects do not have any spectral indications of youth such as peaky (aka, triangular) H band, weak Na or K absorption, or weak pressure broadening \citep{McGovern04, Cruz09_lowg, Kirkpatrick06}.
-% 	\item \textbf{Not Old, High-Gravity, or Metal Poor}: Normal objects do not have any spectral indications of low metallicity such as a very blue NIR spectral energy distribution or strong H$_2$O and FeH absorption \citep{Burgasser08_blue}.
-% 	\item \textbf{Not Dusty}: Normal objects do not have extremely red NIR spectral energy distributions even if they lack low gravity features.
-% 	\item \textbf{Not Peculiar}: Normal objects do not any spectral absorption features that look unusual compared to the majority of other L dwarfs of similar spectral type.
-% \end{itemize}
-% 
-% By excluding young, old, metal-poor, and otherwise peculiar objects, normal L dwarfs have photometric and spectroscopic properties within the observed distribution of the majority of L dwarfs are likely to have field ages, near-solar metallicities, and typical cloud properties. 
-% As described in the next subsection, the range of $J-K_S$ colors spanned by normal L dwarfs is substantial ($\sim$0.5~mag) and is likely due to the intrinsic range of ages, masses, and cloud properties present in the normal population.
-
 
 \appendix
 \section{APPENDIX: Spectra of Galaxies}
