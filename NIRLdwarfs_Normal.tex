@@ -263,6 +263,7 @@ The sample includes \optNormal~total field gravity objects with optical types sp
 and \optLowG~low-gravity objects from L0--L4 (orange, red). 
 While there are more low-gravity objects known, many lack SpeX Prism data due to their southerly declinations and inaccessibility from the IRTF.
 The $J-K_S$ color distribution of the optical-NIR sample is shown in Figure~\ref{fig:JK_colors}. 
+All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag. 
 The color properties of the field and low gravity samples are discussed in more detail in \S\S~\ref{sec:templates_normal} and~\ref{sec:templates_lowg}.
 
 \subsection{Far-Red Optical Spectra}
@@ -430,30 +431,36 @@ We expect the $\beta$ sequence to be filled in as more spectra are acquired, esp
 \subsection{The Field Gravity Template Subsample}
 \label{sec:templates_normal}
 
-Our goal is to create spectral average templates that are representative of the field population of L dwarfs and which reflect intrinsic spreads in spectral morphology due to the age and metallicity spread of the thin disk.
-However, the statistics and biases at each spectral type are different and the resulting templates likely do not represent the same segment of the bulk population.
+Our goal is to use the optical-NIR sample to generate spectral average templates that are representative of the field population of L dwarfs and which reflect the intrinsic spreads in spectral morphology due to the range of properties of the thin disk population.
+However, the statistics and biases of the optical-NIR sample are different at each spectral type and the resulting templates likely do not represent the same segments of the bulk population. 
+Below, we examine the spectral type and $J-K_S$ color distributions of the field gravity objects in the optical-NIR sample and discuss features which could be attributed to observational biases in the sample versus intrinsic properties of the population and how these might impact the resulting templates.
 
 The spectral type distribution of the optical-NIR sample is shown in Figure~\ref{fig:spthist}. 
-The field gravity objects that are included in the templates are shown as black bars while the excluded objects are gray bars.
-At each type, there are at least eight objects included in the template.
-However, at the earlier types (L0--L3), more objects were considered and a higher fraction were rejected compared to the later types (L4, L6--L8).
-With more objects, the $\chi^2$ rejection method is more effective at identifying subtle outliers.
-This suggests that the later type templates could potentially reflect a wider range of spectral morphologies compared to the earlier types.
+The field gravity objects that are included in the templates are shown as black bars while the excluded objects are shown in gray.
+There are at least eight objects included in each template.
+At the earlier types (L0--L3), more objects were considered and a higher fraction were rejected compared to the later types (L4, L6--L8).
+% more earlier type objects
+More earlier type objects are present in the optical-NIR sample for two primary reasons: First, the number densities of earlier type objects are intrinsically higher than later type objects \cite{DayJones:2013hm}. 
+Second, earlier type objects are more luminous than later type objects and thus there are more known and there are more data available for them. 
+% higher fraction rejected at earlier types
+Despite including a higher fraction of objects in the templates, the later type spectra display a similar degree of homogeneity as the earlier types (as reflected in the templates by the flux range and 1$\sigma$ dispersion at each pixel).
+
+In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the optical-NIR sample of L~dwarfs. 
+The $J-K_S$ color distribution of the field gravity objects included in the templates are indicated by black boxes and whiskers; the excluded objects are shown individually as gray x marks.
+The end caps of the whiskers mark the minimum and maximum $J-K_S$ color and the box encloses the interquartile range (the middle half of the distribution). The horizontal bar indicates the median $J-K_S$ color while a filled circle indicates the mean.
+This figure reveals several things of note:
+\begin{itemize}
+\item Some objects excluded from the templates have near average colors implying that objects with peculiar spectra may not have extreme colors. 
+\item Some objects with colors in the red/blue tails of the color distribution are included in the templates implying objects with extreme color may not display any spectral peculiarities besides spectral slope.
+\item The interquartile range for the objects included in the templates is much smaller for L0--L3 ($<$0.15~mags) compared to L4--L7 ($>$0.4~mags).
+This difference cannot entirely be attributed to small number statistics at later types because there are nearly the same number of L5s considered (18) as L3s (20).
+We note that the early type population is expected to be dominated by the lowest-mass stars (70--80~$M_{Jup}$) while the later type population is expected to be entirely substellar. 
+It is possible that the larger color spread at later types is due to the larger range of underlying masses, ages, and gravities expected in the brown dwarf population compared to the stellar dominated earlier types, which are predicted to have roughly the same masses and gravities and are less sensitive to age.
+It is also possible that at the cooler temperatures/later types, the role of small dust grains in the photospheres becomes more important and small changes in those dust properties have a larger impact on the emergent spectra \citep{Morocco, Hiranaka}.
+\end{itemize}
 
 
-something different between L3 and L4 related to number of objects.
-
-
-In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the optical-NIR sample of L~dwarfs. The plot shows the colors of the individual L dwarfs (filled circles) as well as the average color at each spectral type (black bar). All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag. 
-The end caps mark the minimum and maximum of the distribution, the whiskers mark the bottom and top quartiles, the box indicates the locations of the 2nd and 3rd quartiles, and the median is indicated with a bar. The number of objects used in calculating the quartiles are indicated above the end caps.
 The number of objects included in each template, the mean, minimum, maximum, and range of $J-K_S$ colors is listed in Table~\ref{tab:sample_prop}. 
-
-excluded/peculiar spectra are not necessarily color outliers. 
-
-dispersion among color of objects with typical spectral morphorolgy
-
-middle 50\% much tighter for L0-L3 compared to L4-L8. Not likely due to small numbers, because L4 and L5 have lots of objects.
-maybe dust turning on or seeing range of underlying masses, ages, gravities in the brown dwarfs compared to the stellar dominated earlier types (~70 M_Jup)
 
 In order to put the field-gravity optical-NIR sample in the context of the larger normal L~dwarf population, we compare our $J-K_S$ color averages with those of \citet{Faherty13_0355}. 
 They compiled a sample of photometrically-defined normal field L~dwarfs with photometric uncertainties smaller than 0.1~mag. 
