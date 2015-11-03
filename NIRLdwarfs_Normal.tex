@@ -553,7 +553,7 @@ Tables ~\ref{tab:lowg_template}, \ref{tab:lowg_excluded}, \ref{tab:lg_sample_pro
 As described in \S~\ref{sec:templates}, we used the optical-NIR sample to generate optically anchored spectral average templates for L0$\gamma$--L4$\gamma$, L0$\beta$, and L1$\beta$.
 Of the \sample~objects in the optical-NIR sample described in \S~\ref{sec:sample}, \optLowG~are objects with low-gravity features in their optical spectra.
 The low-gravity sample is composed of objects from \citet{Cruz07,Kirkpatrick08,Cruz09_lowg} and ten additional objects with new data presented in \S\S~\ref{sec:obs_new_opt} and~\ref{sec:obs_new_nir}.
-Many other known low-gravity objects are not included in this analysis due to their southerly declinations and resulting lack of SpeX Prism data. 
+Many other known low-gravity objects are not included in this analysis due to their lack of SpeX Prism data as a result of their southerly declinations. 
 Future work will incorporate data from the Folded-port Infrared Echellette (FIRE) spectrograph on Magellan \citep{Simcoe:2013kh} in the southern hemisphere.
 The spectral type distribution of the low-gravity objects is shown in Figure~\ref{fig:spthist} as red and orange bars.
 This sample of low gravity objects is small and incomplete but the striking homogeneity of their NIR spectral morphologies amongst objects of the same optical spectral type provided strong motivation for making templates at some spectral types.
@@ -563,7 +563,7 @@ The spectra rejected from the low gravity templates are shown in Figure Set~\ref
 
 As described in \cite{Cruz09_lowg}, $\beta$ and $\gamma$ spectra type suffixes are used to indicate very low-gravity and intermediate-gravity spectral features, respectively.
 Included in the \optLowG~low gravity objects are 23 L0--L4 objects with a $\gamma$ gravity classification and six L0--L1 $\beta$ type objects.
-Of the~\optLowG, only three (listed in Table~\ref{tab:lowg_excluded}) were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, rather than because of their inconsistent spectral morphology (Figure Set~\ref{fig:lowg_excluded}).
+Of the~\optLowG, only three were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, rather than because of their inconsistent spectral morphology (Table~\ref{tab:lowg_excluded}, Figure Set~\ref{fig:lowg_excluded}).
 
 In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the field (black and gray) and low gravity objects (red and orange) included in the optical-NIR sample of L~dwarfs.
 %The mean color of the objects included in the templates is marked as a solid circle and box and whiskers are used to show the quartile ranges of the colors spanned at each spectral type. Excluded objects are indicated by crosses.
@@ -589,9 +589,10 @@ In low gravity spectra, with later type/cooler temperature,
 \item K band slopes get steeper. 
 \end{itemize}
 
-We suspect that the K band might be quite diagnostic and we have ongoing efforts to quantify this shape and see if it can be used as a diagnostic (Buzard et al. in prep)
 
 compare these trends with indices figures? Allers? Gagne?
+
+
 
 sequence from L0--L3 with features changing by L4. check K08 and Allers13
 
@@ -894,6 +895,10 @@ We construct low-gravity templates for L0--L4$\gamma$ and L0--L1$\beta$ spectral
 We lack sufficient data for other the later low gravity. 
 We compare low-gravity templates with the field templates to develop prescriptions for distinguishing low-gravity from field objects in the NIR.
 
+there are objects with quite red colors for their spectral type that do not have any recognized signatures of low gravity in their optical or low-resolution NIR spectra.
+This further supports the notion that most low gravity objects are red, but not all red objects are low gravity.
+While diversity of cloud properties is often pointed to as the primary suspect for the red colors of low gravity objects, a significant amount of further theoretical and observational work is needed to pinpoint the nature of the physical properties modulating the $J-K_S$ colors of L dwarfs.
+
 While we do see a larger variety of NIR spectral morphologies among the optically-classified L8s, we do not see any trends in the spectral features which justify a spectral class later than L8.
 Some objects excluded from the templates have near average colors implying that objects with peculiar spectra may not have extreme colors. 
 Some objects with colors in the red/blue tails of the color distribution are included in the templates implying objects with extreme color may not display any spectral peculiarities besides spectral slope.
@@ -1063,20 +1068,20 @@ Facilities:
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_b.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_b.pdf}
 	\caption{Normalized optical and near-infrared low resolution spectra of low-gravity $\beta$-type L
-dwarfs. The spectra are normalized individually by band (optical, J, H, and K bands)
+dwarfs. The spectra are normalized individually by band (optical, \emph{J}, \emph{H}, and \emph{K} bands)
 using the entire band range. The most prominent atomic and molecular features are indicated. Superimposed in black in the near-infrared
 bands is the template spectrum calculated using a weighted average of all the
 field objects plotted.}
 	\label{fig:beta_templates}
 \end{figure}
 
-\begin{figure}
-	\epsscale{0.9}
-	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_b.pdf}
-	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_b.pdf}
-	\caption{Spectra of individual L3 and L4 $\beta$}
-	\label{fig:beta_spectra}
-\end{figure}
+% \begin{figure}
+% 	\epsscale{0.9}
+% 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_b.pdf}
+% 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_b.pdf}
+% 	\caption{Spectra of individual L3 and L4 $\beta$}
+% 	\label{fig:beta_spectra}
+% \end{figure}
 
 \begin{figure}
 	\epsscale{0.9}
@@ -1084,7 +1089,7 @@ field objects plotted.}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_g.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_g.pdf}	
 	\caption{Normalized optical and near-infrared low resolution spectra of low-gravity L
-dwarfs. The spectra are normalized individually by band (optical, J, H, and K bands)
+dwarfs. The spectra are normalized individually by band (optical, \emph{J}, \emph{H}, and \emph{K} bands)
 using the entire band range. The most prominent atomic and molecular features are indicated. Superimposed in black in the near-infrared
 bands is the template spectrum calculated using a weighted average of all the
 field objects plotted. }
@@ -1092,7 +1097,7 @@ field objects plotted. }
 \end{figure}
 
 \begin{figure}
-	\figurenum{9.2}
+	\figurenum{8.2}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L3strip_g.pdf}
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_g.pdf}
 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L5strip_lg.pdf}	
