@@ -4,21 +4,22 @@
 \usepackage{lscape}
 \usepackage{pdfpages}
 \usepackage{hyperref}
+\usepackage{hhline}
 
 \slugcomment{Draft \today}
 \shorttitle{short title}
 \shortauthors{Cruz et al.}
 
 
-\newcommand{\sample}{173}
+\newcommand{\sample}{171}
 
 %field + low g should equal sample
 \newcommand{\optField}{143}
-\newcommand{\optLowG}{30}
+\newcommand{\optLowG}{28}
 
 %beta + gamma should equal lowg
 \newcommand{\optBeta}{7}
-\newcommand{\optGamma}{23}
+\newcommand{\optGamma}{21}
 
 %\newcommand{\optNoisy}{13}
 %\newcommand{\optPec}{35}
@@ -250,36 +251,39 @@ Candidate objects were targeted for far-red optical and/or near-infrared spectro
 %Our NIR follow-up campaign was focused on candidate nearby ultracool dwarfs that were too faint for optical follow-up.
 During these observing runs, we also targeted confirmed nearby M and L dwarfs from the literature that lacked optical and/or NIR spectra.
 %This large spectral dataset forms the basis of the ``optical-NIR sample''.
+As described in more detail below, the far-red optical observations were obtained with several different instruments but we restrict the analysis in this paper to objects with NIR data obtained with the SpeX spectrograph \citep{Spex} on the 3~m NASA Infrared Telescope Facility using the low-resolution prism mode.
+We have combined these data, other extant spectra from the literature, and new data to create a sample of \sample~L~dwarfs with both far-red optical (6000–-9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''. 
 
-We have combined extant spectra from the literature with new data to create a sample of \sample~L~dwarfs with both far-red optical (6000–-9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''. 
-Of these, \NewOptSpectra~optical spectra for \NewOptObjects~objects and \NewPrismSpectra~SpeX prism spectra for \NewPrismObjects~objects are published here for the first time and are listed in Tables~\ref{tab:newopt} and~\ref{tab:newnir}. 
-The full sample used for this paper is collectively listed in Tables~\ref{tab:field_template}--\ref{tab:lowg_excluded} based on analysis described in \S~\ref{sec:templates}.
-
-We make no specific effort to ensure the optical-NIR sample is complete in any dimension, but we do want it to be as representative as possible of the known L~dwarf population.
+We made no specific effort to ensure the optical-NIR sample is complete in any dimension, but we did want it to be as representative as possible of the known L~dwarf population.
 Because of the known red bias of the photometrically selected 2MASS-based samples \cite[Figure 3]{Schmidt10}, we made a concerted effort to identify L dwarfs in the literature with $J-K_S$ colors bluer than the range of colors spanned by the 2MASS-selected sample and with both optical and SpeX Prism spectra. 
 %As shown in Figure~3 of \cite{Schmidt10}, the 2MASS-based photometrically selected samples that are the focus of previous papers in this series \citep{Cruz03, Reid08} are biased against the bluer L~dwarfs at every spectral type. 
 %Since most of our spectroscopic follow-up focused on a red-biased sample, our optical-NIR spectroscopic sample is prone to also be red biased. 
 %Specifically, we looked for L~dwarfs in the literature
 This added less than ten objects to the sample.
 
-In the optical-NIR sample used for the analysis presented in this paper, we did include all of the low gravity objects.
-For $\beta$ type objects, we only considered L0--L1$\beta$-type objects since the later types do not have more than one object at each spectral type.
-For $\gamma$ type objects, we limited our analysis to L0--L4$\gamama$. 
+We did not include all possible low gravity objects in the optical-NIR sample.
+For $\beta$~type objects, we only considered L0--L1$\beta$-type objects since the later types do not have more than one object at each spectral type.
+For $\gamma$ type objects, we limited our analysis to L0--L4$\gamma$. 
 The later type $\gamma$ type objects (e.g., 2M0355) display significant spectral diversity and we defer an analysis of these data to a future paper.
 
+The resulting optical-NIR sample of \sample~objects includes \optField~field gravity objects and \optLowG~low-gravity objects.
+It also includes \NewOptSpectra~new optical spectra for \NewOptObjects~objects and \NewPrismSpectra~new SpeX prism spectra for \NewPrismObjects~objects.
+These new data are described in the following subsections and listed in Tables~\ref{tab:newopt} and~\ref{tab:newnir}. The full sample used for this paper is collectively listed in Tables~\ref{tab:field_template}--\ref{tab:lowg_excluded} based on analysis described in \S~\ref{sec:templates}. 
 The spectral type distribution of the optical-NIR sample is shown in Figure~\ref{fig:spthist}. 
-The sample includes \optNormal~total field gravity objects with optical types spanning L0--L8 (gray and black)
+%The \optField~field gravity objects with optical types spanning L0--L8 (shaded and unshaded)
 %With less than 15 objects, the L6--L8 bins suffer the most from small numbers.
-and \optLowG~low-gravity objects from L0--L4 (orange, red). 
-While there are more low-gravity objects known, many lack SpeX Prism data due to their southerly declinations inaccessible from the IRTF.
+%and \optLowG~low-gravity objects from L0--L4 (orange and red). 
+%While there are more low-gravity objects known, many lack SpeX Prism data due to their southerly declinations inaccessible from the IRTF.
+
 The $J-K_S$ color distribution of the optical-NIR sample is shown in Figure~\ref{fig:JK_colors}. 
 All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag. 
 The color properties of the field and low gravity samples are discussed in more detail in \S\S~\ref{sec:templates_normal} and~\ref{sec:templates_lowg}.
 
+
 \subsection{Far-Red Optical Spectra}
 
 %describe optical spectra
-For an L dwarf to be included in the optical-NIR sample, it is required to have an optical spectrum of high enough signal-to-noise ratio ($\gtrsim$50) to get a reliable spectral type.
+For an L dwarf to be included in the optical-NIR sample, it was required to have an optical spectrum of high enough signal-to-noise ratio ($\gtrsim$50) to get a reliable spectral type.
 The optical spectra were obtained with long-slit spectrograph-telescope combinations all with similar resolving power~($\lambda/\Delta\lambda\sim1000$). 
 The instrumental setup and data reduction techniques used for each spectrum is described in the references listed in Tables~\ref{tab:field_template}--\ref{tab:lowg_excluded}.
 Every spectrum was visually compared to spectral standards in order to estimate spectral types using the schemes of \citet{K99} and \cite{Cruz09_lowg} for field and low gravity spectra respectively.  
@@ -379,11 +383,11 @@ Since our analysis is anchored in the optical, we do not have an L9, which has o
 Below, we describe the methods used to construct the templates.
 
 %three samples
-We divided the optical-NIR sample (\optsample) into three subsamples based on their optical spectral morphology: 
+We divided the optical-NIR sample (\sample) into three subsamples based on their optical spectral morphology: 
 \begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
 	\item a field gravity sample with \optField~objects which have spectra similar to the \citet{K99} field spectral standards.
-	\item a low-gravity $\beta$ sample with \optBeta~objects with intermediate-strength low-gravity features as described in \citet{Cruz09_lowg}.
 	\item low-gravity $\gamma$ sample with \optGamma~objects with very strong low-gravity features as described in \citet{Cruz09_lowg}.
+	\item a low-gravity $\beta$ sample with \optBeta~objects with intermediate-strength low-gravity features as described in \citet{Cruz09_lowg}.
 \end{enumerate}
 
 All of the NIR spectra of the same optical spectral type are used to make the first pass at the template.
@@ -400,16 +404,12 @@ For the field gravity L1 template, a $\chi^2$ limit of two excludes mostly bluer
 We instead used a $\chi^2 > 2.3$ criterion which results in a template that more accurately reflects the range of spectral morphologies included in the L1 subtype.
 Due to the small number of late-type objects in the sample, $\chi^2 > 1.4$ was used for the L7 and L8 field gravity templates.
 
-This iterative process resulted in 133 objects being included in 16 spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 47 being excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}).
+This iterative process resulted in 127 objects being included in 16 spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 44 being excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}).
 The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg}; the low-gravity templates are in Figure Sets~\ref{fig:beta_templates} and~\ref{fig:gamma_templates} and discussed in \S~\ref{sec:lowg}. 
 Shading is used to indicate the 1$\sigma$ variance (dark gray) and range of flux values (light gray) used to calculate the template at each pixel.
 We also show spectral averages of the optical spectra along with the NIR templates. The optical spectra were smoothed to approximately match the resolution of the NIR spectra and light gray shading indicates the range of flux values used at each pixel.
 %Objects included in the template spectrum for each subtype are listed by increasing $J-K_S$ color to emphasize the range of colors spanned at each subtype.
 Spectra excluded from the templates are displayed in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
-
-As yet, our optical-NIR sample does not include an L2$\beta$ and only includes one each of L3$\beta$ and L4$\beta$, \object[04070752+1546457]{04070752+1546457} and \object[G196-3B]{G196-3B} \citep{Cruz09_lowg}.
-Even though these individual objects cannot be considered representative of this spectral type, we display these data in Figure \ref{fig:beta_templates}.
-We expect the $\beta$ sequence to be filled in as more spectra are acquired, especially in the southern hemisphere.
 
 \clearpage
 \section{Analysis: Field Gravity L Dwarfs}
