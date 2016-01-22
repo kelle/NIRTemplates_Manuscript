@@ -10,12 +10,18 @@
 \shortauthors{Cruz et al.}
 
 
-\newcommand{\sample}{180}
+\newcommand{\sample}{173}
 
-\newcommand{\optNormal}{135}
-\newcommand{\optLowG}{29}
-\newcommand{\optNoisy}{13}
-\newcommand{\optPec}{35}
+%field + low g should equal sample
+\newcommand{\optField}{143}
+\newcommand{\optLowG}{30}
+
+%beta + gamma should equal lowg
+\newcommand{\optBeta}{7}
+\newcommand{\optGamma}{23}
+
+%\newcommand{\optNoisy}{13}
+%\newcommand{\optPec}{35}
 
 \newcommand{\NewOptSpectra}{19} %New optical Data
 \newcommand{\NewOptObjects}{17} %objects with new optical data
@@ -103,7 +109,7 @@ Building upon the initial discovery and classification of these objects \citep{K
 In this final paper of the series, we focus on the analysis of the NIR spectra of L dwarfs obtained while building that volume-limited sample.
 
 % L dwarf classification in the OPTICAL
-L dwarfs were first classified according to their spectral morphology at red-optical wavelengths using spectra typically covering 6000--9000~\AA~at $R\sim1000$ \citep{M99,K99,Kirkpatrick05}. 
+L dwarfs were first classified according to their spectral morphology at red-optical wavelengths using spectra typically covering 6000--9000~\AA~at $R\sim1000$ \citep{Martin99,K99,Kirkpatrick05}. 
 This classification scheme relies on the prominent spectral absorption features due to \ion{K}{1} broadening, metal oxides (VO, TiO), metal hydrides (CrH, FeH), and alkali metals (Cs, Rb).
 Red-optical spectra of L dwarfs are on the Wien side of the underlying blackbody spectrum, and the spectral morphology in that wavelength regime is dominated by temperature effects, with surface gravity and metallicity making secondary contributions. 
 The effects on the optical spectra of L dwarfs due to low gravity are described by \citet{Kirkpatrick06,Kirkpatrick08, Cruz09_lowg}. 
@@ -113,7 +119,7 @@ Since the effects of low metallicity do not greatly alter the optical spectra of
 
 % NEED FOR NIR CLASSIFICATION
 While the classification and analysis techniques in the optical are valuable, reliable diagnostics based on near-infrared (NIR) data are necessary for two primary reasons:
-First, with intrinsically cool surface temperatures (1500--2200~K) and low luminosities ($-5~\lesssim~log(L_*/L_\sun)~\lesssim~-3.5$), L dwarfs are relatively faint in the optical and emit most of their flux at near-infrared wavelengths \citep[e.g.,][]{Filippazzo:2015vd}.
+First, with intrinsically cool surface temperatures (1500--2200~K) and low luminosities ($-5~\lesssim~log(L_*/L_\sun)~\lesssim~-3.5$), L dwarfs are relatively faint in the optical and emit most of their flux at near-infrared wavelengths \citep[e.g.,][]{Filippazzo:2015dv}.
 As a result, it is more efficient to obtain NIR spectra with higher signal-to-noise ratios than optical data.
 Second, the workhorse spectrographs of the next decade are optimized for the NIR, specifically: the TripleSpec instruments on the ARC 3.5-m, Palomar 200-inch, and the Blanco 4-m \citep{Wilson:2004he}, the Folded-port Infrared Echellette (FIRE) on Magellan \citep{Simcoe:2013kh}, the Near-Infrared Echelle Spectrograph (NIRES) on Keck, and the Near Infrared Spectrograph (NIRSpec) on the James Webb Space Telescope \citep{Ferruit:2012em}.
 
@@ -229,7 +235,7 @@ Figures~\ref{fig:spthist}--\ref{fig:newopt}\\
 Appendix\\
 \\
 Sample bookkeeping:\\
-\optNormal~ L dwarfs with field optical =  \emph{optNormal}\\
+\optField~ L dwarfs with field optical =  \emph{optNormal}\\
 \optLowG~ L dwarfs with lowg optical = \emph{optLowG} \\
 %\optNoisy~ L dwarfs with  noisy optical\\
 %\optPec~ L dwarfs with  peculiar optical\\
@@ -364,7 +370,7 @@ With this plotting method, the color term present in the NIR spectra of L~dwarfs
 \subsection{Making optically-anchored NIR spectral average templates}
 \label{sec:templates}
 
-Spectral average templates are a common technique used in stellar and extragalactic spectroscopy to reveal the most common spectral morphologies, average out defects of individual observations, and to provide representative data with high signal-to-noise ratios.
+Spectral average templates are a common tool used in stellar and extragalactic spectroscopy to reveal the most common spectral morphologies, average out defects of individual observations, and to provide representative data with high signal-to-noise ratios.
 SDSS spectra have been used to make M and L dwarf templates in the far-red optical wavelength regime \citep{Bochanski07_templates, Schmidt:2014jc} but no set of templates have been defined for the NIR spectra of L dwarfs.
 In this section, we use the optical-NIR sample of L dwarf spectra to generate spectral average templates which are anchored to the optical classification and accurately reflect both the typical spectral morphology of L dwarfs and the variations of their spectral morphology.
 
@@ -373,11 +379,11 @@ Since our analysis is anchored in the optical, we do not have an L9, which has o
 Below, we describe the methods used to construct the templates.
 
 %three samples
-We divided the optical-NIR sample (180) into three subsamples based on their optical spectral morphology: 
+We divided the optical-NIR sample (\optsample) into three subsamples based on their optical spectral morphology: 
 \begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-	\item a field gravity sample with 145 objects which have spectra similar to the \citet{K99} field spectral standards.
-	\item a low-gravity $\beta$ sample with \# objects with intermediate-strength low-gravity features as described in \citet{Cruz09_lowg}.
-	\item low-gravity $\gamma$ sample with \# objects with very strong low-gravity features as described in \citet{Cruz09_lowg}.
+	\item a field gravity sample with \optField~objects which have spectra similar to the \citet{K99} field spectral standards.
+	\item a low-gravity $\beta$ sample with \optBeta~objects with intermediate-strength low-gravity features as described in \citet{Cruz09_lowg}.
+	\item low-gravity $\gamma$ sample with \optGamma~objects with very strong low-gravity features as described in \citet{Cruz09_lowg}.
 \end{enumerate}
 
 All of the NIR spectra of the same optical spectral type are used to make the first pass at the template.
@@ -390,10 +396,9 @@ A $\chi^2$ cutoff of two balances our desire to include more spectra than we exc
 
 %details for each subtype where necessary
 While the $\chi^2 > 2$ criterion was appropriate for most subtypes, a few required adjusting.
-For field gravity L1 template, a $\chi^2$ limit of two excludes mostly bluer objects and does not result in a representative sample of field L1s being included in the template.
+For the field gravity L1 template, a $\chi^2$ limit of two excludes mostly bluer objects and does not result in a representative sample of field L1 objects being included in the template.
 We instead used a $\chi^2 > 2.3$ criterion which results in a template that more accurately reflects the range of spectral morphologies included in the L1 subtype.
 Due to the small number of late-type objects in the sample, $\chi^2 > 1.4$ was used for the L7 and L8 field gravity templates.
-%Only one L3 and L4 beta, G19-3B and 04070752+1546457, so didnt make a template.
 
 This iterative process resulted in 133 objects being included in 16 spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 47 being excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}).
 The resulting spectral average templates of field gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg}; the low-gravity templates are in Figure Sets~\ref{fig:beta_templates} and~\ref{fig:gamma_templates} and discussed in \S~\ref{sec:lowg}. 
@@ -402,7 +407,7 @@ We also show spectral averages of the optical spectra along with the NIR templat
 %Objects included in the template spectrum for each subtype are listed by increasing $J-K_S$ color to emphasize the range of colors spanned at each subtype.
 Spectra excluded from the templates are displayed in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
 
-As yet, our optical-NIR sample does not include an L2$\beta$ and only includes one each of L3$\beta$ and L4$\beta$, \object[2Mblah]{2Mblah} and \object[2Mblah2]{2Mblah} \citep{Cruz09_lowg}.
+As yet, our optical-NIR sample does not include an L2$\beta$ and only includes one each of L3$\beta$ and L4$\beta$, \object[04070752+1546457]{04070752+1546457} and \object[G196-3B]{G196-3B} \citep{Cruz09_lowg}.
 Even though these individual objects cannot be considered representative of this spectral type, we display these data in Figure \ref{fig:beta_templates}.
 We expect the $\beta$ sequence to be filled in as more spectra are acquired, especially in the southern hemisphere.
 
@@ -1110,7 +1115,7 @@ field objects plotted. }
 	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L0strip_g_excluded.pdf}
 	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L1strip_g_excluded.pdf}
 	% \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L2strip_lg_excluded.pdf}
-	\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_g_excluded.pdf}
+	%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/L4strip_g_excluded.pdf}
 	\caption{Spectra excluded from the low gravity templates. Also listed in Table~\ref{tab:lowg_excluded}.}
 	\label{fig:lowg_excluded}
 \end{figure}
