@@ -201,7 +201,7 @@ These new data are described in the following subsections and listed in Tables~\
 
 The spectral type distribution of the optical-NIR sample is shown in Figure~\ref{fig:spthist}. 
 The spectral types adopted for objects in the optical-NIR sample are all based on high signal-to-noise ratio ($\gtrsim$50) optical spectra and the typing schemes of \cite{K99} and \cite{Cruz09_lowg}.
-Since one of the primary purposes of our analysis is to use the optical data to inform the analysis of the NIR data, we did not keep track of NIR types which may be in the literature \citep[e.g.,]{Geballe02, Gagne:2015to, Marocco:kv}.
+Since one of the primary purposes of our analysis is to use the optical data to inform the analysis of the NIR data, we did not keep track of NIR types which may be in the literature \citep[e.g.,][]{Geballe02, Allers:2013hk, Marocco:2013kv, Gagne:2015to}.
 
 The $J-K_S$ color distribution of the optical-NIR sample is shown in Figure~\ref{fig:JK_colors}. 
 All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag. 
@@ -293,7 +293,7 @@ Not only do the the spectral similarities between the objects stand out more cle
 With this plotting method, the color term present in the NIR spectra of L~dwarfs is approximated as a three component piece-wise step function. Since the reddening contributing to the color term has been found to be well described by a smooth function \citep{Marocco:2014kr,Hiranaka:2016va}, there is likely still a small amount of residual reddening remaining within each band.
 
 \clearpage
-\subsection{Making optically-anchored NIR spectral average templates}
+\subsection{Optically-anchored NIR spectral average templates}
 \label{sec:templates}
 
 Spectral average templates are a common tool used in stellar and extragalactic spectroscopy to reveal the most common spectral morphologies, average out defects of individual observations, and to provide representative data with high signal-to-noise ratios.
@@ -312,17 +312,17 @@ We divided the optical-NIR sample (\sample) into three subsamples based on their
 	\item a low-gravity $\beta$ sample with \optBeta~objects with intermediate-strength low-gravity features as described in \citet{Cruz09_lowg}.
 \end{enumerate}
 
-All of the NIR spectra of the same optical spectral type are used to make the first pass at the template.
-The spectra are normalized band-by-band and combined using the uncertainty weighted average flux at each pixel.
-The reduced $\chi^2$ is then calculated for each spectrum compared to the template.
-Spectra with reduced $\chi^2 > 2$ in any band are excluded and the template is calculated again with the remaining spectra.
-This process is iterated 3--6 times until the reduced $\chi^2$ value stabilizes.
-The average $\chi^2$ values of the spectra included in the templates is $\sim0.9$.
-A $\chi^2$ cutoff of two balances our desire to include more spectra than we exclude from the templates while still excluding spectra with substantially peculiar spectral morphologies.
+All of the NIR spectra of the same optical spectral type were combined to make the first iteration of each template.
+The spectra were normalized band-by-band and combined using the uncertainty weighted average flux at each pixel.
+The reduced $\chi^2$ for each spectrum compared to this first template was calculated and spectra with reduced $\chi^2 > 2$ in any band were tagged for exclusion.
+The second iteration of the template was calculated with the remaining spectra.
+This process was iterated 3--6 times until the reduced $\chi^2$ value stabilized.
+The average $\chi^2$ values of the spectra included in the templates are $\sim0.9$.
+We found that a $\chi^2$ cutoff of two balances our desire to include more spectra than we exclude from the templates while still excluding spectra with substantially peculiar spectral morphologies.
 
 %details for each subtype where necessary
 While the $\chi^2 > 2$ criterion was appropriate for most subtypes, a few required adjusting.
-For the field gravity L1 template, a $\chi^2$ limit of two excludes mostly bluer objects and does not result in a representative sample of field L1 objects being included in the template.
+For the field gravity L1 template, a $\chi^2$ limit of two excluded mostly bluer objects and does not result in a representative sample of field L1 objects being included in the template.
 We instead used a $\chi^2 > 2.3$ criterion which results in a template that more accurately reflects the range of spectral morphologies included in the L1 subtype.
 Due to the small number of late-type objects in the sample, $\chi^2 > 1.4$ was used for the L7 and L8 field gravity templates.
 
