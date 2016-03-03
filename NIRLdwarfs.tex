@@ -84,9 +84,6 @@ Natural History, New York, NY 10024}
 %\altaffiltext{7}{Astronomy Department, California Institute of Technology, Pasadena, CA 91125}
 
 \begin{abstract}
-	
-	text
-
 Optimal spectral classification of L dwarfs is necessary to make effective use of the data being used to resolve the current discrepancies in optical and near-infrared (NIR) spectral types, address the complexities in spectral morphology, and provide a consistent interpretation of underlying physical properties. 
 Toward this goal, we use new and extant optical and NIR spectra to compile a sample of L dwarfs with spectral coverage from 0.6-–2.4$\micron$. 
 We present new spectra for 10 low gravity L dwarfs for a total sample of 29 $\beta$ and $\gamma$ objects.
@@ -458,9 +455,11 @@ Tables ~\ref{tab:lowg_template}, \ref{tab:lowg_excluded}, \ref{tab:lg_sample_pro
 \subsection{The Low Gravity Template Subsample}
 \label{sec:templates_lowg}
 
-As described in \S~\ref{sec:templates}, we used the optical-NIR sample to generate optically anchored spectral average templates for L0$\gamma$--L4$\gamma$, L0$\beta$, and L1$\beta$.
-Of the \sample~objects in the optical-NIR sample described in \S~\ref{sec:sample}, \optLowG~are objects with low-gravity features in their optical spectra.
-The low-gravity sample is composed of objects from \citet{Cruz07,Kirkpatrick08,Cruz09_lowg} and ten additional objects with new data presented in \S\S~\ref{sec:obs_new_opt} and~\ref{sec:obs_new_nir}.
+Following the method described in \S~\ref{sec:templates}, we used the optical-NIR sample to generate optically anchored spectral average templates for L0$\gamma$--L4$\gamma$, L0$\beta$, and L1$\beta$.
+As described in \S~\ref{sec:sample}, of the \sample~objects in the optical-NIR sample , \optLowG~are objects with low-gravity features in their optical spectra.
+(As described in \cite{Cruz09_lowg}, $\gamma$ and $\beta$ spectra type suffixes are used to indicate very low-gravity and intermediate-gravity spectral features, respectively.)
+Of these \optLowG~low gravity objects, there are \optgamma~L0--L4 objects with a $\gamma$ gravity classification and \optbeta~L0--L1 $\beta$ type objects.
+This low-gravity sample is composed of objects from \citet{Cruz07,Kirkpatrick08,Cruz09_lowg} and ten additional objects with new data presented in \S\S~\ref{sec:obs_new_opt} and~\ref{sec:obs_new_nir}.
 Many other known low-gravity objects are not included in this analysis due to their lack of SpeX Prism data as a result of their southerly declinations. 
 Future work will incorporate data from the Folded-port Infrared Echellette (FIRE) spectrograph on Magellan \citep{Simcoe:2013kh} in the southern hemisphere.
 
@@ -468,10 +467,7 @@ The spectral type distribution of the low-gravity objects is shown in Figure~\re
 This sample of low gravity objects is small and incomplete but the striking homogeneity of their NIR spectral morphologies amongst objects of the same optical spectral type provided strong motivation for making templates at some spectral types.
 
 The low gravity templates are shown in Figure Sets~\ref{fig:beta_templates}--\ref{fig:gamma_templates} and the targets included in them are listed in Table~\ref{tab:lowg_template}.
-The spectra rejected from the low gravity templates are shown in Figure Set~\ref{fig:lowg_excluded} and listed in Table~\ref{tab:lowg_excluded}.
-
-As described in \cite{Cruz09_lowg}, $\beta$ and $\gamma$ spectra type suffixes are used to indicate very low-gravity and intermediate-gravity spectral features, respectively.
-Included in the \optLowG~low gravity objects are \optgamma L0--L4 objects with a $\gamma$ gravity classification and \optbeta L0--L1 $\beta$ type objects.
+The spectra rejected from the low gravity templates are shown in Figure Set~\ref{fig:lowg_excluded} and listed in Table~\ref{tab:lowg_excluded}. 
 Of the~\optLowG, only two were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, rather than because of their inconsistent spectral morphology (Table~\ref{tab:lowg_excluded}, Figure Set~\ref{fig:lowg_excluded}).
 
 In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color versus spectral type distribution for the field (black and gray) and low gravity objects (red and orange) included in the optical-NIR sample of L~dwarfs.
@@ -876,30 +872,39 @@ Facilities:
 
 \begin{figure}
 	\epsscale{0.4}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1093.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1103.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/470.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1093.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/496.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/580.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/586.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1301.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/0032-4405_1093.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/0055+0134_1103.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/0117-3403_470.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/0210-3015_1125.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/0241-0326_496.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/0518-2756_578.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/0536-1920_586.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/1331+3407_1301.pdf}
 	\caption{Figure set for new far-red optical spectra listed in Table~\ref{tab:newopt}. Unlike many spectra of L dwarfs, these data have been telluric corrected. These data are publicly available from the RIZzo Spectral Library.}
 		\label{fig:newopt}
 \end{figure}
 
 \begin{figure}
 	\figurenum{3.2}		
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/400.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/401.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/403.pdf}
-		%\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/404.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/405.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/421.pdf}
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1521.pdf}		
-		\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/opt/1503.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/1538-1953_400.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/1551+0941_1353.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/1551+0941_401.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/1615+4953_403.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/1615+4953_874.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/1711+2326_404.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/1726+1538_405.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/2034+0827_420.pdf}
 		\caption{New optical data continued.}
 \end{figure}
+
+\begin{figure}
+	\figurenum{3.3}		
+		\plotone{/Users/kelle/Dropbox/opt2/2137+0808_408.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/2249+0044_1521.pdf}
+		\plotone{/Users/kelle/Dropbox/opt2/2315+0617_1503.pdf}
+		\caption{New optical data continued.}
+\end{figure}
+
 
 \begin{figure}
 	\epsscale{0.90}
