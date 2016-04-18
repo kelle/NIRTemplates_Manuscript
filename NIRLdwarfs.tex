@@ -1,19 +1,16 @@
-\documentclass[12pt,preprint]{aastex}
-%\documentclass[12pt,preprint]{aastex6}
-\usepackage{natbib}
-\usepackage{graphicx}
-\usepackage{lscape}
+%\documentclass[12pt,preprint]{aastex}
+\documentclass[manscript]{aastex6}
+%\usepackage{natbib}
 \usepackage{pdfpages}
-\usepackage{hyperref}
-\usepackage{hhline}
 
-%start abstract on new page
-\usepackage{etoolbox}
-\pretocmd{\abstractname}{\newpage}{}{}
+\received{}
+\revised{}
+\accepted{}
 
 \slugcomment{Draft \today}
 \shorttitle{Optically-Anchored Analysis of L Dwarfs}
 \shortauthors{Cruz et al.}
+
 
 \newcommand{\sample}{170}
 
@@ -32,20 +29,6 @@
 \newcommand{\NewPrismSpectra}{140} %New Prism Data
 \newcommand{\dupes}{18} % Duplicates & Breakdown
 \newcommand{\NewPrismObjects}{119} % New Prism Breakdown
-
-% FIGSET-MACROS-BEGIN
-\newcommand{\noprint}[1]{}
-\newcommand{\figsetstart}{{\bf Fig. Set} }
-\newcommand{\figsetend}{}
-\newcommand{\figsetgrpstart}{}
-\newcommand{\figsetgrpend}{}
-\newcommand{\figsetnum}[1]{{\bf #1.}}
-\newcommand{\figsettitle}[1]{ {\bf #1} }
-\newcommand{\figsetgrpnum}[1]{\noprint{#1}}
-\newcommand{\figsetgrptitle}[1]{\noprint{#1}}
-\newcommand{\figsetplot}[1]{\noprint{#1}}
-\newcommand{\figsetgrpnote}[1]{\noprint{#1}}
-% FIGSET-MACROS-END
 
 \begin{document}
 
@@ -1054,13 +1037,13 @@ field objects plotted. }
 \begin{figure}
     \figurenum{22.2}
     \plotone{figures/notM_galaxies2.pdf}
-    \caption{Normalized NIR range of 2MASS targets identified as not Ms.}
+    \caption{Normalized NIR spectra of 2MASS targets identified as likely galaxies.}
 \end{figure}
 
 \begin{figure}
     \figurenum{22.3}
     \plotone{figures/notM_emln_galaxies.pdf}
-    \caption{Normalized NIR range of 2MASS targets identified as not Ms.}
+    %\caption{Normalized NIR spectra of 2MASS targets identified as not .}
 \end{figure}
 
 
