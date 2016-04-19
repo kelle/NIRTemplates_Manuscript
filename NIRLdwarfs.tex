@@ -85,7 +85,7 @@ L dwarfs were first classified according to their spectral morphology at red-opt
 This classification scheme relies on the prominent spectral absorption features due to \ion{K}{1} broadening, metal oxides (VO, TiO), metal hydrides (CrH, FeH), and alkali metals (Cs, Rb).
 Red-optical spectra of L dwarfs are on the Wien side of the underlying blackbody spectrum, and the spectral morphology in that wavelength regime is dominated by temperature effects, with surface gravity and metallicity making secondary contributions.
 The effects on the optical spectra of L dwarfs due to low gravity have been described by \citet{Martin99,Kirkpatrick06,Kirkpatrick08, Cruz09_lowg,Luhman09_taurus}.
-Building on the \citet{K99} scheme, \citet{Cruz09_lowg} also defined a classification scheme for low-gravity optical spectral types using $\beta$, $\gamma$, and $\delta$ suffixes.
+Building on the \citet{K99} scheme, \citet{Cruz09_lowg} also defined a classification scheme for low-gravity optical spectral types using $\beta$, $\gamma$, and $\delta$ suffixes to indicate intermediate-gravity, very low-gravity and extremely low-gravity spectral features, respectively.
 Since there are so few known, L subdwarfs and the so-called ``blue'' L dwarfs are typically  classified using the field gravity standards \citep{Gizis:2006jl,Burgasser07_subdwarfs, Burgasser08_blue, Kirkpatrick10, Kirkpatrick:2014kv}.
 
 % NEED FOR NIR CLASSIFICATION
@@ -147,6 +147,7 @@ Because of the known red bias of the photometrically selected 2MASS-based sample
 This added less than ten objects to the sample.
 
 We did not include all possible low gravity objects in the optical-NIR sample.
+(As described in \cite{Cruz09_lowg}, $\gamma$ and $\beta$ spectra type suffixes are used to indicate very low-gravity and intermediate-gravity spectral features, respectively.)
 For $\beta$~type objects, we only considered L0--L1$\beta$-type objects since the later types do not have more than one object at each spectral type.
 For $\gamma$ type objects, we limited our analysis to L0--L4$\gamma$.
 The later type $\gamma$ type objects (e.g., \objectname[2MASS J03552337+1133437]{2M0355+1133},\citet{Cruz09_lowg}) display significant spectral diversity and we defer an analysis of these data to a future paper.
@@ -246,7 +247,7 @@ In addition to a far-red optical spectrum, for an L dwarf to be included in the 
 SpeX prism mode provides a wavelength coverage of 0.8--2.5~$\micron$ in a single order and an average resolving power of $\lambda/\Delta\lambda\sim120$.
 %with a 0$\farcs$5-wide slit.
 SpeX has proven to be a popular workhorse instrument for brown dwarf spectroscopic follow-up and as a result, there are a plethora of data.
-Further, this data is publicly available at the Spex Prism Library \footnote{Spex Prism Spectral Library: \url{http://pono.ucsd.edu/~adam/browndwarfs/spexprism/}} \citep{Burgasser:2014tr}.
+Further, these data are publicly available at the Spex Prism Library \footnote{Spex Prism Spectral Library: \url{http://pono.ucsd.edu/~adam/browndwarfs/spexprism/}} \citep{Burgasser:2014tr}.
 
 \label{sec:obs_new_nir}
 Included in the sample are \NewPrismSpectra~new SpeX prism spectra of \NewPrismObjects~L dwarfs.
@@ -530,7 +531,7 @@ The average colors and range of the L6--L8 objects included in the templates agr
 \input{tables/tab_sample_prop.tex}
 
 Despite the red bias of the optical-NIR sample and the smaller numbers of late type objects, the striking homogeneity of the spectra at each spectral type give us confidence in the templates' representation of the field L dwarf population's NIR spectral morphology.
-Further, given this homogeneity, we do not expect the templates to change significantly as more objects are discovered and data are acquired.
+Further, given this homogeneity, we do not expect the templates, if updated, to change significantly as more objects are discovered and data are acquired.
 
 \subsection{Isolating Temperature: The Field L Dwarf Spectral Sequence}
 \label{sec:temp}
@@ -590,12 +591,12 @@ Finally, L8 is marked by the onset of methane absorption in the $K$-band.
 \label{sec:templates_lowg}
 
 Following the method described in \S~\ref{sec:templates}, we used the optical-NIR sample to generate optically anchored spectral average templates for L0$\gamma$--L4$\gamma$, L0$\beta$, and L1$\beta$.
-As described in \S~\ref{sec:sample}, of the \sample~objects in the optical-NIR sample, \optLowG~are objects with low-gravity features in their optical spectra.
-(As described in \cite{Cruz09_lowg}, $\gamma$ and $\beta$ spectra type suffixes are used to indicate very low-gravity and intermediate-gravity spectral features, respectively.)
+%As described in \S~\ref{sec:sample}, of the \sample~objects in the optical-NIR sample, \optLowG~are objects with low-gravity features in their optical spectra.
+($\gamma$ and $\beta$ spectral type suffixes are used to indicate very low-gravity and intermediate-gravity spectral features, respectively.)
 Of these \optLowG~low gravity objects, there are \optGamma~L0--L4 objects with a $\gamma$ gravity classification and \optBeta~L0--L1 $\beta$ type objects.
 This low-gravity sample is composed of objects from \citet{Cruz07,Kirkpatrick08,Cruz09_lowg} and ten additional objects with new data presented in \S\S~\ref{sec:obs_new_opt} and~\ref{sec:obs_new_nir}.
 Many other known low-gravity objects are not included in this analysis due to their lack of SpeX Prism data as a result of their southerly declinations.
-Future work will incorporate data from the Folded-port Infrared Echellette (FIRE) spectrograph on Magellan \citep{Simcoe:2013kh} in the southern hemisphere.
+%Future work will incorporate data from the Folded-port Infrared Echellette (FIRE) spectrograph on Magellan \citep{Simcoe:2013kh} in the southern hemisphere.
 
 The spectral type distribution of the low-gravity objects is shown in Figure~\ref{fig:spthist} as red and orange bars.
 This sample of low gravity objects is small and incomplete but the striking homogeneity of their NIR spectral morphologies amongst objects of the same optical spectral type provided strong motivation for making templates at some spectral types.
@@ -624,8 +625,9 @@ In low gravity spectra, with later type/cooler temperature,
 \item the spectral slope in $zJ$ band gets redder
 \item FeH absorption (1.0~$\micron$) remains essentially constant,
 \item VO absorption at 1.06~$\micron$ decreases and disappears by L4,
-\item VO absorption at 1.18~$\micron$ reamins strong but gradually weakens,
+\item VO absorption at 1.18~$\micron$ remains strong but gradually weakens,
 \item Depth of the \ion{K}{1}, \ion{Na}{1} doublets at 1.14, 1.17, 1.25~$\micron$ decreases,
+\item $H$ band slopes get steeper and shape becomes more pointed,
 \item H$_2$O absorption (1.4, 1.9~$\micron$) increases, and
 \item $K$ band slopes get steeper.
 \end{itemize}
@@ -637,7 +639,6 @@ In low gravity spectra, with later type/cooler temperature,
 \begin{figure}
   \epsscale{1}
   \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence0_g.pdf}
-  %\plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/sequence1_g.pdf}
   \caption{The low gravity $\gamma$ L dwarf near-infrared spectral sequence.}
   \label{fig:lg_sequence}
 \end{figure}
@@ -652,103 +653,66 @@ However, it is also possible that the spectral sequence of low gravity L dwarfs 
 Low gravity $\gamma$ objects with spectral types later than L4$\gamma$ are not included in our analysis.
 There are fewer objects at these late types and they exhibit a wide diversity of spectral morphologies.
 Preliminary results on the low gravity sequence past L4$\gamma$ is presented by \cite{Gagne:2015to}.
-For a future paper, we plan to undertake a careful analysis of these data and newly identified objects to identify objects of the same spectral class and generate templates.
+For a future paper, we plan to undertake a careful analysis of these data with the goal of generating templates.
 
 \subsection{Isolating gravity}
 
-The differences between the NIR spectral morphology of low and field gravity spectra have been described before, most notably by \cite{Kirkpatrick06} and \cite{Allers:2013hk}. Briefly, the distinguishing characteristics of a low gravity NIR spectrum compared to a field gravity one at the same spectral type are:
+The differences between the NIR spectral morphology of low and field gravity spectra of L~dwarfs have been described before \citep{Lucas01,McGovern04,Kirkpatrick06,Allers:2013hk}. Briefly, the distinguishing characteristics of a low gravity NIR spectrum compared to a field gravity one at the same spectral type are:
 \begin{itemize}
 \item $J$ band slope is redder,
 \item FeH absorption 1.0~$\micron$ is weaker,
 \item VO absorption (1.06, 1.18~$\micron$) is stronger,
 \item \ion{K}{1}, \ion{Na}{1} doublets at 1.14, 1.17, 1.25~$\micron$ are weaker,
 \item H$_2$O absorption (1.4, 1.9~$\micron$) is stronger and slopes are steeper,
-\item $H$ band is triangular,
-\item 1.6~$\micron$ FeH absorption is not present,
-\item red side of the $H$ band slope is steeper, but similar from L2--L4, and
-\item blue side of the $K$ band slope is steeper, but similar from L2--L4.
+\item red side of the $H$ band slope is steeper resulting in triangular shaped $H$ band,
+\item 1.6~$\micron$ FeH absorption is not present, and
+\item blue side of the $K$ band slope is steeper.
 \end{itemize}
 
-One of the potential uses of these templates is to reliably distinguish field-gravity L dwarfs from low-gravity and potentially young L dwarfs using only NIR spectra.
+One of the potential uses of the templates described in \S~\ref{sec:templates} is to reliably distinguish field-gravity L dwarfs from low-gravity and potentially young L dwarfs using only NIR spectra.
 Below, we compare each low gravity template to the suite of field gravity templates and highlight the distinguishing features and the minimum recommended observations for a reliable gravity classification using low-resolution NIR spectra.
 
 \begin{description}
 \item[L0$\gamma$]{
-In Figure~\ref{fig:L0lg-field} the L0$\gamma$ spectral average template (blue) is compared to the field L dwarf templates (black, gray).
+In Figure~\ref{fig:L0lg-field} the L0$\gamma$ spectral average template is compared to the field L dwarf templates.
 The $zJ$ and $H$ bands of the L0$\gamma$ template are distinctive from all field L dwarf templates.
 In particular, the $zJ$ band of the L0$\gamma$ type displays weaker FeH absorption at 0.99--1.007 $\mu$m and stronger VO absorption at 1.05--1.08 $\mu$m and triangular-shaped $H$ band compared to the field objects.
 Aside from these notable differences, the $zJ$-band shape is similar to the L1 and L2 field templates.
 The L0$\gamma$ $K$-band shape, on the other hand, is only subtly different from the L0 field template, with a slightly flatter and less round shape and a weaker CO absorption band head at 2.3~$\mu$m.
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L0$\gamma$ from a field object, a $K$-band spectrum is insufficient and $H$- and/or $zJ$-band data is required.}
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L0$\gamma$ from a field object, a $K$-band spectrum is insufficient and $H$- and/or $zJ$-band data are required.}
 }
+
+\begin{figure}[b]
+    \epsscale{1}
+    \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L0g.pdf}
+    \caption{The L0$\gamma$ spectral average template (blue) compared to the field L dwarf templates and their 1$\sigma$ variance (black, gray). We assert that in order to use low-resolution NIR spectra to credibly distinguish an L0$\gamma$ from a field object in the NIR, a \emph{K}-band spectrum is insufficient and \emph{H} and/or \emph{J}-band data are required.}
+    \label{fig:L0lg-field}
+\end{figure}
+\clearpage
 
 \item[L0$\beta$]{
-In Figure~\ref{fig:L0b-field} the L0$\beta$ spectral average template (blue) is compared to the field L dwarf templates (black,gray).
+In Figure~\ref{fig:L0b-field} the L0$\beta$ spectral average template is compared to the field L dwarf templates.
 The $J$-band and $K$-band spectra of the L0$\beta$ template is similar to the L0, L1 and L2 field templates.
 On the other hand, the $H$-band of the L0$\beta$ template displays the hallmark triangular-shape and is distinctive from the field templates.
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L0$\beta$ from a field object in the NIR, $zJ$ and/or $K$-band data is insufficient and $H$-band data is required.}
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L0$\beta$ from a field object in the NIR, $zJ$ and/or $K$-band data are insufficient and $H$-band data are required.}
 }
 
+\begin{figure}[b]
+    \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L0b.pdf}
+    \caption{The L0$\beta$ spectral average template (blue) compared to the field L dwarf templates and their 1$\sigma$ variance (black, gray). We assert that in order to use NIR spectra to credibly distinguish an L0$\beta$ from a field object using low-resolution NIR data, \emph{zJ}-band and/or \emph{K}-band spectra is insufficient and \emph{H} data are required.}
+    \label{fig:L0b-field}
+\end{figure}
+\clearpage
+
 \item[L1$\gamma$]{
-In Figure~\ref{fig:L1lg-field} the L1$\gamma$ spectral average template (light blue) is compared to the field L dwarf templates (black, gray).
+In Figure~\ref{fig:L1lg-field} the L1$\gamma$ spectral average template is compared to the field L dwarf templates.
 Like the L0$\gamma$, the L1$\gamma$ displays weaker FeH absorption, stronger VO absorption, and triangular-shaped $H$ band compared to the field L dwarf templates thus making the $zJ$ and $H$ bands of the L1$\gamma$ template distinctive.
 Aside from these differences, the $zJ$-band shape of the L1$\gamma$ template is most similar to the L2 and L3 field templates.
 The L1$\gamma$ $K$-band shape is only subtly different from the early-type (L0--L3) field templates and most closely resembles the L1 field template with just a weaker CO absorption band head at 2.3~$\mu$m.
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L1$\gamma$ from a field object, a $K$-band spectrum is insufficient and $H$- and/or $zJ$-band data is required.}
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L1$\gamma$ from a field object, a $K$-band spectrum is insufficient and $H$- and/or $zJ$-band data are required.}
 }
 
-\item[L1$\beta$]{
-In Figure~\ref{fig:L1b-field} the L1$\beta$ spectral average template (red) is compared to the field L dwarf templates (black, gray). The L1$\beta$ template is indistinguishable from the field template.
-\emph{On the basis of these data, we conclude that low-resolution NIR data cannot be used to credibly distinguish an L1$\beta$ from a field object in the NIR.}
-}
-
-\item[L2$\gamma$]{
-In Figure~\ref{fig:L2lg-field} the L2$\gamma$ spectral average template (orange) is compared to all the other field L dwarf templates (black, gray).
-The L2$\gamma$ type is distinctive from field dwarfs in all three $zJ$, $H$, and $K$-bands.
-Even more pronounced than in the L0$\gamma$ and L1$\gamma$ templates, the L2$\gamma$ $zJ$-band spectrum has weaker FeH and stronger VO molecular absorption compared to field L dwarfs.
-In addition, there is also a hint of weaker \ion{K}{1} absorption at 1.25~$\mu$m. Aside from these differences in particular absorption features, the overall shape of the L2$\gamma$ $zJ$ band is most similar to the L5 field template (not shown).
-The L2$\gamma$ $H$ band most closely resembles that of the L7 field template but with the hallmark  triangular-shape (not shown).
-Finally, the L2$\gamma$ $K$-band shape resembles that of early-type (L0--L2) field objects, except with a distinctive redder overall slope and significantly weaker CO absorption band head at 2.3~$\mu$m.
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L2$\gamma$ from a field object in the NIR, either a $zJ$, $H$, or $K$-band spectrum is sufficient.}
-}
-
-\item[L3$\gamma$]{
-In Figure~\ref{fig:L3lg-field} the L3$\gamma$ spectral average template (dark orange) is compared to all the other field L dwarf templates (black, gray).
-The L3$\gamma$ type is distinctive from field dwarfs in all three $zJ$, $H$, and $K$-bands.
-the L3$\gamma$ $zJ$-band spectrum most closely resembles the L4 and L5 field templates but with weaker FeH and stronger VO molecular absorption.
-The L3$\gamma$ $H$-band most closely resembles that of the L7 field template but with the hallmark triangular-shape.
-The L3$\gamma$ $K$-band shape is distinctive from all of the field templates but most closely resembles that of early-type (L1--L3) field objects.
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L3$\gamma$ from a field object in the NIR, either a $zJ$, $H$, or $K$-band spectrum is sufficient.}
-}
-
-\item[L4$\gamma$]{
-In Figure~\ref{fig:L4lg-field}, the L4$\gamma$ spectral average template (red) is compared to all the other field L dwarf templates (black, gray).
-%The NIR spectra of the L4$\gamma$ is not as distinctive from the field objects as the earlier type $\gamma$ objects.
-The $zJ$ band of the L4$\gamma$ template looks very similar to the field L4 and L5 templates but with weaker 1$\micron$ FeH absorption and a redder overall slope. (Unlike in the earlier type $\gamma$ templates, there is no distinctive VO absorption.)
-Just like the earlier-type $\gamma$ templates, the triangular-shaped $H$ band is quite distinctive from the $H$ band shape of the field objects. And similar to the L2 and L3$\gamma$, the $H$ band of the L4$\gamma$ template most resembles that of the L7 field template.
-Finally, the L4$\gamma$ $K$-band shape closely resembles that of the earlier-type (L1--L3) field templates, but with weaker CO absorption at 2.3~$\mu$m.
-\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L4$\gamma$ from a field object in the NIR, $zJ$ and/or $K$-band data is insufficient and $H$-band data is required.}
-}
-\end{description}
-
-%%%%%%%%%%%%%%%%%%
-% LOW GRAVITY COMPARISIONS
-%%%%%%%%%%%%%%%%%%
-
-\begin{figure}
-    \epsscale{1}
-    \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L0g.pdf}
-    \caption{The L0$\gamma$ spectral average template (blue) compared to the field L dwarf templates and their 1$\sigma$ variance (black, gray). We assert that in order to use low-resolution NIR spectra to credibly distinguish an L0$\gamma$ from a field object in the NIR, a \emph{K}-band spectrum is insufficient and \emph{H} and/or \emph{J}-band data is required.}
-    \label{fig:L0lg-field}
-\end{figure}
-
-\begin{figure}
-    \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L0b.pdf}
-    \caption{The L0$\beta$ spectral average template (blue) compared to the field L dwarf templates and their 1$\sigma$ variance (black, gray). We assert that in order to use NIR spectra to credibly distinguish an L0$\beta$ from a field object using low-resolution NIR data, \emph{zJ}-band and/or \emph{K}-band spectra is insufficient and \emph{H} data is required.}
-    \label{fig:L0b-field}
-\end{figure}
-
-\begin{figure}
+\begin{figure}[b]
         \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L1g.pdf}
     \caption{The L1$\gamma$ spectral average template (light blue) to the field L dwarf templates and their 1$\sigma$ variance (black, gray). We assert that in order to use low-resolution NIR spectra to credibly distinguish an L1$\gamma$ from a field object in the NIR, either a \emph{J}, \emph{H}, or \emph{K}-band spectrum is sufficient.}
     \label{fig:L1lg-field}
@@ -759,16 +723,31 @@ Finally, the L4$\gamma$ $K$-band shape closely resembles that of the earlier-typ
   \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates2-L1g.pdf}
   \caption{L1$\gamma$ comparison cont.}
 \end{figure}
+\clearpage
 
-\begin{figure}
+\item[L1$\beta$]{
+In Figure~\ref{fig:L1b-field} the L1$\beta$ spectral average template is compared to the field L dwarf templates.
+The L1$\beta$ template is indistinguishable from the field template.
+\emph{On the basis of these data, we conclude that low-resolution NIR data cannot be used to credibly distinguish an L1$\beta$ from a field object in the NIR.}}
+
+\begin{figure}[b]
     \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L1b.pdf}
     \caption{The L1$\beta$ spectral average template (red) compared to the field L dwarf templates and their 1$\sigma$ variance (black, gray). The L1$\beta$ is indistinguishable from the L1 field template and thus we assert that low-resolution NIR spectra cannot be used to credibly distinguish an L1$\gamma$ from a field object.}
     \label{fig:L1b-field}
 \end{figure}
-
 \clearpage
 
-\begin{figure}
+\item[L2$\gamma$]{
+In Figure~\ref{fig:L2lg-field} the L2$\gamma$ spectral average template is compared to all the other field L dwarf templates.
+The L2$\gamma$ type is distinctive from field dwarfs in all three $zJ$, $H$, and $K$-bands.
+Even more pronounced than in the L0$\gamma$ and L1$\gamma$ templates, the L2$\gamma$ $zJ$-band spectrum has weaker FeH and stronger VO molecular absorption compared to field L dwarfs.
+In addition, there is also a hint of weaker \ion{K}{1} absorption at 1.25~$\mu$m. Aside from these differences in particular absorption features, the overall shape of the L2$\gamma$ $zJ$ band is most similar to the L5 field template (not shown).
+The L2$\gamma$ $H$ band most closely resembles that of the L7 field template but with the hallmark  triangular-shape (not shown).
+Finally, the L2$\gamma$ $K$-band shape resembles that of early-type (L0--L2) field objects, except with a distinctive redder overall slope and significantly weaker CO absorption band head at 2.3~$\mu$m.
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L2$\gamma$ from a field object in the NIR, either a $zJ$, $H$, or $K$-band spectrum is sufficient.}
+}
+
+\begin{figure}[b]
     \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L2g.pdf}
     \caption{The L2$\gamma$ spectral average template (green) to the field L dwarf templates and their 1$\sigma$ variance (black, gray).
     We assert that in order to use low-resolution NIR spectra to credibly distinguish an L2$\gamma$ from a field object in the NIR, either a \emph{J}, \emph{H}, or \emph{K}-band spectrum is sufficient.}
@@ -780,11 +759,21 @@ Finally, the L4$\gamma$ $K$-band shape closely resembles that of the earlier-typ
   \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates2-L2g.pdf}
   \caption{L2$\gamma$ comparison cont.}
 \end{figure}
+\clearpage
 
-\begin{figure}
+\item[L3$\gamma$]{
+In Figure~\ref{fig:L3lg-field} the L3$\gamma$ spectral average template is compared to all the other field L dwarf templates.
+The L3$\gamma$ type is distinctive from field dwarfs in all three $zJ$, $H$, and $K$-bands.
+the L3$\gamma$ $zJ$-band spectrum most closely resembles the L4 and L5 field templates but with weaker FeH and stronger VO molecular absorption.
+The L3$\gamma$ $H$-band most closely resembles that of the L7 field template but with the hallmark triangular-shape.
+The L3$\gamma$ $K$-band shape is distinctive from all of the field templates but most closely resembles that of early-type (L1--L3) field objects.
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L3$\gamma$ from a field object in the NIR, either a $zJ$, $H$, or $K$-band spectrum is sufficient.}
+}
+
+\begin{figure}[b]
   \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L3g.pdf}
   \caption{The L3$\gamma$ spectral average template (orange) to the field L dwarf templates and their 1$\sigma$ variance (black, gray).
-  We assert that in order to use low-resolution NIR spectra to credibly distinguish an L3$\gamma$ from a field object, a \emph{K}-band spectrum is insufficient and \emph{H}- and/or \emph{J}-band data is required.}
+  We assert that in order to use low-resolution NIR spectra to credibly distinguish an L3$\gamma$ from a field object, a \emph{K}-band spectrum is insufficient and \emph{H}- and/or \emph{J}-band data are required.}
   \label{fig:L3lg-field}
 \end{figure}
 
@@ -793,11 +782,22 @@ Finally, the L4$\gamma$ $K$-band shape closely resembles that of the earlier-typ
      \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates2-L3g.pdf}
      \caption{L3$\gamma$ comparison cont.}
 \end{figure}
+\clearpage
 
-\begin{figure}
+\item[L4$\gamma$]{
+In Figure~\ref{fig:L4lg-field}, the L4$\gamma$ spectral average template is compared to all the other field L dwarf templates.
+%The NIR spectra of the L4$\gamma$ is not as distinctive from the field objects as the earlier type $\gamma$ objects.
+The $zJ$ band of the L4$\gamma$ template looks very similar to the field L4 and L5 templates but with weaker 1$\micron$ FeH absorption and a redder overall slope. (Unlike in the earlier type $\gamma$ templates, there is no distinctive VO absorption.)
+Just like the earlier-type $\gamma$ templates, the triangular-shaped $H$ band is quite distinctive from the $H$ band shape of the field objects. And similar to the L2 and L3$\gamma$, the $H$ band of the L4$\gamma$ template most resembles that of the L7 field template.
+Finally, the L4$\gamma$ $K$-band shape closely resembles that of the earlier-type (L1--L3) field templates, but with weaker CO absorption at 2.3~$\mu$m.
+\emph{On the basis of these data, we conclude that in order to use low-resolution NIR data to credibly distinguish an L4$\gamma$ from a field object in the NIR, $zJ$ and/or $K$-band data are insufficient and $H$-band data are required.}
+}
+\end{description}
+
+\begin{figure}[b]
     \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates-L4g.pdf}
     \caption{The L4$\gamma$ spectral average template (dark red) to the field L dwarf templates.
-    We assert that in order to use low-resolution NIR spectra to credibly distinguish an L4$\gamma$ from a field object, a \emph{K}-band spectrum is insufficient and H and/or \emph{J}-band data is required.}
+    We assert that in order to use low-resolution NIR spectra to credibly distinguish an L4$\gamma$ from a field object, a \emph{K}-band spectrum is insufficient and H and/or \emph{J}-band data are required.}
     \label{fig:L4lg-field}
 \end{figure}
 
@@ -806,6 +806,7 @@ Finally, the L4$\gamma$ $K$-band shape closely resembles that of the earlier-typ
      \plotone{/Users/kelle/Dropbox/Analysis/NIRtemplates/NIRSpecFigures/plots/templates2-L4g.pdf}
      \caption{L4$\gamma$ comparison cont.}
 \end{figure}
+\clearpage
 
 \section{Near-Infrared Spectral Classification of L Dwarfs}
 \label{sec:classification}
