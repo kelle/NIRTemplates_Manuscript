@@ -279,15 +279,16 @@ That is, while the spectra lie on top of each other near the normalization point
 This fanning effect makes analyzing the similarities or differences in the spectral shapes and absorption features difficult beyond where the spectra are normalized.
 
 As was pointed out over a decade ago by \citet{Leggett:2003tm}, despite the different spectral slopes, when the $H$ and $K$ bands of objects of the same optical spectral type are separately scaled and overlaid, the agreement between the spectral morphologies is excellent.
-Also for T dwarfs \cite{Burgasser06}.
 In order to directly compare the absorption features in L~dwarf spectra, we utilize this plotting method where each NIR band is normalized separately, using most of the wavelength range of each band.
 Specifically, we use the following normalization ranges, which exclude the low signal-to-noise regions in the water bands, to divide the spectra into three sections:
-\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\begin{itemize}
+%\itemsep1pt \parskip0pt \parsep0pt
 \item 0.87--1.39~$\micron$ for the $zJ$~band,
 \item 1.41--1.89~$\micron$ for the $H$~band, and
 \item 1.91--2.39~$\micron$ for the $K$~band.
 \end{itemize}
 These three regions were chosen because they are naturally separated by the strong water absorption bands present in both L~dwarfs' and Earth's atmospheres.
+(This method has also been used for T dwarf classification \cite{Burgasser06}.)
 %We did not break up the spectrum into smaller regions in order to enable the comparison of the broad band absorption features (e.g., CO, FeH) and spectral morphology.
 Once normalized in this manner, the effect of the color term is substantially reduced and it becomes evident that the low-resolution spectral morphology among normal L~dwarfs of the same optical spectral type are very similar.
 The same objects shown in the top panel of Figure~\ref{fig:L1fan} that fan out over the 0.8--2.4~$\micron$ range are shown in the bottom panel plotted band-by-band, using the above defined normalization ranges for each panel.
@@ -317,7 +318,8 @@ Below, we describe the methods used to construct the templates.
 
 %three samples
 We divided the optical-NIR sample (\sample) into three subsamples based on their optical spectral morphology:
-\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
+\begin{enumerate}
+%\itemsep1pt \parskip0pt \parsep0pt
 	\item a field gravity sample with \optField~objects which have spectra similar to the \citet{K99} field spectral standards.
 	\item low-gravity $\gamma$ sample with \optGamma~objects with very strong low-gravity features as described in \citet{Cruz09_lowg}.
 	\item a low-gravity $\beta$ sample with \optBeta~objects with intermediate-strength low-gravity features as described in \citet{Cruz09_lowg}.
@@ -329,7 +331,7 @@ The reduced $\chi^2$ for each spectrum compared to this first template was calcu
 The second iteration of the template was calculated with the remaining spectra.
 This process was iterated 3--6 times until the reduced $\chi^2$ value stabilized.
 The average $\chi^2$ values of the spectra included in the templates are $\sim0.9$.
-We found that a $\chi^2$ cutoff of two balances our desire to include more spectra than we exclude from the templates while still excluding spectra with substantially peculiar spectral morphologies.
+We found that a $\chi^2$ cutoff of two balances our desire to maximize the number of spectra used to define the templates while still excluding spectra with substantially peculiar spectral morphologies.
 
 %details for each subtype where necessary
 While the $\chi^2 > 2$ criterion was appropriate for most subtypes, a few required adjusting.
@@ -629,7 +631,6 @@ In low gravity spectra, with later type/cooler temperature,
 %%%%%%%%%%%%%%%%%%
 % GAMMA SEQUENCE %
 %%%%%%%%%%%%%%%%%%
-
 
 \begin{figure}
   \epsscale{1}
