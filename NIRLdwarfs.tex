@@ -199,47 +199,56 @@ The data were obtained and reduced in the same manner as described in \citet{Kir
 In Figure~\ref{fig:spthist}, these new far-red optical data are indicated in the spectral type distribution of the entire optical-NIR sample with left hatching.
 The spectra are shown in Figure Set~\ref{fig:newopt} and are publicly available on the The Ultracool RIZzo Spectral Library\footnote{The Ultracool RIZzo Spectral Library: \url{https://jgagneastro.wordpress.com/the-ultracool-rizzo-spectral-library/}}.
 
-\clearpage
+\figsetstart
+  \figsetnum{3}
+  \figsettitle{New far-red optical spectra.}
+    \figsetgrpstart
+    \figsetgrpnum{3.1}
+    \figsetgrptitle{Spectrum of 0032-4405}
+    \figsetplot{optspec/0032-4405_1093.pdf}
+    \figsetgrpnote{New far-red optical spectra listed in Table~\ref{tab:newopt}. Unlike many spectra of L dwarfs, these data have been telluric corrected. These data are publicly available from the RIZzo Spectral Library.}
+    \figsetgrpend
+\figsetend
 
-\begin{figure}
-  \epsscale{0.4}
-    \plotone{/Users/kelle/Dropbox/opt2/0032-4405_1093.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/0055+0134_1103.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/0117-3403_470.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/0210-3015_1125.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/0241-0326_496.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/0518-2756_578.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/0536-1920_586.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/1331+3407_1301.pdf}
-  \caption{Figure set for new far-red optical spectra listed in Table~\ref{tab:newopt}. Unlike many spectra of L dwarfs, these data have been telluric corrected. These data are publicly available from the RIZzo Spectral Library.}
-    \label{fig:newopt}
+\begin{figure}[b]
+  \figurenum{3.1}
+  \epsscale{0.5}
+    \plotone{optspec/0032-4405_1093.pdf}
+    \plotone{optspec/0055+0134_1103.pdf}
+    \plotone{optspec/0117-3403_470.pdf}
+    \plotone{optspec/0210-3015_1125.pdf}
+  \caption{New far-red optical spectra listed in Table~\ref{tab:newopt}. Unlike many spectra of L dwarfs, these data have been telluric corrected. These data are publicly available from the RIZzo Spectral Library.\label{fig:newopt}}
 \end{figure}
 
 \begin{figure}
   \figurenum{3.2}
-  \epsscale{0.4}
-    \plotone{/Users/kelle/Dropbox/opt2/1538-1953_400.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/1551+0941_1353.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/1551+0941_401.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/1615+4953_403.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/1615+4953_874.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/1711+2326_404.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/1726+1538_405.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/2034+0827_420.pdf}
-    \caption{New optical data continued.}
+  \epsscale{0.5}
+  \plotone{optspec/0241-0326_496.pdf}
+    \plotone{optspec/0518-2756_578.pdf}
+   \plotone{optspec/0536-1920_586.pdf}
+    \plotone{optspec/1331+3407_1301.pdf}
+    \plotone{optspec/1538-1953_400.pdf}
+    \plotone{optspec/1551+0941_1353.pdf}
+    \plotone{optspec/1551+0941_401.pdf}
+    \plotone{optspec/1615+4953_403.pdf}
+    \caption{New far-red optical spectra continued.}
 \end{figure}
 
 \begin{figure}
   \figurenum{3.3}
-  \epsscale{0.4}
-    \plotone{/Users/kelle/Dropbox/opt2/2137+0808_408.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/2249+0044_1521.pdf}
-    \plotone{/Users/kelle/Dropbox/opt2/2315+0617_1503.pdf}
-    \caption{New optical data continued.}
+  \epsscale{0.5}
+  \plotone{optspec/1615+4953_874.pdf}
+    \plotone{optspec/1711+2326_404.pdf}
+   \plotone{optspec/1726+1538_405.pdf}
+    \plotone{optspec/2034+0827_420.pdf}
+    \plotone{optspec/2137+0808_408.pdf}
+    \plotone{optspec/2249+0044_1521.pdf}
+    \plotone{optspec/2315+0617_1503.pdf}
+    \caption{New far-red optical spectra continued.}
 \end{figure}
+\clearpage
 
 % new optical data
-\clearpage
 \input{tables/tab_newopt.tex}
 
 \subsection{Near-Infrared Spectra}
@@ -993,7 +1002,7 @@ Our analysis reveals several interesting things about L dwarfs properties:
 	\item There are objects with quite red colors for their spectral type that do not have any recognized signatures of low gravity in their optical or low-resolution NIR spectra. This further supports the notion that most low gravity objects are red, but not all red objects are low gravity.
 	\item Some objects excluded from the templates have near average colors. This implies that not all objects with peculiar spectra have extreme colors.
 	\item Some objects with colors in the red/blue tails of the color distribution are included in the templates. This implies that not all objects with extreme colors display significant spectral peculiarities in low-resolution NIR data besides spectral slope.
-	\item There is more scatter in the $J-K$ colors of the later-type field gravity objects (L4--L7) compared to the earlier types (L0--L3). This could be attributed to the larger range of underlying masses, ages, and gravities expected in the brown dwarf population and/or to the increased sensitivity of the emergent spectra to cloud properties at cooler temperatues.
+	\item There is more scatter in the $J-K$ colors of the later-type field gravity objects (L4--L7) compared to the earlier types (L0--L3). This could be attributed to the larger range of underlying masses, ages, and gravities expected in the brown dwarf population and/or to the increased sensitivity of the emergent spectra to cloud properties at cooler temperatures.
 	\item The optically anchored NIR low-gravity $\gamma$ low resolution spectral sequence appears to be coarser than the field gravity sequence.
 \end{itemize}
 
@@ -1003,7 +1012,7 @@ We have suggested alternate and secondary standards where previously proposed st
 We proposed a scheme to assign spectral types to low-resolution NIR spectra of L~dwarfs.
 The scheme
 \begin{itemize}
-\item is anchored to the optical and thus correlated with temperature,
+\item is anchored to the optical and thus primarily correlated with temperature,
 \item provides a method to estimate spectral types using spectra with limited wavelength coverage,
 \item requires an analysis of the spectra band-by-band and thus is minimally sensitive to the range of NIR colors spanned by each type,
 \item utilizes high-fidelity spectral average templates in addition to spectral standards, and
@@ -1014,7 +1023,7 @@ Future work will include expanding the optical-NIR sample low-resolution SpeX sp
 Based on the homogeneity present among the spectral morphologies of the current sample, we do not expect the templates to change significantly as more objects are added.
 However, more objects are needed to further investigate the trends that we have observed in $J-K$ color, especially at the later spectral types.
 Further, more objects and analysis are required to make the low-gravity $\beta$ spectral sequence more robust and to extend the $\gamma$ sequence later than L4$\gamma$.
-We also plan to compile a optical-NIR sample using moderate-resolution NIR data from the FIRE spectrograph in order to make a suite of templates which could be used with NIRCAM on the James Webb Space Telescope.
+%We also plan to compile a optical-NIR sample using moderate-resolution NIR data from the FIRE spectrograph in order to make a suite of templates which could be used with NIRCAM on the James Webb Space Telescope.
 
 Our analysis suggests that a great deal of further theoretical and observational work is needed to pinpoint the nature of the physical properties modulating the spectral morphologies and colors of L dwarfs.
 However, our results provide methods to reliably and consistently identify and classify L dwarf spectra and represent significant progress in our ability to decode NIR spectra to reveal the underlying physics of L dwarf atmospheres.
@@ -1059,6 +1068,6 @@ The authors wish to recognize and acknowledge the very significant cultural role
 
 \bibliographystyle{aasjournal}
 \bibliography{paper12}
-%export from Papers. Paper12 Refs Collection, Standard, Abberviation
+%export from Papers. Paper12 Refs Collection, Standard, Abbreviation
 
 \end{document}
