@@ -53,7 +53,6 @@ Natural History, New York, NY, USA}
 \altaffiltext{2}{Physics, Graduate Center of the City University of New York, New York, NY, USA}
 \altaffiltext{3}{Visiting Astronomer at the Infrared Telescope Facility, which is operated by the University of Hawaii under Cooperative Agreement no. NCC 5-538 with the National Aeronautics and Space Administration, Science Mission Directorate, Planetary Astronomy Program.}
 
-
 %Optimal spectral classification of L dwarfs is necessary to resolve the current discrepancies in optical and near-infrared (NIR) spectral types, address the complexities in spectral morphology, and provide a consistent interpretation of underlying physical properties.
 \begin{abstract}
 \textbf{Discrepancies between competing optical and near-infrared (NIR) spectral typing systems for L dwarfs have motivated us to search for a classification scheme which ties the optical and NIR schemes and addresses complexities in the spectral morphology.}
@@ -465,13 +464,21 @@ Specifically, we use the following normalization ranges, which exclude the low s
 \item 1.91--2.39~$\micron$ for the \emph{K}~band.
 \end{itemize}
 These three regions were chosen because they are naturally separated by the strong water absorption bands present in both L~dwarfs' and Earth's atmospheres.
-This method has also been used for T dwarf classification \cite{Burgasser06}.
-%We did not break up the spectrum into smaller regions in order to enable the comparison of the broad band absorption features (e.g., CO, FeH) and spectral morphology.
+(This method has also been used for T dwarf classification \cite{Burgasser06}.)
 Once normalized in this manner, the effect of the color term is substantially reduced and it becomes evident that the low-resolution spectral morphologies among normal L~dwarfs of the same optical spectral type are very similar.
 The same objects shown in the top panel of Figure~\ref{fig:L1fan} that fan out over the 0.8--2.4~$\micron$ range are shown in the bottom panel plotted band-by-band, using the above defined normalization ranges for each panel.
 Not only do the spectral similarities between the objects stand out more clearly in this panel visualization, it is also easier to distinguish truly peculiar (e.g, `red' and `blue') spectra from the bulk population.
 
-With this plotting method, the color term present in the NIR spectra of L~dwarfs is approximated as a three component piece-wise step function. Since the reddening contributing to the color term has been found to be well described by a smooth function \citep{Marocco:2014kr,Hiranaka:2016jm}, there is likely still a small amount of residual reddening remaining within each band.
+With this plotting method, the color term present in the NIR spectra of L~dwarfs is approximated as a three component piece-wise step function.
+Since the reddening contributing to the color term has been found to be well described by a smooth function \citep{Marocco:2014kr,Hiranaka:2016jm}, there is likely still a small amount of residual reddening remaining within each band.
+\textbf{One could imagine trying to de-redden each band using a reddening curve.
+However, this would require making physical assumptions about the cause of the reddening (e.g, grain size distribution) in order to derive a reddening curve for each object.
+Not only would this approach be onerous, it also violates one of the precepts of the MK System for spectral classification \citep{Morgan:1984wy,Cushing:2014un}.}
+
+
+
+\textbf{method is well justified because it needs to work with data obtained by the spectrographs used to study exoplanets, e.g., GPI and SPHERE.
+
 
 \begin{figure}
   \epsscale{0.90}
@@ -987,7 +994,7 @@ As discussed previously
 % The \citet{Geballe02} system, one of the more popular systems to date, is insufficient for L dwarfs because it uses only one  index (H$_2$O 1.5$\micron$) for L dwarf classification based on NIR data.
 % More recently, \citet{Allers:2013hk} provided an index-based scheme to classify field gravity dwarfs which relies on four narrow-band indices from \cite{Allers07,McLean03,Slesnick04} measuring the slope of the water absorption bands separating the \emph{zJ}, $H$, and \emph{K} bands.
 % \citet{Allers:2013hk} further provide an index based scheme to distinguish field, intermediate, and low-gravity spectra.
-While quantitative, index based schemes are useful, a scheme is also needed which uses spectral standards and the entirety of the spectrum to estimate a type, as in the MK system \citep{Morgan:1984wy}.
+While quantitative, index based schemes are useful, a scheme is also needed which uses spectral standards and the entirety of the spectrum to estimate a type, as in the MK system \citep{Morgan:1984wy,Cushing:2014un}.
 K10 identified spectral standards (hereafter, K10 standards) that provide a \emph{zJ}-band sequence and a scheme which uses the \emph{H} and \emph{K} band data to assign `blue' and `red' suffixes.
 % More recently, \cite{Kirkpatrick10} proposed a suite of NIR standards and a spectral typing scheme that compares the entire 1--2.5~$\micron$ region, normalized at 1.28 $\micron$ (resulting in the ``fan'' described above in \S~\ref{sec:method} and illustrated in Figure~\ref{fig:L1fan}), but only requiring a good match to the spectral standard in the \emph{zJ} band.
 % Objects with a poor match to the standard in the \emph{H} and \emph{K} bands, despite a good \emph{zJ}-band match, are given a `blue' or `red' suffix.
@@ -1109,6 +1116,7 @@ The features contributing to a good match in the \emph{K} band are both the blue
 
 Presently, we do not encourage the use of half-types (or any further gradation) for spectral types based on low-resolution NIR data.
 Compared to the optical sequence, where half-types are warranted, the low-resolution NIR data display a greater diversity of spectral morphologies at each type and the resulting sequence is coarser.
+\textbf{In addition, the three component piece-wise normalization method is not fully accounting for the color term of each object and the residual reddening is likely contributing to the spread of spectral morphologies at each spectral type.}
 %As a result, the NIR spectral sequence of L dwarfs based on SpeX prism data is coarser and less precise than the optical sequence.
 %A NIR spectral sequence based on moderate-resolution spectra may facilitate the introduction of half types in the future.
 
