@@ -510,8 +510,14 @@ We divided the optical-NIR sample (\sample) into three subsamples based on their
 
 All of the NIR spectra of the same optical spectral type were combined to make the first iteration of each template.
 The spectra were normalized band-by-band and combined using the uncertainty weighted average flux at each pixel.
-The reduced $\chi^2$ for each spectrum compared to this first template was calculated and spectra with reduced $\chi^2 > 2$ in any band were tagged for exclusion.
-The second iteration of the template was calculated with the remaining spectra.
+\textbf{
+A reduced $\chi^2$-like metric was calculated comparing each observed spectrum to the template:}
+\begin{equation}
+\chi^2=\frac{\sum_{\lambda_i=1}^{n} \frac{[F_{obs}(\lambda_i) - F_{template}(\lambda_i)]^2}{\sigma(\lambda_i)^2}}{n-1}
+\end{equation}
+\textbf{where $\lambda_i$ is each wavelength element, $n$ is the total number of wavelength elements in the band, $F_{obs}$ is the normalized flux of the spectrum, $F_{template}$ is the flux of the template, and $\sigma$ is the standard deviation of the fluxes used to make the template. (The uncertainty in the observed spectrum was not used.)
+Spectra with reduced $\chi^2 > 2$ in any band were tagged for exclusion.
+The second iteration of the template was calculated with the remaining spectra and the $\chi^2$ values were re-calculated using the new template.}
 This process was iterated 3--6 times until no additional objects were rejected and the reduced $\chi^2$ values stabilized.
 The average $\chi^2$ values of the spectra included in the templates are $\sim0.9$.
 We found that a $\chi^2$ cutoff of two balances our desire to maximize the number of spectra used to define the templates while still excluding spectra with substantially peculiar spectral morphologies.
