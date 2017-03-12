@@ -521,10 +521,10 @@ A reduced $\chi^2$-like metric was calculated comparing each observed spectrum t
 \textbf{where $\lambda_i$ is each wavelength element, $n$ is the total number of wavelength elements in the band, $F_{obs}$ is the normalized flux of the spectrum, $F_{template}$ is the flux of the template, and $\sigma$ is the standard deviation of the fluxes used to make the template. (The uncertainty in the observed spectrum was not used.)
 Spectra with reduced $\chi^2 > 2$ in any band were tagged for exclusion.
 The second iteration of the template was calculated with the remaining spectra and the $\chi^2$ values were re-calculated using the new template.}
-This process was iterated 3--6 times until no additional objects were rejected and the reduced $\chi^2$ values stabilized.
+This process was iterated 3--6 times until no additional objects were rejected and the reduced $\chi^2$ values stabilized. \textbf{The code used to make the templates is publically available on GitHub\footnote{\url{https://github.com/kelle/Make_NIRTemplates}.}.}
+
 The average $\chi^2$ values of the spectra included in the templates are $\sim0.9$.
 We found that a $\chi^2$ cutoff of two balances our desire to maximize the number of spectra used to define the templates while still excluding spectra with substantially peculiar spectral morphologies.
-
 %details for each subtype where necessary
 While the $\chi^2 > 2$ criterion was appropriate for most subtypes, a few required adjusting.
 For the field-gravity L1~template, a $\chi^2$ limit of two excluded mostly bluer objects and does not result in a representative sample of field L1~objects being included in the template.
