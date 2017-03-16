@@ -1161,21 +1161,34 @@ We have developed a Python program, dubbed The Ultracool Typing Kit, which facil
 The program normalizes the input NIR spectrum band-by-band (as described in \S~\ref{sec:method}) and overplots it on the grid of the spectral field- and low-gravity templates listed in Table~\ref{tab:standards}.
 The program, a more detailed description, and usage instructions can all be found on GitHub\footnote{The Ultracool Typing Kit: \url{https://github.com/BDNYC/UltracoolTypingKit}}.}
 
-
-\subsubsection{Comparing NIR to Optical Spectral Types}
-
-\textbf{talk about Figure~\ref{fig:optical NIR comparison}.
-}
+\subsection{New method compared to optical and literature NIR types}
 
 \begin{figure}
-  \epsscale{0.50}
-  \plotone{optical_comparison.pdf}
-  \plotone{literature_comparison.pdf}
-  \caption{\emph{Right}: \textbf{Comparison between Cruz NIR spectral types and optical spectral types in the top panel is contrasted against the comparison between NIR spectral types found previously in the literature and optical spectral types.}
-    \emph{Left}: \textbf{Comparison between Cruz NIR spectral types and literature NIR spectral types in the top panel is contrasted against the comparison between optical and literature spectral types.}}
+  \plotone{opt_field_obj.pdf}
+  \caption{Comparison between NIR spectral types found with method proposed here and optical spectral types.}
   \label{fig:optical NIR comparison}
 \end{figure}
 
+\begin{figure}
+  %\plotone{optical_comparison.pdf}
+  %\plotone{literature_comparison.pdf}
+  \plotone{nir_field_obj.pdf}
+  \caption{\textbf{Comparison between Cruz NIR spectral types and literature NIR spectral types in the top panel.}}
+  \label{fig:Lit NIR comparison}
+\end{figure}
+
+\textbf{We use the optical-NIR sample described in \S~\ref{sec:sample} to compare the spectral typing method described above to optical spectral types and NIR spectral types found in the literature.
+This sample is well-suited to analyze the performance of the new typing method since all of the objects have NIR spectra as well as high-fidelity optical spectral types.}
+
+\textbf{The NIR spectra in the optical-NIR sample were stripped of identifying information and typed using the method described above (via the Ultracool Typing Kit) by Schwab.
+We compare the resulting NIR types to the optical types in Figure~\ref{fig:optical NIR comparison}.
+In general, the agreement is excellent, with the vast majority of NIR types being within one subclass of the optical type.
+***Something about the six outlier objects.***}
+
+\textbf{As mentioned in  \S~\ref{sec:sample}, we used SPLAT to identify NIR spectral types existing in the literature for 78 objects in the optical-NIR sample.
+We compare our NIR spectral types to those literature NIR types in Figure~\ref{fig:Lit NIR comparison}.
+Based on this analysis, we note a systematic tendency for the literature types to be later than the ones found with the method proposed here.
+}
 
 \section{Summary, Conclusions, and Future Work}
 \label{sec:summary}
