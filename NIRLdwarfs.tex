@@ -140,56 +140,6 @@ During these observing runs, we also targeted confirmed nearby M and L dwarfs fr
 As described in more detail below, the far-red optical observations were obtained with several different instruments but we restrict the analysis in this paper to objects with NIR data obtained with the SpeX spectrograph \citep{Spex} on the 3~m NASA Infrared Telescope Facility using the low-resolution prism mode.
 We have combined these data, other extant spectra from the literature, and new data to create a sample of \sample~L~dwarfs with both far-red optical (6000--9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''.
 
-We made no specific effort to ensure the optical-NIR sample is complete in any dimension, but we did want it to be as representative as possible of the known L~dwarf population.
-Because of the known red bias of the photometrically selected 2MASS-based samples \cite[Figure 3]{Schmidt10}, we made a concerted effort to identify L dwarfs in the literature with $J-K_S$ colors bluer than the range of colors spanned by the 2MASS-selected sample and with both optical and SpeX Prism spectra.
-%As shown in Figure~3 of \cite{Schmidt10}, the 2MASS-based photometrically selected samples that are the focus of previous papers in this series \citep{Cruz03, Reid08} are biased against the bluer L~dwarfs at every spectral type.
-%Since most of our spectroscopic follow-up focused on a red-biased sample, our optical-NIR spectroscopic sample is prone to also be red biased.
-%Specifically, we looked for L~dwarfs in the literature
-This added less than ten objects to the sample.
-
-We did not include all possible low-gravity objects in the optical-NIR sample.
-(As described in \cite{Cruz09_lowg}, $\gamma$ and $\beta$ spectra type suffixes are used to indicate very low-gravity and intermediate-gravity spectral features, respectively.)
-For $\beta$~type objects, we only considered L0--L1$\beta$-type objects since the later types do not have more than one object at each spectral type.
-For $\gamma$ type objects, we limited our analysis to L0--L4$\gamma$.
-The later-type $\gamma$ objects (e.g., \objectname[2MASS J03552337+1133437]{2M0355+1133}, \citealt{Cruz09_lowg}) display significant spectral diversity and we defer an analysis of these data to a future paper.
-
-The resulting optical-NIR sample of \sample~objects includes \optField~field-gravity objects and \optLowG~low-gravity objects.
-It also includes \NewOptSpectra~new optical spectra for \NewOptObjects~objects and \NewPrismSpectra~new SpeX prism spectra for \NewPrismObjects~objects.
-These new data are described in the following subsections and listed in Tables~\ref{tab:newopt} and~\ref{tab:newnir}. The full sample used for this paper is collectively listed in Tables~\ref{tab:field_template}--\ref{tab:lowg_excluded} based on analysis described in \S~\ref{sec:templates}.
-
-The spectral type distribution of the optical-NIR sample is shown in Figure~\ref{fig:spthist}.
-The spectral types adopted for objects in the optical-NIR sample are all based on high signal-to-noise ratio ($\gtrsim$50) optical spectra and the typing schemes of \cite{K99} and \cite{Cruz09_lowg}.
-%\textbf{Previously assigned NIR spectral types are discussed in \S~\ref{sec:typing}.}
-%Since one of the primary purposes of our analysis is to use the optical data to inform the analysis of the NIR data, we elected to not keep track of other NIR types} in the literature \citep[e.g.,][]{Geballe02, Allers:2013hk, Marocco:2013kv, Gagne:2015dc}.
-
-The $J-K_S$ color distribution of the optical-NIR sample is shown in Figure~\ref{fig:JK_colors}.
-All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag.
-The color properties of the field and low-gravity samples are discussed in more detail in \S\S~\ref{sec:templates_normal} and~\ref{sec:templates_lowg}.
-
-\begin{figure}
-    \plotone{histogram.pdf}
-    \caption{Spectral type distribution of the optical-NIR sample distinguishing field-gravity objects in black and gray and low-gravity objects in orange and red.
-    Right hatching indicates objects with new optical spectra and left hatching indicates new NIR spectra; these objects are listed in Tables~\ref{tab:newopt} and \ref{tab:newnir}, respectively.
-    Objects included in the field-gravity templates are indicated in black and objects included in the low-gravity templates are indicated in red; these objects are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, respectively.
-    Field-gravity objects that are excluded from the field-gravity templates are indicated in gray and low-gravity objects excluded from the low-gravity templates are indicated in orange; these objects are listed in Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}, respectively.}
-  \label{fig:spthist}
-\end{figure}
-
-\begin{figure}
-    \plotone{JK.pdf}
-    \caption{Box plot representation of the 2MASS $J-K_S$ color distribution for the L dwarfs in the optical-NIR sample.
-    Quartile ranges (\emph{box and whiskers}) and mean colors (\emph{solid circles}) are shown for the objects included in the field-gravity templates (\emph{black}) and low-gravity templates (\emph{red}).
-    \textbf{The boxes indicates the interquartile range which contains half of the data, the median is indicated with a horizontal line inside the box, and the vertical lines (whiskers) extend to the minimum and maximum of the distribution.
-        For bins with five or fewer objects, only whiskers are shown indicating the range of the distribution.
-        The number of objects used in calculating the quartiles are indicated above the end caps of the whiskers.
-    %The end caps of the whiskers mark the minimum and maximum $J-K_S$ color and the box encloses the interquartile range (the middle half of the distribution). The horizontal bar indicates the median $J-K_S$ color while a filled circle indicates the mean.
-    The median $J-K_S$ uncertainty of all objects included in the templates is shown with a gray error bar.}
-    Objects excluded from the templates are marked individually (\emph{crosses}, field g: \emph{gray}, low-g: \emph{orange}).
-    The properties of the field and low-gravity template samples are summarized in Table~\ref{tab:sample_prop} and~\ref{tab:lg_sample_prop}, respectively. The individual objects included in the field and low-gravity templates are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, while the excluded objects are listed in Tables~\ref{tab:field_excluded} and~\ref{tab:lowg_excluded}.}
-  \label{fig:JK_colors}
-\end{figure}
-\clearpage
-
 \subsection{Far-Red Optical Spectra}
 \label{sec:obs_new_opt}
 
@@ -442,6 +392,62 @@ In Appendix~\ref{sec:galaxies}, we show the NIR spectra of objects that were rev
 % new nir prism data
 \input{tab_newnir.tex}
 %\includepdf[pages=-,nup=2x2,landscape]{Table1.pdf}
+
+\subsection{Sample Properties}
+
+We made no specific effort to ensure the optical-NIR sample is complete in any dimension, but we did want it to be as representative as possible of the known L~dwarf population.
+Because of the known red bias of the photometrically selected 2MASS-based samples \cite[Figure 3]{Schmidt10}, we made a concerted effort to identify L dwarfs in the literature with $J-K_S$ colors bluer than the range of colors spanned by the 2MASS-selected sample and with both optical and SpeX Prism spectra.
+%As shown in Figure~3 of \cite{Schmidt10}, the 2MASS-based photometrically selected samples that are the focus of previous papers in this series \citep{Cruz03, Reid08} are biased against the bluer L~dwarfs at every spectral type.
+%Since most of our spectroscopic follow-up focused on a red-biased sample, our optical-NIR spectroscopic sample is prone to also be red biased.
+%Specifically, we looked for L~dwarfs in the literature
+This added less than ten objects to the sample.
+
+We did not include all possible low-gravity objects in the optical-NIR sample.
+(As described in \cite{Cruz09_lowg}, $\gamma$ and $\beta$ spectra type suffixes are used to indicate very low-gravity and intermediate-gravity spectral features, respectively.)
+For $\beta$~type objects, we only considered L0--L1$\beta$-type objects since the later types do not have more than one object at each spectral type.
+For $\gamma$ type objects, we limited our analysis to L0--L4$\gamma$.
+The later-type $\gamma$ objects (e.g., \objectname[2MASS J03552337+1133437]{2M0355+1133}, \citealt{Cruz09_lowg}) display significant spectral diversity and we defer an analysis of these data to a future paper.
+
+The resulting optical-NIR sample of \sample~objects includes \optField~field-gravity objects and \optLowG~low-gravity objects.
+It also includes \NewOptSpectra~new optical spectra for \NewOptObjects~objects and \NewPrismSpectra~new SpeX prism spectra for \NewPrismObjects~objects.
+These new data are described in the following subsections and listed in Tables~\ref{tab:newopt} and~\ref{tab:newnir}. The full sample used for this paper is collectively listed in Tables~\ref{tab:field_template}--\ref{tab:lowg_excluded} based on analysis described in \S~\ref{sec:templates}.
+
+The spectral type distribution of the optical-NIR sample is shown in Figure~\ref{fig:spthist}.
+The spectral types adopted for objects in the optical-NIR sample are all based on high signal-to-noise ratio ($\gtrsim$50) optical spectra and the typing schemes of \cite{K99} and \cite{Cruz09_lowg}.
+%\textbf{Previously assigned NIR spectral types are discussed in \S~\ref{sec:typing}.}
+%Since one of the primary purposes of our analysis is to use the optical data to inform the analysis of the NIR data, we elected to not keep track of other NIR types} in the literature \citep[e.g.,][]{Geballe02, Allers:2013hk, Marocco:2013kv, Gagne:2015dc}.
+
+The $J-K_S$ color distribution of the optical-NIR sample is shown in Figure~\ref{fig:JK_colors}.
+All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag.
+The color properties of the field and low-gravity samples are discussed in more detail in \S\S~\ref{sec:templates_normal} and~\ref{sec:templates_lowg}.
+
+\begin{figure}
+    \plotone{histogram.pdf}
+    \caption{Spectral type distribution of the optical-NIR sample distinguishing field-gravity objects in black and gray and low-gravity objects in orange and red.
+    Right hatching indicates objects with new optical spectra and left hatching indicates new NIR spectra; these objects are listed in Tables~\ref{tab:newopt} and \ref{tab:newnir}, respectively.
+    Objects included in the field-gravity templates are indicated in black and objects included in the low-gravity templates are indicated in red; these objects are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, respectively.
+    Field-gravity objects that are excluded from the field-gravity templates are indicated in gray and low-gravity objects excluded from the low-gravity templates are indicated in orange; these objects are listed in Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}, respectively.}
+  \label{fig:spthist}
+\end{figure}
+
+\begin{figure}
+    \plotone{JK.pdf}
+    \caption{Box plot representation of the 2MASS $J-K_S$ color distribution for the L dwarfs in the optical-NIR sample.
+    Quartile ranges (\emph{box and whiskers}) and mean colors (\emph{solid circles}) are shown for the objects included in the field-gravity templates (\emph{black}) and low-gravity templates (\emph{red}).
+    \textbf{The boxes indicates the interquartile range which contains half of the data, the median is indicated with a horizontal line inside the box, and the vertical lines (whiskers) extend to the minimum and maximum of the distribution.
+        For bins with five or fewer objects, only whiskers are shown indicating the range of the distribution.
+        The number of objects used in calculating the quartiles are indicated above the end caps of the whiskers.
+    %The end caps of the whiskers mark the minimum and maximum $J-K_S$ color and the box encloses the interquartile range (the middle half of the distribution). The horizontal bar indicates the median $J-K_S$ color while a filled circle indicates the mean.
+    The median $J-K_S$ uncertainty of all objects included in the templates is shown with a gray error bar.}
+    Objects excluded from the templates are marked individually (\emph{crosses}, field g: \emph{gray}, low-g: \emph{orange}).
+    The properties of the field and low-gravity template samples are summarized in Table~\ref{tab:sample_prop} and~\ref{tab:lg_sample_prop}, respectively. The individual objects included in the field and low-gravity templates are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, while the excluded objects are listed in Tables~\ref{tab:field_excluded} and~\ref{tab:lowg_excluded}.}
+  \label{fig:JK_colors}
+\end{figure}
+\clearpage
+
+
+
+
 
 \section{Optically-anchored NIR Spectral Analysis}
 
@@ -1161,7 +1167,7 @@ We have developed a Python program, dubbed The Ultracool Typing Kit, which facil
 The program normalizes the input NIR spectrum band-by-band (as described in \S~\ref{sec:method}) and overplots it on the grid of the spectral field- and low-gravity templates listed in Table~\ref{tab:standards}.
 The program, a more detailed description, and usage instructions can all be found on GitHub\footnote{The Ultracool Typing Kit: \url{https://github.com/BDNYC/UltracoolTypingKit}}.}
 
-\subsection{New method compared to optical and literature NIR types}
+\subsubsection{New method compared to optical and literature NIR types}
 
 \begin{figure}
   \plotone{opt_field_obj.pdf}
