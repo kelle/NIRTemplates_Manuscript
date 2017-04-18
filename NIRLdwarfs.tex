@@ -538,7 +538,7 @@ A reduced $\chi^2$-like metric was calculated comparing each observed spectrum t
 \textbf{where $\lambda_i$ is each wavelength element, $n$ is the total number of wavelength elements in the band, $F_{obs}$ is the normalized flux of the spectrum, $F_{template}$ is the flux of the template, and $\sigma$ is the standard deviation of the fluxes used to make the template. (The uncertainty in the observed spectrum was not used.)
 Spectra with reduced $\chi^2 > 2$ in any band were tagged for exclusion.
 The second iteration of the template was calculated with the remaining spectra and the $\chi^2$ values were re-calculated using the new template.}
-This process was iterated 3--6 times until no additional objects were rejected and the reduced $\chi^2$ values stabilized. \textbf{The code used to make the templates is publically available on GitHub\footnote{\url{https://github.com/kelle/Make_NIRTemplates}.}.}
+This process was iterated 3--6 times until no additional objects were rejected and the reduced $\chi^2$ values stabilized. \textbf{The code used to make the templates is available on GitHub\footnote{Code used to generate templates: \url{https://github.com/kelle/Make_NIRTemplates}.}.}
 
 The average $\chi^2$ values of the spectra included in the templates are $\sim0.9$.
 We found that a $\chi^2$ cutoff of two balances our desire to maximize the number of spectra used to define the templates while still excluding spectra with substantially peculiar spectral morphologies.
@@ -554,6 +554,7 @@ Shading is used to indicate the 1$\sigma$ variance (dark gray) and range of flux
 We also show spectral averages of the optical spectra along with the NIR templates. The optical spectra were smoothed to approximately match the resolution of the NIR spectra and light gray shading indicates the range of flux values used at each pixel.
 %Objects included in the template spectrum for each subtype are listed by increasing $J-K_S$ color to emphasize the range of colors spanned at each subtype.
 Spectra excluded from the templates are displayed in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
+\textbf{The templates are available from GitHub\footnote{Templates: \url{https://github.com/BDNYC/NIRTemplates}}.}
 
 \textbf{Both the normalization method and the spectral templates described greatly facilitate the comparative analysis of the NIR spectral morphology of L dwarfs.}
 As more optical and/or NIR data are collected for L dwarfs, the templates could potentially be updated.
