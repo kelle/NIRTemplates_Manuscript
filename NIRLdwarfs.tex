@@ -1,4 +1,4 @@
-\documentclass[modern]{aastex61}
+\documentclass[modern,trackchanges]{aastex61}
 \usepackage{natbib}
 
 \received{April 22, 2016}
@@ -49,8 +49,8 @@ Meeting the Cool Neighbors XII: An Optically-Anchored Analysis of the Near-Infra
 \author{Adam J. Burgasser} %SpeX Data & template code
 \affil{Center for Astrophysics and Space Sciences, University of California, San Diego, San Diego, CASS, M/C 0424 9500 Gilman Drive, La Jolla, CA 92093-0424, USA}
 
-\author{\textbf{Ellianna Schwab}} %nir spectral types comparsion
-\affil{\textbf{Department of Physics, City College of New York, City University of New York, 160 Convent Avenue, New York, NY 10031}}
+\author{Ellianna Schwab} %nir spectral types comparsion
+\affil{Department of Physics, City College of New York, City University of New York, 160 Convent Avenue, New York, NY 10031}
 
 \author{Emily L. Rice} %introduction and conclusions
 \affil{Department of Engineering Science and Physics, College of Staten Island, City University of New York, Staten Island, NY 10310, USA}
@@ -66,14 +66,15 @@ Meeting the Cool Neighbors XII: An Optically-Anchored Analysis of the Near-Infra
 
 
 %Optimal spectral classification of L dwarfs is necessary to resolve the current discrepancies in optical and near-infrared (NIR) spectral types, address the complexities in spectral morphology, and provide a consistent interpretation of underlying physical properties.
+
 \begin{abstract}
-\textbf{Discrepancies between competing optical and near-infrared (NIR) spectral typing systems for L dwarfs have motivated us to search for a classification scheme which ties the optical and NIR schemes \edit2{together,} and addresses complexities in the spectral morphology.}
+Discrepancies between competing optical and near-infrared (NIR) spectral typing systems for L dwarfs have motivated us to search for a classification scheme which ties the optical and NIR schemes \added{together,} and addresses complexities in the spectral morphology.
 We use new and extant optical and NIR spectra to compile a sample of~\sample~L dwarfs, including \optLowG~low-gravity $\beta$ and $\gamma$ objects, with spectral coverage from 0.6--2.4$\micron$.
 We present \NewPrismSpectra~new low-resolution NIR spectra and ~\NewOptSpectra~new optical spectra.
 We utilize a method for analyzing NIR spectra that partially removes the broad band spectral slope and reveals similarities in the absorption features between objects of the same optical spectral type.
 Using the optical spectra as an anchor, we generate near-infrared spectral average templates for L0–-L8, L0–-L4$\gamma$, and L0--L1$\beta$ type dwarfs.
 These templates reveal that NIR spectral morphologies are correlated with the optical types. 
-\edit2{They also} show the range of spectral morphologies spanned by each spectral type.
+\added{They also} show the range of spectral morphologies spanned by each spectral type.
 We compare low-gravity and field-gravity templates to provide recommendations on the minimum required observations for credibly classifying low-gravity spectra using low-resolution NIR data.
 We use the templates to evaluate the existing NIR spectral standards and propose new ones where appropriate.
 Finally, we build on the work of \cite{Kirkpatrick10} to provide a spectral typing method which is tied to the optical and can be used when only \emph{H}- or \emph{K}-band data are available.
@@ -90,18 +91,18 @@ Building upon the initial discovery and classification of these objects \citep{B
 In this final paper of the series, we focus on the analysis of the NIR spectra of L dwarfs obtained while building that volume-limited sample.
 
 % L dwarf classification in the OPTICAL
-\textbf{The first classification scheme developed for L dwarfs is based on their spectral morphology at red-optical wavelengths using spectra typically covering 6000--9000~\AA~at $R\sim1000$ \citep{Martin99,K99,Kirkpatrick05}.
-This classification scheme relies on the prominent spectral absorption features due to \ion{K}{1} broadening, metal oxides (VO, TiO), metal hydrides (CrH, FeH), and alkali metals (Cs, Rb).}
+The first classification scheme developed for L dwarfs is based on their spectral morphology at red-optical wavelengths using spectra typically covering 6000--9000~\AA~at $R\sim1000$ \citep{Martin99,K99,Kirkpatrick05}.
+This classification scheme relies on the prominent spectral absorption features due to \ion{K}{1} broadening, metal oxides (VO, TiO), metal hydrides (CrH, FeH), and alkali metals (Cs, Rb).
 Red-optical spectra of L dwarfs are on the Wien side of the underlying blackbody spectrum, and the spectral morphology in that wavelength regime is dominated by temperature effects, with surface gravity and metallicity making secondary contributions.
 The effects on the optical spectra of L dwarfs due to low gravity have been described by \citet{Martin99,Kirkpatrick06,Kirkpatrick08, Cruz09_lowg,Luhman09_taurus}.
 Building on the \citet{K99} scheme, \citet{Cruz09_lowg} also defined a classification scheme for low-gravity optical spectral types using $\beta$, $\gamma$, and $\delta$ suffixes to indicate intermediate-gravity, very low-gravity and extremely low-gravity spectral features, respectively.
-\edit2{There are also L subdwarfs and so-called ``blue'' L dwarfs with low metalliticy and old ages.  
+\added{There are also L subdwarfs and so-called ``blue'' L dwarfs with low metalliticy and old ages.  
 Since there are so few known,} they are typically classified using the field-gravity standards \citep{Gizis:2006jl,Burgasser07_subdwarfs, Burgasser08_blue, Kirkpatrick10, Kirkpatrick:2014kv}.
 
 % NEED FOR NIR CLASSIFICATION
 While the classification and analysis techniques in the optical are valuable, reliable diagnostics based on near-infrared (NIR) data are necessary for two primary reasons:
 First, with intrinsically cool surface temperatures (1500--2200~K) and low luminosities ($-5~\lesssim~log(L_*/L_\sun)~\lesssim~-3.5$), L dwarfs are relatively faint in the optical and emit most of their flux at near-infrared wavelengths \citep[e.g.,][]{Filippazzo:2015dv}.
-As a result, it is more efficient to obtain NIR spectra with higher signal-to-noise ratios than \textbf{at optical wavelengths}.
+As a result, it is more efficient to obtain NIR spectra with higher signal-to-noise ratios than at optical wavelengths.
 Second, the workhorse spectrographs of the next decade are optimized for the NIR. For example, the Folded-port Infrared Echellette (FIRE) on Magellan \citep{Simcoe:2013kh}, the Near-Infrared Echelle Spectrograph (NIRES) on Keck, and the Near Infrared Spectrograph (NIRSpec) on the James Webb Space Telescope \citep{Ferruit:2012em}.
 %specifically: the TripleSpec instruments on the ARC 3.5-m, Palomar 200-inch, and the Blanco 4-m \citep{Wilson:2004he},
 
@@ -109,7 +110,7 @@ Second, the workhorse spectrographs of the next decade are optimized for the NIR
 Ever since their discovery, the observational properties of L dwarfs in the NIR have proved more complex to interpret than their behavior at optical wavelengths.
 Spectral classification and inference of unambiguous physical properties based on near-infrared data has been fraught with inconsistencies and degeneracies.
 This was first recognized in their photometric properties where, unlike M~dwarfs, L~dwarfs of the same optically-based spectral type span a large range of $J-K$ colors \citep[e.g.,][]{Leggett:2003tm}.
-There have been numerous efforts to classify the NIR spectra of L dwarfs \citep{Reid01_NIR, Testi01, Geballe02,Burgasser07_subdwarfs}, two of the most \textbf {widely adopted} have been those of \citet{Kirkpatrick10} and \citet{Allers:2013hk}, hereafter K10 and AL13, respectively.
+There have been numerous efforts to classify the NIR spectra of L dwarfs \citep{Reid01_NIR, Testi01, Geballe02,Burgasser07_subdwarfs}, two of the most widely adopted have been those of \citet{Kirkpatrick10} and \citet{Allers:2013hk}, hereafter K10 and AL13, respectively.
 K10 developed a classification sequence based on spectral standards which hinges on the \emph{zJ}-band spectral morphology and uses the \emph{H} and \emph{K} bands to assign `red' or `blue' suffixes based on the overall spectral slope.
 The system of AL13 defined quantitative spectral indices to identify spectral type and surface gravity class.
 While both of these systems result in types broadly consistent with the optically-determined types, neither use the entire NIR spectral region available from the ground \citep{Kirkpatrick05}.
@@ -118,10 +119,10 @@ The relative difficulty of NIR spectral analysis compared to the optical can be 
 First, the NIR spectra of L dwarfs are inherently more sensitive to underlying physical properties.
 While temperature dominates the spectral variations in the optical, gravity, metallicity, and condensate cloud differences play a significant role on the observed NIR spectral features \citep{Jones:1997hb,Knapp04}.
 Thus, different underlying masses, compositions, and cloud properties cause a wider range of spectral morphologies at a given temperature (spectral type) resulting in the range of NIR colors.
-\textbf{This sensitivity to second order parameters has made a satisfying NIR-based classification scheme for L dwarfs elusive.}
+This sensitivity to second order parameters has made a satisfying NIR-based classification scheme for L dwarfs elusive.
 %This sensitivity of the NIR spectra to second order parameters in addition to temperature has made a satisfying NIR-based classification scheme for L dwarfs elusive and beguiled reliable and consistent interpretation of their spectra.
 Second, much of the NIR data for L dwarfs has been collected with the SpeX spectrograph in prism mode, covering 0.8--2.5~$\micron$ at $R\sim200$, a proportionately larger wavelength regime and lower resolution than the optical.
-\textbf{This larger wavelength coverage provides more ``room'' for the diversity of spectral features to be apparent.}
+This larger wavelength coverage provides more ``room'' for the diversity of spectral features to be apparent.
 %The larger wavelength coverage in the NIR compared to the optical essentially provides more room for the diversity of spectral features to be apparent.
 
 The discord between the classification of L dwarfs at different wavelengths and resolutions is reminiscent of the parable of a group of investigators who are asked to describe an elephant based only on a small part of the animal's anatomy.
@@ -505,10 +506,9 @@ For example, \citet{Macintosh:2015ew} only obtained $JH$ spectra for 51 Eri b.}
 
 With this plotting method, the color term present in the NIR spectra is approximated as a three component piece-wise step function.
 Since the reddening contributing to the color term has been found to be well described by a smooth function \citep{Marocco:2014kr,Hiranaka:2016jm}, there is likely still a small amount of residual reddening remaining within each band.
-\edit2{We did not attempt to normalize using a smooth function.}
-\deleted{One could imagine trying to de-redden each band using a reddening curve.
+\replaced{One could imagine trying to de-redden each band using a reddening curve.
 However, this would require making physical assumptions about the cause of the reddening (e.g, grain size distribution) in order to derive a reddening curve for each object.
-Not only would this approach be onerous, it also violates one of the precepts of the MK System for spectral classification \citep{Morgan:1984wy,Cushing:2014un}.}
+Not only would this approach be onerous, it also violates one of the precepts of the MK System for spectral classification \citep{Morgan:1984wy,Cushing:2014un}.}{We did not attempt to normalize using a smooth function.}
 
 \begin{figure}
   \epsscale{0.90}
@@ -1355,5 +1355,7 @@ The authors wish to recognize and acknowledge the very significant cultural role
 \bibliographystyle{aasjournal}
 \bibliography{paper12}
 %export from Papers. Paper12 Refs Collection, Standard, Abbreviation
+
+\listofchanges
 
 \end{document}
