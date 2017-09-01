@@ -543,22 +543,22 @@ We divided the optical-NIR sample (\sample) into three subsamples based on their
 All of the NIR spectra of the same optical spectral type were combined to make the first iteration of each template.
 The spectra were normalized band-by-band and combined using the uncertainty weighted average flux at each pixel.
 \textbf{
-A reduced $\chi^2$-like metric was calculated comparing each observed spectrum to the template:}
+A \replaced{reduced $\chi^2$-like metric }{minimization metric, $M$,} was calculated comparing each observed spectrum to the template:}
 \begin{equation}
-\chi^2=\frac{\sum_{\lambda_i=1}^{n} \frac{[F_{obs}(\lambda_i) - F_{template}(\lambda_i)]^2}{\sigma(\lambda_i)^2}}{n-1}
+M=\frac{\sum_{\lambda_i=1}^{n} \frac{[F_{obs}(\lambda_i) - F_{template}(\lambda_i)]^2}{\sigma(\lambda_i)^2}}{n-1}
 \end{equation}
 \textbf{where $\lambda_i$ is each wavelength element, $n$ is the total number of wavelength elements in the band, $F_{obs}$ is the normalized flux of the spectrum, $F_{template}$ is the flux of the template, and $\sigma$ is the standard deviation of the fluxes used to make the template. (The uncertainty in the observed spectrum was not used.)
-Spectra with reduced $\chi^2 > 2$ in any band were tagged for exclusion.
-The second iteration of the template was calculated with the remaining spectra and the $\chi^2$ values were re-calculated using the new template.}
-This process was iterated 3--6 times until no additional objects were rejected and the reduced $\chi^2$ values stabilized. \textbf{The code used to make the templates is available on GitHub\footnote{Code used to generate templates: \url{https://github.com/kelle/Make_NIRTemplates}.}.}
+Spectra with \replaced{reduced $\chi^2 > 2$}{$M > 2$} in any band were tagged for exclusion.
+The second iteration of the template was calculated with the remaining spectra and the \replaced{$\chi^2$}{$M$} values were re-calculated using the new template.}
+This process was iterated 3--6 times until no additional objects were rejected and the \replaced{reduced $\chi^2$}{$M$} values stabilized. \textbf{The code used to make the templates is available on GitHub\footnote{Code used to generate templates: \url{https://github.com/kelle/Make_NIRTemplates}.}.}
 
-The average $\chi^2$ values of the spectra included in the templates are $\sim0.9$.
-We found that a $\chi^2$ cutoff of two balances our desire to maximize the number of spectra used to define the templates while still excluding spectra with substantially peculiar spectral morphologies.
+The average \replaced{$\chi^2$}{$M$} values of the spectra included in the templates are $\sim0.9$.
+We found that a \replaced{$\chi^2$}{$M$} cutoff of two balances our desire to maximize the number of spectra used to define the templates while still excluding spectra with substantially peculiar spectral morphologies.
 %details for each subtype where necessary
-While the $\chi^2 > 2$ criterion was appropriate for most subtypes, a few required adjusting.
-For the field-gravity L1~template, a $\chi^2$ limit of two excluded mostly bluer objects and does not result in a representative sample of field L1~objects being included in the template.
-We instead used a $\chi^2 > 2.3$ criterion which results in a template that more accurately reflects the range of spectral morphologies included in the L1~subtype.
-\textbf{For L7 and L8 field-gravity templates, where the number of objects are small, a tighter criterion of $\chi^2 > 1.4$ was used because otherwise no objects are excluded.}
+While the \replaced{$\chi^2 > 2$}{$M > 2$} criterion was appropriate for most subtypes, a few required adjusting.
+For the field-gravity L1~template, a \replaced{$\chi^2$}{$M$} limit of two excluded mostly bluer objects and does not result in a representative sample of field L1~objects being included in the template.
+We instead used a \replaced{$\chi^2 > 2.3$}{$M > 2.3$} criterion which results in a template that more accurately reflects the range of spectral morphologies included in the L1~subtype.
+\textbf{For L7 and L8 field-gravity templates, where the number of objects are small, a tighter criterion of \replaced{$\chi^2 > 1.4$}{$M > 1.4$} was used because otherwise no objects are excluded.}
 
 This iterative process resulted in 127 objects being included in 16 spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 44 being excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}).
 The resulting spectral average templates of field-gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg}; the low-gravity templates are in Figure Sets~\ref{fig:beta_templates} and~\ref{fig:gamma_templates} and discussed in \S~\ref{sec:lowg}.
