@@ -92,8 +92,8 @@ Building upon the initial discovery and classification of these objects \citep{B
 In this final paper of the series, we focus on the analysis of the NIR spectra of L dwarfs obtained while building that volume-limited sample.
 
 % L dwarf classification in the OPTICAL
-The first classification scheme developed for L dwarfs is based on their spectral morphology at red-optical wavelengths using spectra typically covering 6000--9000~\AA~at $R\sim1000$ \citep{Martin99,K99,Kirkpatrick05}.
-This classification scheme relies on the prominent spectral absorption features due to \ion{K}{1} broadening, metal oxides (VO, TiO), metal hydrides (CrH, FeH), and alkali metals (Cs, Rb).
+The first classification scheme developed for L dwarfs \replaced{is}{was} based on their spectral morphology at red-optical wavelengths using spectra typically covering 6000--9000~\AA~at $R\sim1000$ \citep{Martin99,K99,Kirkpatrick05}.
+This classification scheme \replaced{relies}{relied} on the prominent spectral absorption features due to \ion{K}{1} broadening, metal oxides (VO, TiO), metal hydrides (CrH, FeH), and alkali metals (Cs, Rb).
 Red-optical spectra of L dwarfs are on the Wien side of the underlying blackbody spectrum, and the spectral morphology in that wavelength regime is dominated by temperature effects, with surface gravity and metallicity making secondary contributions.
 The effects on the optical spectra of L dwarfs due to low gravity have been described by \citet{Martin99,Kirkpatrick06,Kirkpatrick08, Cruz09_lowg,Luhman09_taurus}.
 Building on the \citet{K99} scheme, \citet{Cruz09_lowg} also defined a classification scheme for low-gravity optical spectral types using $\beta$, $\gamma$, and $\delta$ suffixes to indicate intermediate-gravity, very low-gravity and extremely low-gravity spectral features, respectively.
@@ -430,13 +430,13 @@ These new data are described in the following subsections and listed in Tables~\
 The spectral type distribution of the optical-NIR sample is shown in Figure~\ref{fig:spthist}.
 The spectral types adopted for objects in the optical-NIR sample are all based on high signal-to-noise ratio ($\gtrsim$50) optical spectra and the typing schemes of \cite{K99} and \cite{Cruz09_lowg}.
 
-\textbf{Many of the objects in the optical-NIR sample have existing NIR spectral types in the literature; however, these types are based on several different schemes with inconsistent suffix usage.
+Many of the objects in the optical-NIR sample have existing NIR spectral types in the literature; however, these types are based on several different schemes with inconsistent suffix usage.
 In order to give a general sense of the pre-existing NIR types for objects in the optical-NIR sample, we have identified a subsample composed of 78 objects in the optical-NIR sample included in the SpeX Prism Library Analysis Toolkit (SPLAT) with a listed NIR spectral type.
 (The types originate from 17 different papers but they are predominately from \citet{Knapp04}, \citet{Allers:2010cg}, \citet{Kirkpatrick10}, and \citet{Gagne:2015dc}.)
 In Figure~\ref{fig:opt_lit_nir_comparison}, we show these NIR types compared to the optical types and indicate agreement/disagreement between suffixes.
 In the 21 cases where the optical and literature types disagree by more than one subtype (falling outside the shaded region), it is much more common for the literature type to be later than the optical compared to the other way around (17/4).
 Further, in 26 cases, a full one third of this comparison subsample, the optical and the NIR suffix do not agree.
-}
+
 
 The $J-K_S$ color distribution of the optical-NIR sample is shown in Figure~\ref{fig:JK_colors}.
 All of the objects have reliable 2MASS photometry with uncertainties smaller than 0.1~mag.
@@ -453,8 +453,8 @@ The color properties of the field and low-gravity samples are discussed in more 
 
 \begin{figure}
   \plotone{lit_field_obj.pdf}
-  \caption{\textbf{Swarm plot representation of optical spectral types compared to literature NIR types from SPLAT for 78 objects in the optical-NIR sample.
-  Filled orange, blue, and pink circles indicate objects where the suffixes agree while a black star indicates suffix disagreement.}}
+  \caption{Swarm plot representation of optical spectral types compared to literature NIR types from SPLAT for 78 objects in the optical-NIR sample.
+  Filled orange, blue, and pink circles indicate objects where the suffixes agree while a black star indicates suffix disagreement.}
   \label{fig:opt_lit_nir_comparison}
 \end{figure}
 
@@ -462,11 +462,11 @@ The color properties of the field and low-gravity samples are discussed in more 
     \plotone{JK.pdf}
     \caption{Box plot representation of the 2MASS $J-K_S$ color distribution for the L dwarfs in the optical-NIR sample.
     Quartile ranges (\emph{box and whiskers}) and mean colors (\emph{solid circles}) are shown for the objects included in the field-gravity templates (\emph{black}) and low-gravity templates (\emph{red}).
-    \textbf{The boxes indicates the interquartile range which contains half of the data, the median is indicated with a horizontal line inside the box, and the vertical lines (whiskers) extend to the minimum and maximum of the distribution.
+    The boxes indicates the interquartile range which contains half of the data, the median is indicated with a horizontal line inside the box, and the vertical lines (whiskers) extend to the minimum and maximum of the distribution.
         For bins with five or fewer objects, only whiskers are shown indicating the range of the distribution.
         The number of objects used in calculating the quartiles are indicated above the end caps of the whiskers.
     %The end caps of the whiskers mark the minimum and maximum $J-K_S$ color and the box encloses the interquartile range (the middle half of the distribution). The horizontal bar indicates the median $J-K_S$ color while a filled circle indicates the mean.
-    The median $J-K_S$ uncertainty of all objects included in the templates is shown with a gray error bar.}
+    The median $J-K_S$ uncertainty of all objects included in the templates is shown with a gray error bar.
     Objects excluded from the templates are marked individually (\emph{crosses}, field g: \emph{gray}, low-g: \emph{orange}).
     The properties of the field and low-gravity template samples are summarized in Table~\ref{tab:sample_prop} and~\ref{tab:lg_sample_prop}, respectively. The individual objects included in the field and low-gravity templates are listed in Tables~\ref{tab:field_template} and \ref{tab:lowg_template}, while the excluded objects are listed in Tables~\ref{tab:field_excluded} and~\ref{tab:lowg_excluded}.}
   \label{fig:JK_colors}
@@ -478,13 +478,13 @@ The color properties of the field and low-gravity samples are discussed in more 
 \subsection{Method for Normalizing NIR Spectra}
 \label{sec:method}
 
-\textbf{L dwarfs exhibit a wide range of $J-K_S$ colors at each optical spectral type \cite[e.g.,][]{Kirkpatrick08, Schmidt10, Faherty:2012cy} and this color spread poses challenges to the analysis of NIR spectra.}
+L dwarfs exhibit a wide range of $J-K_S$ colors at each optical spectral type \cite[e.g.,][]{Kirkpatrick08, Schmidt10, Faherty:2012cy} and this color spread poses challenges to the analysis of NIR spectra.
 Common practice is to normalize NIR spectra of L~dwarfs at the \emph{zJ}-band peak (1.28--1.32~$\micron$, e.g., K10). %\citep[e.g.,][]{Kirkpatrick10}.
 In the top panel of Figure~\ref{fig:L1fan}, we show the 0.8--2.4~$\micron$ spectral range for 17 field-gravity, optically-typed L1 dwarfs normalized in this manner.
 Despite all of the objects having the same optical spectral type and appearing to have similar NIR spectral morphology, the spectra `fan out' at longer wavelengths.
 That is, while the spectra lie on top of each other near the normalization point, they gradually diverge from one another at both shorter and longer wavelengths, as would be expected for objects having a range of $J-K_S$ colors.
 This fanning effect makes analyzing the similarities or differences in the spectral shapes and absorption features difficult beyond where the spectra are normalized.
-\textbf{K10 attempts to get around this by focusing analysis on the 0.9--1.4$\micron$ region, but that method does not take full advantage of the spectral morphology in the \emph{H} and \emph{K} bands.}
+K10 attempts to get around this by focusing analysis on the 0.9--1.4$\micron$ region, but that method does not take full advantage of the spectral morphology in the \emph{H} and \emph{K} bands.
 
 As was pointed out over a decade ago by \citet{Leggett:2003tm}, despite the different spectral slopes, when the \emph{H} and \emph{K} bands of objects of the same optical spectral type are separately scaled and overlaid, the agreement between the spectral morphologies is excellent.
 In order to directly compare the absorption features in L~dwarf spectra, we utilize this plotting method where each NIR band is normalized separately, using most of the wavelength range of each band.
@@ -501,9 +501,9 @@ Once normalized in this manner, the effect of the color term is substantially re
 The same objects shown in the top panel of Figure~\ref{fig:L1fan} that fan out over the 0.8--2.4~$\micron$ range are shown in the bottom panel plotted band-by-band, using the above defined normalization ranges for each panel.
 Not only do the spectral similarities between the objects stand out more clearly in this panel visualization, it is also easier to distinguish truly peculiar (e.g, `red' and `blue') spectra from the bulk population.
 
-\textbf{This three component normalization method is further justified because it can be used to analyze data obtained by spectrographs which obtain spectra one band at a time and where full $JHK$ spectral coverage is not ensured.
+This three component normalization method is further justified because it can be used to analyze data obtained by spectrographs which obtain spectra one band at a time and where full $JHK$ spectral coverage is not ensured.
 Two such instruments which are used to study brown dwarfs and exoplanets are the Gemini Planet Imager (GPI) and the Spectro-Polarimetric High-contrast Exoplanet Research instrument (SPHERE) \citep{Beuzit:2008gt,Macintosh:2014js}.
-For example, \citet{Macintosh:2015ew} only obtained $JH$ spectra for 51 Eri b.}
+For example, \citet{Macintosh:2015ew} only obtained $JH$ spectra for 51 Eri b.
 
 With this plotting method, the color term present in the NIR spectra is approximated as a three component piece-wise step function.
 Since the reddening contributing to the color term has been found to be well described by a smooth function \citep{Marocco:2014kr,Hiranaka:2016jm}, there is likely still a small amount of residual reddening remaining within each band.
@@ -569,7 +569,7 @@ We also show spectral averages of the optical spectra along with the NIR templat
 Spectra excluded from the templates are displayed in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
 \textbf{The templates are available from GitHub\footnote{Templates: \url{https://github.com/BDNYC/NIRTemplates}}.}
 
-\textbf{Both the normalization method and the spectral templates described greatly facilitate the comparative analysis of the NIR spectral morphology of L dwarfs.}
+Both the normalization method and the spectral templates described greatly facilitate the comparative analysis of the NIR spectral morphology of L dwarfs.
 As more optical and/or NIR data are collected for L dwarfs, the templates could potentially be updated.
 In anticipation of this, we dub the templates presented here version 1.0.
 
@@ -812,14 +812,18 @@ Many other known low-gravity objects are not included in this analysis because t
 %Future work will incorporate data from the Folded-port Infrared Echellette (FIRE) spectrograph on Magellan \citep{Simcoe:2013kh} in the southern hemisphere.
 
 The spectral type distribution of the low-gravity objects is shown in Figure~\ref{fig:spthist} as red and orange bars.
-This sample of low-gravity objects is small and incomplete but the striking homogeneity of their NIR spectral morphologies amongst objects of the same optical spectral type provided strong motivation for making templates at some spectral types.
+This sample of low-gravity objects is small and incomplete\added{,} but the striking homogeneity of their NIR spectral morphologies amongst objects of the same optical spectral type provided strong motivation for \replaced{making}{constructing} templates \replaced{at}{for} some spectral types.
 
-The low-gravity templates are shown in Figure Sets~\ref{fig:beta_templates}--\ref{fig:gamma_templates} and the targets included in them are listed in Table~\ref{tab:lowg_template}.
+\replaced
+{The low-gravity templates are shown in Figure Sets~\ref{fig:beta_templates}--\ref{fig:gamma_templates} and the targets included in them are listed in Table~\ref{tab:lowg_template}.}
+{Low-gravity templates were produced following the same procedure for our field gravity templates.
+These are shown in Figure Sets~\ref{fig:beta_templates}--\ref{fig:gamma_templates}, with the targets included in them are listed in Table~\ref{tab:lowg_template}.}
 The spectra rejected from the low-gravity templates are shown in Figure Set~\ref{fig:lowg_excluded} and listed in Table~\ref{tab:lowg_excluded}.
-Of the~\optLowG, only two were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, rather than because of their inconsistent spectral morphology (Table~\ref{tab:lowg_excluded}, Figure Set~\ref{fig:lowg_excluded}).
+
+\replaced{Of the~\optLowG, only two were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, rather than because of their inconsistent spectral morphology}{Of the~\optLowG~low-gravity spectra available, only two were excluded from the templates. They were excluded primarily due to the low signal-to-noise ratio of their NIR spectra} (Table~\ref{tab:lowg_excluded}, Figure Set~\ref{fig:lowg_excluded}).
 
 In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color distribution versus spectral type for the field (black and gray) and low-gravity objects (red and orange) included in the optical-NIR sample of L~dwarfs.
-\textbf{For the low-gravity L0 bin, we use a box plot representation for the color distribution, while for the low-gravity L1--L4, where there are fewer than five objects in each bin, we only show the whiskers indicating the range of the distribution.}
+For the low-gravity L0 bin, we use a box plot representation for the color distribution, while for the low-gravity L1--L4, where there are fewer than five objects in each bin, we only show the whiskers indicating the range of the distribution.
 %The mean color of the objects included in the templates is marked as a solid circle and box and whiskers are used to show the quartile ranges of the colors spanned at each spectral type. Excluded objects are indicated by crosses.
 %The number of objects included in each template and descriptive statistics about their $J-K_S$ color distributions are listed in Table~\ref{tab:lg_sample_prop}.
 Not surprisingly, the $J-K_S$ color distribution of the low-gravity objects is significantly redder than the field-gravity objects.
@@ -1095,7 +1099,7 @@ We identify low-gravity spectral standards and list them in Table~\ref{tab:stand
 We considered bright objects at intermediate declinations which were included in the spectral average templates.
 
 Despite different selection criteria, four of our eight proposed low-gravity ($\gamma$ or $\beta$) standards are also proposed as \textsc{vl-g} or \textsc{int-g} standards by \citet{Allers:2013hk}, (hereafter AL13) and these are marked in Table~\ref{tab:standards} with a superscript `d'.
-\textbf{Despite having different classification methods\footnote{\textbf{AL13 define a gravity score for each L dwarf spectrum by comparing several NIR spectral features against those of field dwarf spectra. The score of a spectral feature can be 0, 1, or 2, depending on how far its index or equivalent width measurement differs from the intrinsic scatter seen for field dwarfs. The median of all the spectral features' scores is then taken as the representative gravity score for the whole NIR spectrum. INT-G are objects having gravity scores consistent with intermediate gravity (median score of 1), and VL-G are objects having gravity scores consistent with very low gravity (median score $\geq$ 1.5).}}, the AL13} \textsc{vl-g} and \textsc{int-g} \textbf{suffixes are used to indicate essentially the same spectral morphology as our $\gamma$ and $\beta$ suffixes.}
+Despite having different classification methods\footnote{AL13 define a gravity score for each L dwarf spectrum by comparing several NIR spectral features against those of field dwarf spectra. The score of a spectral feature can be 0, 1, or 2, depending on how far its index or equivalent width measurement differs from the intrinsic scatter seen for field dwarfs. The median of all the spectral features' scores is then taken as the representative gravity score for the whole NIR spectrum. INT-G are objects having gravity scores consistent with intermediate gravity (median score of 1), and VL-G are objects having gravity scores consistent with very low gravity (median score $\geq$ 1.5).}, the AL13 \textsc{vl-g} and \textsc{int-g} suffixes are used to indicate essentially the same spectral morphology as our $\gamma$ and $\beta$ suffixes.
 The L1$\gamma$, L2$\gamma$, and L3$\gamma$ standards we chose are the same as the \textsc{vl-g} L dwarfs proposed by AL13.
 We chose different standards for L0$\gamma$ and L4$\gamma$.
 \begin{itemize}
@@ -1132,13 +1136,13 @@ We propose a spectral typing scheme that takes advantage of normalizing band-by-
 %As illustrated in Figure~\ref{fig:sequence}, the \emph{H} and \emph{K} bands are not as diagnostic of an optically-anchored spectral type as the feature-rich \emph{zJ} band.
 
 \begin{itemize}
-	\item If $JHK$ spectra are available, normalize the data at 1.28~$\micron$ and compare to the NIR spectral standards as described in K10. Note if the \textbf{spectral slope is unusually red or blue compared to the standard.}
+	\item If $JHK$ spectra are available, normalize the data at 1.28~$\micron$ and compare to the NIR spectral standards as described in K10. Note if the spectral slope is unusually red or blue compared to the standard.
 
 	\item Normalize the spectra band-by-band as described in \S~\ref{sec:method} and compare to the spectral standards and/or the field- and low-gravity NIR templates to find the best matches in each band.
 	The `best' match is the subtype where the spectral shapes look the most similar. The best match is usually bracketed by fair-to-good matches one type later and earlier than the best match.
 	The fit in \emph{zJ}-band is given the most weight, followed by \emph{H} and \emph{K} bands.
-	\textbf{If multiple templates fit equally well in the \emph{zJ} band, then look for the best fit in the \emph{H} band.
-	If multiple templates fit equally well in both \emph{zJ} and \emph{H}, then look for the best fit in \emph{K}.}
+	If multiple templates fit equally well in the \emph{zJ} band, then look for the best fit in the \emph{H} band.
+	If multiple templates fit equally well in both \emph{zJ} and \emph{H}, then look for the best fit in \emph{K}.
 	The goodness of the \emph{K} band match is considered last and relatively poor K-band matches are tolerated if there are good matches in the \emph{zJ} and \emph{H} bands.
 	\begin{itemize}
 		\item[$\circ$] The features in the \emph{zJ} band that determine a good match are the slope of the entire band and the strengths of the various absorption features; the 1.3~$\micron$ peak is not always matched well.
@@ -1163,7 +1167,7 @@ We propose a spectral typing scheme that takes advantage of normalizing band-by-
 
 Presently, we do not encourage the use of half-types (or any further gradation) for spectral types based on low-resolution NIR data.
 Compared to the optical sequence, where half-types are warranted, the low-resolution NIR data display a greater diversity of spectral morphologies at each type and the resulting sequence is coarser.
-\textbf{In addition, the three component piece-wise normalization method is not fully accounting for the color term of each object and the residual reddening is likely contributing to the spread of spectral morphologies at each spectral type.}
+In addition, the three component piece-wise normalization method is not fully accounting for the color term of each object and the residual reddening is likely contributing to the spread of spectral morphologies at each spectral type.
 %As a result, the NIR spectral sequence of L dwarfs based on SpeX prism data is coarser and less precise than the optical sequence.
 %A NIR spectral sequence based on moderate-resolution spectra may facilitate the introduction of half types in the future.
 
@@ -1195,46 +1199,42 @@ Compared to the optical sequence, where half-types are warranted, the low-resolu
 %	\end{itemize}
 %\end{enumerate}
 
-\textbf{
 We have developed a Python program, dubbed The Ultracool Typing Kit, which facilitates the spectral comparisons described above.
 The program normalizes the input NIR spectrum band-by-band (as described in \S~\ref{sec:method}) and overplots it on the grid of the spectral field- and low-gravity templates listed in Table~\ref{tab:standards}.
-The program, a more detailed description, and usage instructions can all be found on GitHub\footnote{The Ultracool Typing Kit: \url{https://github.com/BDNYC/UltracoolTypingKit}}.}
+The program, a more detailed description, and usage instructions can all be found on GitHub\footnote{The Ultracool Typing Kit: \url{https://github.com/BDNYC/UltracoolTypingKit}}.
 
 \subsubsection{New method compared to optical and literature NIR types}
 
-\textbf{
 We use the optical-NIR sample described in \S~\ref{sec:sample} to compare the spectral typing method described above to optical spectral types and NIR spectral types found in the literature.
 %This sample is well-suited to analyze the performance of the new typing method since all of the objects have NIR spectra as well as high-fidelity optical spectral types.}
-The NIR spectra in the optical-NIR sample were stripped of identifying information and typed using the method described above (via the Ultracool Typing Kit).}
+The NIR spectra in the optical-NIR sample were stripped of identifying information and typed using the method described above (via the Ultracool Typing Kit).
 
-\textbf{As described in  \S~\ref{sec:sample}, we used SPLAT to identify NIR spectral types existing in the literature for 78~objects in the optical-NIR sample.
+As described in  \S~\ref{sec:sample}, we used SPLAT to identify NIR spectral types existing in the literature for 78~objects in the optical-NIR sample.
 We compare our NIR spectral types to those literature NIR types in Figure~\ref{fig:Lit NIR comparison}.
 While the agreement is generally good, with 58/78 (74\%) agreeing within one subtype, we note a strong tendency for the literature types to be later than the ones found with the method proposed here.
 This is not surprising since this same trend is observed with the optical types (Figure~\ref{fig:opt_lit_nir_comparison}) to which our scheme is anchored.
-}
 
-\textbf{
 The resulting NIR types are compared to the optical types in Figure~\ref{fig:optical NIR comparison}.
 In general, the agreement is excellent, with 90\% of NIR types being within one subclass of the optical type and having the same suffix (153/\sample).
 Only 6/\sample~(4\%) objects are off by more than one subtype and 13/\sample~(8\%) were assigned a different suffix.
-This analysis shows that the NIR spectral typing method we propose here does indeed result in NIR types which are consistent with the optical types.}
+This analysis shows that the NIR spectral typing method we propose here does indeed result in NIR types which are consistent with the optical types.
 
 % ***Something about the six outlier objects. Issue #20
 
 \begin{figure}
   \plotone{nir_field_obj.pdf}
-  \caption{\textbf{Swarm plot representation of literature NIR spectral types compared to NIR types found using the method described here.
+  \caption{Swarm plot representation of literature NIR spectral types compared to NIR types found using the method described here.
   Filled orange, blue, and pink circles indicate objects where the suffixes agree while a black star indicates suffix disagreement.
-  While the agreement is generally good, with 58/78~(74\%) agreeing within one subtype, we note a strong tendency for the literature types to be later than the ones found with the method proposed here.}}
+  While the agreement is generally good, with 58/78~(74\%) agreeing within one subtype, we note a strong tendency for the literature types to be later than the ones found with the method proposed here.}
   \label{fig:Lit NIR comparison}
 \end{figure}
 
 \begin{figure}
   \plotone{opt_field_obj.pdf}
-  \caption{\textbf{Swarm plot representation of optical spectral types compared to NIR types found using the method described here.
+  \caption{Swarm plot representation of optical spectral types compared to NIR types found using the method described here.
   Filled orange, blue, and pink circles indicate objects where the suffixes agree while a black star indicates suffix disagreement.
   In general, the agreement is excellent, with 90\% of NIR types being within one subclass of the optical type and having the same suffix (153/\sample).
-  Only 6/\sample~(4\%) objects are off by more than one subtype and 13/\sample~(8\%) were assigned a different suffix.}}
+  Only 6/\sample~(4\%) objects are off by more than one subtype and 13/\sample~(8\%) were assigned a different suffix.}
   \label{fig:optical NIR comparison}
 \end{figure}
 
@@ -1243,7 +1243,7 @@ This analysis shows that the NIR spectral typing method we propose here does ind
 We present analyses of \sample~L dwarfs with both high quality optical and NIR spectra.
 The sample is comprised of \optField~field-gravity L0--L5 objects and \optLowG~L0--L4 low-gravity $\beta$~and $\gamma$~objects.
 Included in the sample are new low-resolution NIR SpeX spectra for \NewPrismObjects~L dwarfs and new moderate-resolution far-red optical spectra for~\NewOptObjects.
-\textbf{These data are all are publicly available from the BDNYC Database.}
+\added{These data are all are publicly available from the BDNYC Database.}
 In our analysis of the NIR spectra, we normalize the spectra band-by-band rather than at one small wavelength window.
 This normalization method effectively reduces the broad-band reddening term present in the spectra and facilitates the comparison of the molecular absorption features.
 
@@ -1270,7 +1270,7 @@ We have suggested alternate and secondary standards where previously proposed st
 We proposed a scheme to assign spectral types to low-resolution NIR spectra of L~dwarfs.
 The scheme
 \begin{itemize}
-  \item \textbf{results in spectral types consistent with optical types,}
+  \item results in spectral types consistent with optical types,
   \item is anchored to the optical and thus primarily correlated with temperature,
   \item provides a method to estimate spectral types using spectra with limited wavelength coverage,
   \item requires an analysis of the spectra band-by-band and thus is minimally sensitive to the range of NIR colors spanned by each type,
@@ -1350,7 +1350,7 @@ This research has benefited from the SpeX Prism Spectral Libraries, maintained b
 and made use of NASA's Astrophysics Data System; the SIMBAD database, operated at CDS, Strasbourg, France; and the AstroBetter blog and wiki.
 Some of the data presented herein were obtained at the W.M. Keck Observatory, which is operated as a scientific partnership among the California Institute of Technology, the University of California and the National Aeronautics and Space Administration. The Observatory was made possible by the generous financial support of the W.M. Keck Foundation.
 This paper also includes data gathered with the 6.5 meter Magellan Telescopes located at Las Campanas Observatory, Chile.
-\textbf{This publication makes use of data products from the Two Micron All Sky Survey, which is a joint project of the University of Massachusetts and the Infrared Processing and Analysis Center/California Institute of Technology, funded by the National Aeronautics and Space Administration and the National Science Foundation.}
+This publication makes use of data products from the Two Micron All Sky Survey, which is a joint project of the University of Massachusetts and the Infrared Processing and Analysis Center/California Institute of Technology, funded by the National Aeronautics and Space Administration and the National Science Foundation.
 The authors wish to recognize and acknowledge the very significant cultural role and reverence that the summit of Mauna Kea has always had within the indigenous Hawaiian community.  We are most fortunate to have the opportunity to conduct observations from this mountain.
 
 \facility{IRTF(SpeX), Keck(LRIS), Magellan:Clay(LDSS3)}
