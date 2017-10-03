@@ -78,7 +78,7 @@ These templates reveal that NIR spectral morphologies are correlated with the op
 \added{They also} show the range of spectral morphologies spanned by each spectral type.
 We compare low-gravity and field-gravity templates to provide recommendations on the minimum required observations for credibly classifying low-gravity spectra using low-resolution NIR data.
 We use the templates to evaluate the existing NIR spectral standards and propose new ones where appropriate.
-Finally, we build on the work of \cite{Kirkpatrick10} to provide a spectral typing method which is tied to the optical and can be used when only \emph{H}- or \emph{K}-band data are available.
+Finally, we build on the work of \cite{Kirkpatrick10} to provide a spectral typing method \replaced{which}{that} is tied to the optical and can be used when only \emph{H}- or \emph{K}-band data are available.
 The methods we present here provide resolutions to several long standing issues with classifying L dwarf spectra and
 could also be the foundation for a spectral classification scheme for cloudy exoplanets.
 \end{abstract}
@@ -92,6 +92,8 @@ Building upon the initial discovery and classification of these objects \citep{B
 In this final paper of the series, we focus on the analysis of the NIR spectra of L dwarfs obtained while building that volume-limited sample.
 
 % L dwarf classification in the OPTICAL
+\added{Spectral classification aims to provide a method of succinctly and accurately inferring the physical properties of a celestial object based on its spectral morphology.
+Achieving that aim requires that spectral analyses of the same object at different wavelengths give self-consistent results.}
 The first classification scheme developed for L dwarfs \replaced{is}{was} based on their spectral morphology at red-optical wavelengths using spectra typically covering 6000--9000~\AA~at $R\sim1000$ \citep{Martin99,K99,Kirkpatrick05}.
 This classification scheme \replaced{relies}{relied} on the prominent spectral absorption features due to \ion{K}{1} broadening, metal oxides (VO, TiO), metal hydrides (CrH, FeH), and alkali metals (Cs, Rb).
 Red-optical spectra of L dwarfs are on the Wien side of the underlying blackbody spectrum, and the spectral morphology in that wavelength regime is dominated by temperature effects, with surface gravity and metallicity making secondary contributions.
@@ -129,7 +131,7 @@ This larger wavelength coverage provides more ``room'' for the diversity of spec
 The discord between the classification of L dwarfs at different wavelengths and resolutions is reminiscent of the parable of a group of investigators who are asked to describe an elephant based only on a small part of the animal's anatomy.
 Each one describes an entirely different part (tusk, trunk, ears, legs) and while none of them are wrong, they are unable to form a coherent description of the elephant.
 In the case of the analysis of L dwarf spectra, the different parts of the spectrum are sensitive to different underlying physical properties just like the length of an elephant's tusk, which keeps growing throughout adulthood, is more indicative of its age than the length of its trunk, which stops growing once the animal matures.
-Further, due to the differences in wavelength coverage and resolution, the optical spectra are similar to a close up of the elephant's side while the SpeX Prism spectra are like a zoomed out view including the trunk, ears, and tusks providing a more complete view of a complex animal.
+Further, due to the differences in wavelength coverage, resolution, \added{and optical depth probed}, the optical spectra are similar to a close up of the elephant's side while the SpeX Prism spectra are like a zoomed out view including the trunk, ears, and tusks providing a more complete view of a complex animal.
 
 Given how important the NIR spectra are as a diagnostic for the fundamental properties of both L~dwarfs and giant exoplanets, we have undertaken a concerted effort to disentangle and isolate the spectral features due to temperature and gravity.
 %In particular, we have combined new and existing far-red optical and NIR data for L~dwarfs in order to use the optical spectra as the anchor for the NIR spectral analysis.
@@ -153,7 +155,7 @@ During these observing runs, we also targeted confirmed nearby M and L dwarfs fr
 The data collected during these campaigns are publicly available from the BDNYC Database\footnote{The BDNYC Database: \url{http://database.bdnyc.org/}}.
 
 As described in more detail below, the far-red optical observations were obtained with several different instruments but we restrict the analysis in this paper to objects with NIR data obtained with the SpeX spectrograph \citep{Spex} on the 3~m NASA Infrared Telescope Facility using the low-resolution prism mode.
-We have combined these data, other extant spectra from the literature, and new data to create a sample of \sample~L~dwarfs with both far-red optical (6000--9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''.
+We have combined \replaced{these}{new SpeX prism} data, new optical data, and extant spectra from the literature to create a sample of \sample~L~dwarfs with both far-red optical (6000--9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''.
 
 \subsection{Far-Red Optical Spectra}
 \label{sec:obs_new_opt}
@@ -168,7 +170,7 @@ Included in the sample are new optical spectra for 16 objects from the Low Resol
 The targets, telescopes, and observation dates are listed in Table~\ref{tab:newopt}.
 The data were obtained and reduced in the same manner as described in \citet{Kirkpatrick10}.
 In Figure~\ref{fig:spthist}, these new far-red optical data are indicated in the spectral type distribution of the entire optical-NIR sample with left hatching.
-The spectra are shown in Figure Set~\ref{fig:newopt} and are publicly available from the \textbf{BDNYC Database}.
+The spectra are shown in Figure Set~\ref{fig:newopt}.
 
 \figsetstart
 \figsetnum{3}
@@ -392,7 +394,7 @@ These data are publicly available from the BDNYC Database.}
 In addition to a far-red optical spectrum, for an L dwarf to be included in the optical-NIR sample, it is required to have a spectrum obtained with the SpeX spectrograph on the 3~m NASA Infrared Telescope Facility using the low-resolution prism mode \citep{Spex}.
 SpeX prism mode provides a wavelength coverage of 0.8--2.5~$\micron$ in a single order and an average resolving power of $\lambda/\Delta\lambda\sim120$.
 %with a 0$\farcs$5-wide slit.
-SpeX has proven to be a popular workhorse instrument for brown dwarf spectroscopic follow-up and, as a result, there is a plethora of data publicly available in SpeX Prism Library Analysis Toolkit (SPLAT)\footnote{SpeX Prism Library Analysis Toolkit (SPLAT): \url{http://www.browndwarfs.org/splat}} and its predecossor, the Spex Prism Library \footnote{Spex Prism Spectral Library: \url{http://pono.ucsd.edu/~adam/browndwarfs/spexprism/}} \citep{Burgasser:2014tr}.
+SpeX has proven to be a popular workhorse instrument for brown dwarf spectroscopic follow-up and, as a result, there is a plethora of data publicly available in SpeX Prism Library Analysis Toolkit (SPLAT)\footnote{SpeX Prism Library Analysis Toolkit (SPLAT): \url{http://www.browndwarfs.org/splat}} and its predecessor, the SpeX Prism Library \footnote{SpeX Prism Spectral Library: \url{http://pono.ucsd.edu/~adam/browndwarfs/spexprism/}} \citep{Burgasser:2014tr}.
 
 \label{sec:obs_new_nir}
 Included in the sample are \NewPrismSpectra~new SpeX prism spectra of \NewPrismObjects~L dwarfs.
@@ -400,7 +402,7 @@ Observations were obtained over 28 nights during 2003--2011. The targets and obs
 The targets were observed as dithered pairs (ABBA) to enable pair-wise sky subtraction. A0 stars were observed at a similar airmass and time as the target to provide both telluric and flux calibration.
 The data were flat-fielded, extracted, wavelength calibrated, and telluric corrected with Spextool \citep{Cushing04,Spextool2}.
 In the spectral type distribution of the entire optical-NIR sample shown in Figure~\ref{fig:spthist}, objects with new NIR SpeX Prism data are indicated with right hatching.
-\textbf{These data are publicly available from both SPLAT and the BDNYC Database.}
+These data are publicly available from both SPLAT and the BDNYC Database.
 
 In Appendix~\ref{sec:galaxies}, we show the NIR spectra of objects that were revealed to not be ultracool dwarfs and instead are suspected to be galaxies.
 
@@ -477,9 +479,8 @@ The color properties of the field and low-gravity samples are discussed in more 
 
 \subsection{Method for Normalizing NIR Spectra}
 \label{sec:method}
-
 L dwarfs exhibit a wide range of $J-K_S$ colors at each optical spectral type \cite[e.g.,][]{Kirkpatrick08, Schmidt10, Faherty:2012cy} and this color spread poses challenges to the analysis of NIR spectra.
-Common practice is to normalize NIR spectra of L~dwarfs at the \emph{zJ}-band peak (1.28--1.32~$\micron$, e.g., K10). %\citep[e.g.,][]{Kirkpatrick10}.
+\replaced{Common practice is to normalize }{Most previous analyses have normalized } NIR spectra of L~dwarfs at the \emph{zJ}-band peak (1.28--1.32~$\micron$, e.g., K10). %\citep[e.g.,][]{Kirkpatrick10}.
 In the top panel of Figure~\ref{fig:L1fan}, we show the 0.8--2.4~$\micron$ spectral range for 17 field-gravity, optically-typed L1 dwarfs normalized in this manner.
 Despite all of the objects having the same optical spectral type and appearing to have similar NIR spectral morphology, the spectra `fan out' at longer wavelengths.
 That is, while the spectra lie on top of each other near the normalization point, they gradually diverge from one another at both shorter and longer wavelengths, as would be expected for objects having a range of $J-K_S$ colors.
@@ -706,6 +707,7 @@ While the optical system of \cite{K99} only goes to L8, \cite{Geballe02} introdu
 %Despite a frequent misconception that it starts with the first appearance of methane \emph{anywhere} in the NIR spectrum,
 \cite{Geballe02} define the start of the T dwarf sequence as the first appearance of the 1.6$\micron$ methane absorption feature in the \emph{H}~band.
 All L8-type objects have a 2.2$\micron$ methane absorption feature in the \emph{K}~band.
+\added{The sample includes several objects classified as an L8 in the optical and L9 in the NIR (e.g., 0255-47, 0328+23, 0830+48).}
 While we do see a larger variety of NIR spectral morphologies among the optically-classified L8~objects, we do not see any trends in the spectral features which justify a spectral class later than L8.
 
 In Figure~\ref{fig:JK_colors}, we show 2MASS $J-K_S$ color versus optical spectral type for the optical-NIR sample of L~dwarfs.
