@@ -147,10 +147,11 @@ Photometric selection criteria were used to identify candidate nearby ultracool 
 The selection criteria and sample creation are described extensively in Papers~V,~IX, and~X.
 Candidate objects were targeted for far-red optical and/or near-infrared spectroscopic follow-up to obtain spectral types and photometric distances.
 During these observing runs, we also targeted confirmed nearby M and L dwarfs from the literature that lacked optical and/or NIR spectra.
-The data collected during these campaigns are publicly available from the BDNYC Database\footnote{The BDNYC Database: \url{http://database.bdnyc.org/}}.
 
 As described in more detail below, the far-red optical observations were obtained with several different instruments but we restrict the analysis in this paper to objects with NIR data obtained with the SpeX spectrograph \citep{Spex} on the 3~m NASA Infrared Telescope Facility using the low-resolution prism mode.
 We have combined \replaced{these}{new SpeX prism} data, new optical data, and extant spectra from the literature to create a sample of \sample~L~dwarfs with both far-red optical (6000--9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''.
+
+All of these data are publicly available from the BDNYC Database\footnote{The BDNYC Database: \url{http://database.bdnyc.org/}}. \added{The website interface to the database relies on AtrodbWeb \citep{Rodriguez:2016ea}. Version 1 of the database \citep{Filippazzo:2016go} includes data from \citet{Filippazzo:2015dv} while version 2 includes all the data used in this paper.}
 
 \subsection{Far-Red Optical Spectra}
 \label{sec:obs_new_opt}
@@ -1270,6 +1271,10 @@ This publication makes use of data products from the Two Micron All Sky Survey, 
 The authors wish to recognize and acknowledge the very significant cultural role and reverence that the summit of Mauna Kea has always had within the indigenous Hawaiian community. We are most fortunate to have the opportunity to conduct observations from this mountain.
 
 \facility{IRTF(SpeX), Keck(LRIS), Magellan:Clay(LDSS3)}
+
+\added{\software{Astropy \citep{TheAstropyCollaboration:2013cd},
+          Matplotlib \citep{matplotlib:2007ih}}
+          }
 
 \bibliographystyle{aasjournal}
 \bibliography{paper12}
