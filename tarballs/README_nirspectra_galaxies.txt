@@ -23,7 +23,7 @@ designation filename  path
 2MASS J05574102-1333264 U10474.fits BDNYC_spectra/SpeX/Prism/U10474.fits
 2MASS J05574229-1333156 U10475.fits BDNYC_spectra/nir_spectra/U10475.fits
 2MASS J05583706-1339123 U10480.fits BDNYC_spectra/nir_spectra/U10480.fits
-"2MASS J12475047-0152142  " u11099_050323.fits  BDNYC_spectra/nir_spectra/u11099_050323.fits
+2MASS J12475047-0152142 u11099_050323.fits  BDNYC_spectra/nir_spectra/u11099_050323.fits
 2MASS J12490460-3454079 u20453_050323.fits  BDNYC_spectra/nir_spectra/u20453_050323.fits
 2MASS J13570485-3946356 u20534_050323.fits  BDNYC_spectra/nir_spectra/u20534_050323.fits
 2MASS J15063708+2759546 U20599.fits BDNYC_spectra/nir_spectra/U20599.fits
@@ -31,5 +31,5 @@ designation filename  path
 2MASS J20151370-1252571 U11982.fits BDNYC_spectra/nir_spectra/U11982.fits
 2MASS J22400942+3848306 U13203.fits BDNYC_spectra/nir_spectra/U13203.fits
 2MASS J22433237-1525260 U12153.fits BDNYC_spectra/nir_spectra/U12153.fits
-23490528+1833150  U21012.fits BDNYC_spectra/nir_spectra/U21012.fits
+2MASS J23490528+1833150 U21012.fits BDNYC_spectra/nir_spectra/U21012.fits
 ================================================================================
