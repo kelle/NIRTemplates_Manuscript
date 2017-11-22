@@ -1,0 +1,43 @@
+Title: Meeting the Cool Neighbors XII: An Optically-Anchored Analysis of 
+       the Near-Infrared Spectra of L Dwarfs
+Authors: Cruz K.L., Nunez A., Burgasser A.J., Abrahams E., Rice E.L., 
+         Reid I.N., Looper D. 
+Table: New Far-Red Optical Observations
+================================================================================
+Byte-by-byte Description of file: datafile1.txt
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label  Explanations
+--------------------------------------------------------------------------------
+   1-  4 A4     ---     FS     Figure Set 1 element number
+   6- 23 A18    ---     2MASS  2MASS identifier of optical L dwarf
+  25- 30 A6     ---     Tel    Telescope
+  32- 37 A6     ---     Instr  Instrument
+  39- 42 I4     yr      Obs.Y  Observation Year
+  44- 46 A3     ---     Obs.M  Observation Month
+  48- 49 I2     d       Obs.D  Observation Day in Month
+  51- 61 A11    ---     SpT    Derived optical spectral type
+  63- 81 A19    ---   r_SpT    Reference bibcode for SpT
+  83- 86 A4     ---     SpT-1  Previous Spectral type, no 1
+  88-106 A19    ---   r_SpT-1  Reference bibcode for SpT-1
+ 108-115 A8     ---     SpT-2  Previous Spectral type, no 2
+ 117-135 A19    ---   r_SpT-2  Reference bibcode for SpT-2
+--------------------------------------------------------------------------------
+1.1  00325584-4405058   Keck I LRIS   2009 Oct 11 L0{gamma}   2009AJ....137.3345C (L0) 2008AJ....136.1290R                              
+1.2  00550564+0134365   Keck I LRIS   2009 Oct 11 L2{gamma}   This paper                                                                
+1.3  01174748-3403258   Keck I LRIS   2009 Oct 12 L1{gamma}   This paper          L2?  2003AJ....126.2421C                              
+1.4  02103857-3015313   Keck I LRIS   2009 Oct 11 L0{gamma}   This paper                                                                
+1.5  02411151-0326587   Keck I LRIS   2009 Oct 12 L0{gamma}   2009AJ....137.3345C (L1) 2007AJ....133..439C                              
+1.6  05184616-2756457   Keck I LRIS   2009 Feb 17 L1{gamma}   This paper          L0:  2007AJ....133..439C                              
+1.7  05361998-1920396   Keck I LRIS   2009 Feb 17 L2{gamma}   This paper          L1:  2007AJ....133..439C                              
+1.8  06244595-4521548   Clay   LDSS-3 2008 Feb 24 L5          This paper          L5:  2008AJ....136.1290R                              
+1.9  15382417-1953116   Keck I LRIS   2010 Jul 17 L4{gamma}   This paper                                                                
+1.11 15515237+0941148   Keck I LRIS   2010 Jun 18 L3.5{gamma} This paper          (L2) 2008AJ....136.1290R                              
+1.10 15515237+0941148   Keck I LRIS   2009 Feb 17                                                                                       
+1.13 16154255+4953211   Keck I LRIS   2010 Jun 18 L4{gamma}   This paper          (L4) 2007AJ....133..439C                              
+1.12 16154255+4953211   Keck I LRIS   2009 Feb 17                                                                                       
+1.14 17111353+2326333   Keck I LRIS   2010 Jun 18 L0{gamma}   This paper          L0:  2007AJ....133..439C                              
+1.15 17260007+1538190   Keck I LRIS   2010 Jun 18 L3.5{gamma} This paper          L2   2000AJ....120..447K L3{beta} 2009AJ....137.3345C 
+1.16 20343769+0827009   Clay   LDSS-3 2008 Oct 07 L1          This paper                                                                
+1.17 21373742+0808463   Keck I LRIS   2010 Jul 17 L5          This paper          L5:  2008AJ....136.1290R                              
+1.18 22495345+0044046AB Keck I LRIS   2009 Oct 11 L4{gamma}   This paper          L3   2002AJ....123.3409H                              
+1.19 23153135+0617146   Keck I LRIS   2009 Oct 11 L0{gamma}   This paper                                                                

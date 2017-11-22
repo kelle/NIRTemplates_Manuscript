@@ -1,0 +1,33 @@
+Title: Meeting the Cool Neighbors XII: An Optically-Anchored Analysis of 
+       the Near-Infrared Spectra of L Dwarfs
+Authors: Cruz K.L., Nunez A., Burgasser A.J., Abrahams E., Rice E.L., 
+         Reid I.N., Looper D. 
+Table: Near-Infrared IRTF SpeX Prism Spectra of Galaxies
+================================================================================
+Byte-by-byte Description of file: datafile10.txt
+--------------------------------------------------------------------------------
+   Bytes Format Units Label  Explanations
+--------------------------------------------------------------------------------
+   1-  5 A5    ---   FS     Figure Set A1 element number
+   7- 22 A16   ---   2MASS  2MASS identifier of likely galaxy
+  24- 27 I4    yr    Obs.Y  Observation Year
+  29- 31 A3    ---   Obs.M  Observation Month
+  33- 34 I2    d     Obs.D  Observation Day in Month
+--------------------------------------------------------------------------------
+A1.1  00110940+5149236 2003 Sep 05 
+A1.2  02561474+1935213 2003 Sep 05 
+A1.3  02562362+2013457 2003 Sep 05 
+A1.4  04214954+1528598 2004 Nov 07 
+A1.5  05151593-0656262 2004 Nov 07 
+A1.6  05574102-1333264 2004 Nov 07 
+A1.7  05574229-1333156 2003 Sep 05 
+A1.8  05583706-1339123 2003 Sep 05 
+A1.9  12475047-0152142 2005 Mar 23 
+A1.10 12490476-3454014 2005 Mar 23 
+A1.11 13570485-3946356 2005 Mar 23 
+A1.12 15063706+2759544 2003 Sep 05 
+A1.13 17213581-0619145 2003 Sep 03 
+A1.14 20151370-1252571 2003 Aug 11 
+A1.15 22400942+3848306 2003 Aug 12 
+A1.16 22433237-1525260 2003 Aug 12 
+A1.17 23490528+1833150 2003 Sep 04 

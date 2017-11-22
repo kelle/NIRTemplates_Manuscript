@@ -1,0 +1,187 @@
+================================================================================
+Title:  Meeting the Cool Neighbors XII: An Optically-Anchored Analysis of
+       the Near-Infrared Spectra of L Dwarfs
+Authors: Cruz K.L., Nunez A., Burgasser A.J., Abrahams E., Rice E.L.,
+         Reid I.N., Looper D.
+================================================================================
+Description of contents: Near-infrared spectra of M and L dwarfs included in
+    the optical-NIR sample listed in Tables 3-6. Each file contains the flux
+    and uncertainty values for the observed spectrum.
+
+System requirements: These are standard FITS spectra files.
+
+Additional comments: A summary table of the catalogs is given below
+
+designation               filename                                             path
+2MASS J01033203+1935361   2M0103.fits                                          BDNYC_spectra/nir_spectra/2M0103.fits
+2MASS J07003664+3157266   U10617.fits                                          BDNYC_spectra/nir_spectra/U10617.fits
+2MASS J08354256-0819237   U10742.fits                                          BDNYC_spectra/nir_spectra/U10742.fits
+2MASS J08472872-1532372   U10764.fits                                          BDNYC_spectra/nir_spectra/U10764.fits
+2MASS J10584787-1548172   U10949.fits                                          BDNYC_spectra/nir_spectra/U10949.fits
+2MASS J15150083+4847416   U11314.fits                                          BDNYC_spectra/nir_spectra/U11314.fits
+2MASS J21041491-1037369   U12059.fits                                          BDNYC_spectra/nir_spectra/U12059.fits
+2MASS J22244381-0158521   U12128_2224-0158.fits                                BDNYC_spectra/nir_spectra/U12128_2224-0158.fits
+2MASS J00452143+1634446   U20037_2M0045+1634_adam.fits                         BDNYC_spectra/nir_spectra/U20037_2M0045+1634_adam.fits
+2MASS J01075242+0041563   U20052_2M0107_dagny.fits                             BDNYC_spectra/nir_spectra/U20052_2M0107_dagny.fits
+2MASS J02103857-3015313   U20098.fits                                          BDNYC_spectra/nir_spectra/U20098.fits
+2MASS J05012406-0010452   U20198_2M0501-0010_dagny.fits                        BDNYC_spectra/nir_spectra/U20198_2M0501-0010_dagny.fits
+2MASS J06244595-4521548   U20244_f1.fits                                       BDNYC_spectra/nir_spectra/U20244_f1.fits
+2MASS J08300825+4828482   U20301.fits                                          BDNYC_spectra/nir_spectra/U20301.fits
+2MASS J10224821+5825453   u20373_050323.fits                                   BDNYC_spectra/nir_spectra/u20373_050323.fits
+2MASS J22443167+2043433   U20968_2244+2043_dagny.fits                          BDNYC_spectra/nir_spectra/U20968_2244+2043_dagny.fits
+2MASS J16322911+1904407   2M1632_SpeX.fits                                     BDNYC_spectra/SpeX/Prism/2M1632_SpeX.fits
+2MASS J23224684-3133231   j2322-3133prismtc1.fits                              BDNYC_spectra/SpeX/Prism/j2322-3133prismtc1.fits
+2MASS J01415823-4633574   spex_prism_0141-4633_040905.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0141-4633_040905.fits
+2MASS J03231002-4631237   spex_prism_0323-4631_U20157.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0323-4631_U20157.fits
+2MASS J03572695-4417305   spex_prism_0357-4417_070916.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0357-4417_070916.fits
+2MASS J11463449+2230527   spex_prism_1146+2230_080112.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1146+2230_080112.fits
+2MASS J11544223-3400390   spex_prism_1154-3400_080109.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1154-3400_080109.fits
+2MASS J12281523-1547342   spex_prism_1228-1547_080114.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1228-1547_080114.fits
+2MASS J15394189-0520428   spex_prism_1539-0520_080714.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1539-0520_080714.fits
+2MASS J15525906+2948485   spex_prism_1552+2948_080730.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1552+2948_080730.fits
+2MASS J17260007+1538190   spex_prism_1726+1538_080713.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1726+1538_080713.fits
+2MASS J17281150+3948593   spex_prism_1728+3948_060821.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1728+3948_060821.fits
+2MASS J22081363+2921215   spex_prism_2208+2921_U40004.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2208+2921_U40004.fits
+2MASS J00043484-4044058   spex_prism_lhs102bc_040907.fits                      BDNYC_spectra/SpeX/Prism/spex_prism_lhs102bc_040907.fits
+2MASS J01174748-3403258   spex_prism_U10074_060821.fits                        BDNYC_spectra/SpeX/Prism/spex_prism_U10074_060821.fits
+2MASS J02411151-0326587   spex_prism_U10141_060821.fits                        BDNYC_spectra/SpeX/Prism/spex_prism_U10141_060821.fits
+2MASS J03185403-3421292   U10176.fits                                          BDNYC_spectra/SpeX/Prism/U10176.fits
+2MASS J04390101-2353083   U10312.fits                                          BDNYC_spectra/SpeX/Prism/U10312.fits
+2MASS J04455387-3048204   U10329.fits                                          BDNYC_spectra/SpeX/Prism/U10329.fits
+2MASS J05233822-1403022   U10390.fits                                          BDNYC_spectra/SpeX/Prism/U10390.fits
+2MASS J10101480-0406499   U10880.fits                                          BDNYC_spectra/SpeX/Prism/U10880.fits
+2MASS J20575409-0252302   U12054_2057-0252.fits                                BDNYC_spectra/SpeX/Prism/U12054_2057-0252.fits
+2MASS J00250365+4759191   U13016.fits                                          BDNYC_spectra/SpeX/Prism/U13016.fits
+2MASS J06521977-2534505   U50078_0652-2534_090125.fits                         BDNYC_spectra/SpeX/Prism/U50078_0652-2534_090125.fits
+2MASS J00100009-2031122   spex_prism_0010-2031_080714.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0010-2031_080714.fits
+2MASS J00150206+2959323   U50207_0015+2959_KIR10.fits                          BDNYC_spectra/nir_spectra/U50207_0015+2959_KIR10.fits
+2MASS J00154476+3516026   spex_prism_0015+3516_080908.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0015+3516_080908.fits
+2MASS J00165953-4056541   spex_prism_0016-4056_080907.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0016-4056_080907.fits
+2MASS J00325584-4405058   spex_prism_0032-4405_U20026.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0032-4405_U20026.fits
+2MASS J00345684-0706013   U50246_0034-0706.fits                                BDNYC_spectra/nir_spectra/U50246_0034-0706.fits
+2MASS J00361617+1821104   2M0036_NIR.fits                                      BDNYC_spectra/nir_spectra/2M0036_NIR.fits
+2MASS J00531899-3631102   spex_prism_0053-3631_080907.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0053-3631_080907.fits
+2MASS J00550564+0134365   U20048.fits                                          BDNYC_spectra/nir_spectra/U20048.fits
+2MASS J01410321+1804502   spex_prism_0141+1804_080907.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0141+1804_080907.fits
+2MASS J01443536-0716142   U10088_050810.fits                                   BDNYC_spectra/nir_spectra/U10088_050810.fits
+2MASS J02050344+1251422   spex_prism_u13076_060820.fits                        BDNYC_spectra/SpeX/Prism/spex_prism_u13076_060820.fits
+2MASS J02052940-1159296   DENIS0205.fits                                       BDNYC_spectra/nir_spectra/DENIS0205.fits
+2MASS J02132880+4444453   U10102.fits                                          BDNYC_spectra/nir_spectra/U10102.fits
+2MASS J02182913-3133230   U10107_0218-3133.fits                                BDNYC_spectra/nir_spectra/U10107_0218-3133.fits
+2MASS J02192807-1938416   spex_prism_0219-1938_080908.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0219-1938_080908.fits
+2MASS J02271036-1624479   U20114_0227-1624.fits                                BDNYC_spectra/nir_spectra/U20114_0227-1624.fits
+2MASS J02301551+2704061   spex_prism_0230+2704_080907.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0230+2704_080907.fits
+2MASS J02355993-2331205   U50185_GJ1048B_0235-2331_BUR08B.fits                 BDNYC_spectra/nir_spectra/U50185_GJ1048B_0235-2331_BUR08B.fits
+2MASS J02394245-1735471   U10125_0239-1735.fits                                BDNYC_spectra/nir_spectra/U10125_0239-1735.fits
+2MASS J02415367-1241069   U10142_0241-1241_BUR08B.fits                         BDNYC_spectra/nir_spectra/U10142_0241-1241_BUR08B.fits
+2MASS J02511490-0352459   U10151.fits                                          BDNYC_spectra/nir_spectra/U10151.fits
+2MASS J02550357-4700509   spex_prism_0255-4700_adam.fits                       BDNYC_spectra/SpeX/Prism/spex_prism_0255-4700_adam.fits
+2MASS J02572581-3105523   U20139.fits                                          BDNYC_spectra/nir_spectra/U20139.fits
+2MASS J03101401-2756452   U10170_0310-2756.fits                                BDNYC_spectra/nir_spectra/U10170_0310-2756.fits
+2MASS J03140344+1603056   U20156_0314+1603.fits                                BDNYC_spectra/nir_spectra/U20156_0314+1603.fits
+2MASS J03250136+2253039   U13119_0325+2253.fits                                BDNYC_spectra/nir_spectra/U13119_0325+2253.fits
+2MASS J03284265+2302051   U50188_0328+2302_BUR08B.fits                         BDNYC_spectra/nir_spectra/U50188_0328+2302_BUR08B.fits
+SDSSp J033035.13-002534   5 U50456_0330-0025.fits                              BDNYC_spectra/nir_spectra/U50456_0330-0025.fits
+2MASS J03370359-1758079   U10196_0337-1758.fits                                BDNYC_spectra/nir_spectra/U10196_0337-1758.fits
+2MASS J03454316+2540233   U20165_0345+2540_new_w.fits                          BDNYC_spectra/SpeX/Prism/U20165_0345+2540_new_w.fits
+Cl* Melotte 22 ROQUE 25   U40021_Roque25_dagny.fits                            BDNYC_spectra/nir_spectra/U40021_Roque25_dagny.fits
+2MASS J03582255-4116060   U20175_0358-4116.fits                                BDNYC_spectra/nir_spectra/U20175_0358-4116.fits
+2MASS J04062677-3812102   U40106_0406-3812.fits                                BDNYC_spectra/nir_spectra/U40106_0406-3812.fits
+2MASS J04082905-1450334   U10244_0408-1450.fits                                BDNYC_spectra/nir_spectra/U10244_0408-1450.fits
+2MASS J05184616-2756457   U10381_0518-2756.fits                                BDNYC_spectra/nir_spectra/U10381_0518-2756.fits
+2MASS J05361998-1920396   U10397.fits                                          BDNYC_spectra/SpeX/Prism/U10397.fits
+2MASS J05431887+6422528   U20230_0543+6422.fits                                BDNYC_spectra/nir_spectra/U20230_0543+6422.fits
+2MASS J06022216+6336391   U20236_0602+6336.fits                                BDNYC_spectra/nir_spectra/U20236_0602+6336.fits
+2MASS J06160532-4557080   U20240_0616-4557.fits                                BDNYC_spectra/nir_spectra/U20240_0616-4557.fits
+2MASS J06523073+4710348   U10601.fits                                          BDNYC_spectra/nir_spectra/U10601.fits
+2MASS J07171626+5705430   spex_prism_0717+5705_080108.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0717+5705_080108.fits
+2MASS J07231462+5727081   U20270_0723+5727.fits                                BDNYC_spectra/nir_spectra/U20270_0723+5727.fits
+2MASS J07464256+2000321   spex_prism_0746+2000_U10668.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0746+2000_U10668.fits
+2MASS J07511645-2530432   U50080_0751-2530.fits                                BDNYC_spectra/nir_spectra/U50080_0751-2530.fits
+2MASS J08202996+4500315   spex_prism_0820+4500_U10714.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0820+4500_U10714.fits
+2MASS J08230838+6125208   U20298_0823+6125.fits                                BDNYC_spectra/nir_spectra/U20298_0823+6125.fits
+2MASS J08234818+2428577   spex_prism_0823+2428_080110.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0823+2428_080110.fits
+2MASS J08251968+2115521   u10721_050323.fits                                   BDNYC_spectra/nir_spectra/u10721_050323.fits
+2MASS J08355829+0548308   U20307_0835+0548.fits                                BDNYC_spectra/nir_spectra/U20307_0835+0548.fits
+2MASS J08503593+1057156   U10770.fits                                          BDNYC_spectra/nir_spectra/U10770.fits
+2MASS J08575849+5708514   spex_prism_0857+5708_080108.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_0857+5708_080108.fits
+2MASS J09054654+5623117   U20329_0905+5623.fits                                BDNYC_spectra/nir_spectra/U20329_0905+5623.fits
+2MASS J09083803+5032088   U10802.fits                                          BDNYC_spectra/SpeX/Prism/U10802.fits
+2MASS J09121469+1459396   U50176_Gl337CD_20080112_BUR10A.fits                  BDNYC_spectra/nir_spectra/U50176_Gl337CD_20080112_BUR10A.fits
+2MASS J09153413+0422045   U20335A.fits                                         BDNYC_spectra/nir_spectra/U20335A.fits
+2MASS J09211410-2104446   U20336_0921-2104.fits                                BDNYC_spectra/nir_spectra/U20336_0921-2104.fits
+2MASS J09283972-1603128   U10828_0928-1603.fits                                BDNYC_spectra/nir_spectra/U10828_0928-1603.fits
+2MASS J10221489+4114266   U50184_1022+4114_HD89744B_BUR08B.fits                BDNYC_spectra/nir_spectra/U50184_1022+4114_HD89744B_BUR08B.fits
+2MASS J10430758+2225236   U10926.fits                                          BDNYC_spectra/SpeX/Prism/U10926.fits
+2MASS J10452400-0149576   U10929.fits                                          BDNYC_spectra/SpeX/Prism/U10929.fits
+SDSS J104842.81+011158.     U20387.fits                                        BDNYC_spectra/SpeX/Prism/U20387.fits
+2MASS J11000965+4957470   U20397.fits                                          BDNYC_spectra/SpeX/Prism/U20397.fits
+2MASS J11040127+1959217   U10954_spex-prism_1104+1959_20030521_BUR04B.fits     BDNYC_spectra/SpeX/Prism/U10954_spex-prism_1104+1959_20030521_BUR04B.fits
+2MASS J11181292-0856106   U50933_1118-0856_KIR10A.fits                         BDNYC_spectra/nir_spectra/U50933_1118-0856_KIR10A.fits
+2MASS J11263991-5003550   spex_prism_1126-5003_061221dl.fits                   BDNYC_spectra/SpeX/Prism/spex_prism_1126-5003_061221dl.fits
+2MASS J12070374-3151298   U20435.fits                                          BDNYC_spectra/SpeX/Prism/U20435.fits
+2MASS J12212770+0257198   spex_prism_1221+0257_060411.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1221+0257_060411.fits
+2MASS J12312141+4959234   U11076_1231+4959.fits                                BDNYC_spectra/nir_spectra/U11076_1231+4959.fits
+2MASS J12321827-0951502   U20448_1232-0951.fits                                BDNYC_spectra/nir_spectra/U20448_1232-0951.fits
+2MASS J13004255+1912354   U11115_1300+1912.fits                                BDNYC_spectra/nir_spectra/U11115_1300+1912.fits
+2MASS J13023811+5650212   U51060_1302+5650_KIR10A.fits                         BDNYC_spectra/nir_spectra/U51060_1302+5650_KIR10A.fits
+2MASS J13054019-2541059   spex_prism_kelu-1_060411.fits                        BDNYC_spectra/nir_spectra/spex_prism_kelu-1_060411.fits
+2MASS J13313310+3407583   U20487_j1331+3407prismtc1_dagny.fits                 BDNYC_spectra/SpeX/Prism/U20487_j1331+3407prismtc1_dagny.fits
+2MASS J13314894-0116500   U50174_1331-0116_BUR10A.fits                         BDNYC_spectra/nir_spectra/U50174_1331-0116_BUR10A.fits
+2MASS J13431670+3945087   U11163_1343+3945.fits                                BDNYC_spectra/nir_spectra/U11163_1343+3945.fits
+2MASS J14044495+4634297   spex_prism_1404+4634_080713.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1404+4634_080713.fits
+2MASS J14090310-3357565   U20552_1409-3357.fits                                BDNYC_spectra/nir_spectra/U20552_1409-3357.fits
+2MASS J14213145+1827407   spex_prism_1421+1827_080730.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1421+1827_080730.fits
+2MASS J14283132+5923354   U20570.fits                                          BDNYC_spectra/SpeX/Prism/U20570.fits
+2MASS J14304358+2915405   spex_prism_1430+2915_080713.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1430+2915_080713.fits
+2MASS J14392836+1929149   U20581_1439+1929_ajb.fits                            BDNYC_spectra/nir_spectra/U20581_1439+1929_ajb.fits
+2MASS J14403186-1303263   U51218_1440-1303_KIR10A.fits                         BDNYC_spectra/nir_spectra/U51218_1440-1303_KIR10A.fits
+2MASS J15065441+1321060   u11291_1506+1321_050323.fits                         BDNYC_spectra/nir_spectra/u11291_1506+1321_050323.fits
+2MASS J15074769-1627386   2M1507.fits                                          BDNYC_spectra/nir_spectra/2M1507.fits
+2MASS J15232263+3014562   U50068_Gl584C_20080508_BUR10A.fits                   BDNYC_spectra/nir_spectra/U50068_Gl584C_20080508_BUR10A.fits
+2MASS J15261405+2043414   U50175_1526+2043_BUR04B.fits                         BDNYC_spectra/nir_spectra/U50175_1526+2043_BUR04B.fits
+2MASS J15382417-1953116   U20622.fits                                          BDNYC_spectra/nir_spectra/U20622.fits
+2MASS J15515237+0941148   spex_prism_U20636_1551+0941_080713.fits              BDNYC_spectra/SpeX/Prism/spex_prism_U20636_1551+0941_080713.fits
+2MASS J16154255+4953211   u11538_050323.fits                                   BDNYC_spectra/nir_spectra/u11538_050323.fits
+2MASS J16360078-0034525   U51421_1636-0034.fits                                BDNYC_spectra/nir_spectra/U51421_1636-0034.fits
+2MASS J16452207+3004071   spex_prism_1645+3004_080713.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1645+3004_080713.fits
+2MASS J16573454+1054233   U20694_1657+1054.fits                                BDNYC_spectra/nir_spectra/U20694_1657+1054.fits
+SDSS J16585026+1820006    U51440_1658+1820.fits                                BDNYC_spectra/nir_spectra/U51440_1658+1820.fits
+2MASS J17073334+4301304   spex_prism_1707+4301_080908.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1707+4301_080908.fits
+2MASS J17111353+2326333   spex_prism_1711+2326_080713.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1711+2326_080713.fits
+2MASS J17210390+3344160   U11694.fits                                          BDNYC_spectra/nir_spectra/U11694.fits
+2MASS J17224432+6329470   U51464_1722+6329.fits                                BDNYC_spectra/nir_spectra/U51464_1722+6329.fits
+2MASS J17312974+2721233   U20744.fits                                          BDNYC_spectra/SpeX/Prism/U20744.fits
+2MASS J17461199+5034036   U20752.fits                                          BDNYC_spectra/SpeX/Prism/U20752.fits
+2MASS J18071593+5015316   U11756_1807+5015.fits                                BDNYC_spectra/SpeX/Prism/U11756_1807+5015.fits
+2MASS J18212815+1414010   j1821+14prismtcadam.fits                             BDNYC_spectra/SpeX/Prism/j1821+14prismtcadam.fits
+2MASS J19223062+6610194   U20812.fits                                          BDNYC_spectra/SpeX/Prism/U20812.fits
+2MASS J19285196-4356256   spex_prism_1928-4356_080908.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_1928-4356_080908.fits
+2MASS J20282035+0052265   U20866_2028+0052_BUR04B.fits                         BDNYC_spectra/nir_spectra/U20866_2028+0052_BUR04B.fits
+2MASS J20343769+0827009   spex_prism_2034+0827_U20869.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2034+0827_U20869.fits
+2MASS J20360316+1051295   spex_prism_2036+1051_080729.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2036+1051_080729.fits
+2MASS J20414283-3506442   spex_prism_2041-3506_080908.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2041-3506_080908.fits
+2MASS J21304464-0845205   spex_prism_2130-0845_080713.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2130-0845_080713.fits
+2MASS J21321145+1341584   spex_prism_2132+1341_051017.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2132+1341_051017.fits
+2MASS J21371044+1450475   U20907_2137+1450.fits                                BDNYC_spectra/nir_spectra/U20907_2137+1450.fits
+2MASS J21373742+0808463   spex_prism_2137+0808_U20909.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2137+0808_U20909.fits
+2MASS J21481633+4003594   j2148+40prismtc_davy1_09sep05.fits                   BDNYC_spectra/SpeX/Prism/j2148+40prismtc_davy1_09sep05.fits
+2MASS J21512543-2441000   spex_prism_U12091_060821.fits                        BDNYC_spectra/SpeX/Prism/spex_prism_U12091_060821.fits
+2MASS J21522609+0937575   U20925.fits                                          BDNYC_spectra/SpeX/Prism/U20925.fits
+2MASS J21580457-1550098   U12101_2158-1550_davy.fits                           BDNYC_spectra/nir_spectra/U12101_2158-1550_davy.fits
+2MASS J22064498-4217208   spex_prism_2206-4217_080714.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2206-4217_080714.fits
+2MASS J22120703+3430351   U20936.fits                                          BDNYC_spectra/SpeX/Prism/U20936.fits
+2MASS J22134491-2136079   j2213-2136prismtc1.fits                              BDNYC_spectra/SpeX/Prism/j2213-2136prismtc1.fits
+2MASS J22380742+4353179   U12147_2238+4353.fits                                BDNYC_spectra/nir_spectra/U12147_2238+4353.fits
+2MASS J22425317+2542573   U13206_spex-prism_2242+2542_20080712_BUR10A.fits     BDNYC_spectra/SpeX/Prism/U13206_spex-prism_2242+2542_20080712_BUR10A.fits
+2MASS J22490917+3205489   U13209.fits                                          BDNYC_spectra/SpeX/Prism/U13209.fits
+2MASS J22495345+0044046   U40005_2249+0044_katelyn.fits                        BDNYC_spectra/nir_spectra/U40005_2249+0044_katelyn.fits
+2MASS J22521073-1730134   U20976_050810.fits                                   BDNYC_spectra/nir_spectra/U20976_050810.fits
+2MASS J23101846-1759090   spex_prism_2310-1759_080714.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2310-1759_080714.fits
+2MASS J23153135+0617146   spex_prism_2315+0617_U20993.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2315+0617_U20993.fits
+2MASS J23174712-4838501   U20994_j2317-4838prismtc1_dagny.fits                 BDNYC_spectra/SpeX/Prism/U20994_j2317-4838prismtc1_dagny.fits
+2MASS J23254530+4251488   U13227.fits                                          BDNYC_spectra/SpeX/Prism/U13227.fits
+2MASS J23302258-0347189   spex_prism_2330-0347_080714.fits                     BDNYC_spectra/SpeX/Prism/spex_prism_2330-0347_080714.fits
+2MASS J23312938+1552228   U51700_2331+1552.fits                                BDNYC_spectra/nir_spectra/U51700_2331+1552.fits
+2MASS J23392527+3507165   U21005.fits                                          BDNYC_spectra/SpeX/Prism/U21005.fits
+================================================================================
