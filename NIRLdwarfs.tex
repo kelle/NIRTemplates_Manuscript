@@ -154,7 +154,7 @@ During these observing runs, we also targeted confirmed nearby M and L dwarfs fr
 As described in more detail below, the far-red optical observations were obtained with several different instruments but we restrict the analysis in this paper to objects with NIR data obtained with the SpeX spectrograph \citep{Spex} on the 3~m NASA Infrared Telescope Facility using the low-resolution prism mode.
 We have combined \replaced{these}{new SpeX prism} data, new optical data, and extant spectra from the literature to create a sample of \sample~L~dwarfs with both far-red optical (6000--9000~\AA) and low-resolution SpeX prism spectra (0.85--2.4~$\micron$) which we refer to collectively as the ``optical-NIR sample''.
 
-All of these data are available as Data behind the Figures and from the BDNYC Database\footnote{The BDNYC Database: \url{http://database.bdnyc.org/}}. \added{The website interface to the database relies on AtrodbWeb \citep{Rodriguez:2016ea}. Version 1 of the database \citep{Filippazzo:2016go} includes data from \citet{Filippazzo:2015dv} while version 2 includes all the data used in this paper.}
+All of these data are available as supplementary material and from the BDNYC Database\footnote{The BDNYC Database: \url{http://database.bdnyc.org/}}. \added{The website interface to the database relies on AtrodbWeb \citep{Rodriguez:2016ea}. Version 1 of the database \citep{Filippazzo:2016go} includes data from \citet{Filippazzo:2015dv} while version 2 includes all the data used in this paper.}
 
 \subsection{Far-Red Optical Spectra}
 \label{sec:obs_new_opt}
@@ -559,8 +559,8 @@ We instead used a \replaced{$\chi^2 > 2.3$}{$M > 2.3$} criterion which results i
 \textbf{For L7 and L8 field-gravity templates, where the number of objects are small, a tighter criterion of \replaced{$\chi^2 > 1.4$}{$M > 1.4$} was used because otherwise no objects are excluded.}
 
 This iterative process resulted in 127 objects being included in 16 spectral average templates (Tables~\ref{tab:field_template} and \ref{tab:lowg_template}) and 44 being excluded (Tables~\ref{tab:field_excluded} and \ref{tab:lowg_excluded}).
-The resulting spectral average templates of field-gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg}; the low-gravity templates are in Figure Sets~\ref{fig:beta_templates} and~\ref{fig:gamma_templates} and discussed in \S~\ref{sec:lowg}; and spectra excluded from the templates are displayed in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
-\added{The templates are available as the Data behind the Figures and from GitHub\footnote{Templates: \url{https://github.com/BDNYC/NIRTemplates}}.}
+The resulting spectral average templates of field-gravity objects are shown in Figure~\ref{fig:field_templates} and discussed in \S~\ref{sec:fieldg}; the low-gravity templates are in Figure~\ref{fig:beta_templates} and~\ref{fig:gamma_templates} and discussed in \S~\ref{sec:lowg}; and spectra excluded from the templates are displayed in Figures~\ref{fig:field_excluded} and \ref{fig:lowg_excluded}.
+The templates are available in a supplementary tar.gz archive and from Zenodo \citep{Cruz:2017kt}.
 Shading is used to indicate the 1$\sigma$ variance (dark gray) and range of flux values (light gray) used to calculate the template at each pixel.
 We also show spectral averages of the optical spectra along with the NIR templates. The optical spectra were smoothed to approximately match the resolution of the NIR spectra and light gray shading indicates the range of flux values used at each pixel.
 \deleted{The templates are available from GitHub.}
@@ -574,7 +574,7 @@ In anticipation of this, we dub the templates presented here version 1.0.
   \plotone{L0strip_f.pdf}
   \plotone{L1strip_f.pdf}
   \plotone{L2strip_f.pdf}
-  \caption{Spectral average templates for field-gravity objects. The average is shown as a solid black line. At each pixel, the 1$\sigma$ variance is shown as dark gray shading and range of flux values are indicated by light gray. Objects included in the templates are listed on the left in order of increasing $J-K_S$ color. The most prominent atomic and molecular features are indicated. \added{The templates are available as Data behind the Figure.}}
+  \caption{Spectral average templates for field-gravity objects. The average is shown as a solid black line. At each pixel, the 1$\sigma$ variance is shown as dark gray shading and range of flux values are indicated by light gray. Objects included in the templates are listed on the left in order of increasing $J-K_S$ color. The most prominent atomic and molecular features are indicated. \added{The templates are available as supplementary material.}}
   \label{fig:field_templates}
 \end{figure}
 
@@ -642,7 +642,7 @@ In anticipation of this, we dub the templates presented here version 1.0.
   \epsscale{0.9}
   \plotone{L0strip_b.pdf}
   \plotone{L1strip_b.pdf}
-  \caption{Spectral average templates for $\beta$-type low-gravity objects. The average is shown as a solid black line. At each pixel, the 1$\sigma$ variance is shown as dark gray shading and range of flux values are indicated by light gray. Objects included in the templates are listed on the left in order of increasing $J-K_S$ color. The most prominent atomic and molecular features are indicated. \added{The templates are available as Data behind the Figure.}}
+  \caption{Spectral average templates for $\beta$-type low-gravity objects. The average is shown as a solid black line. At each pixel, the 1$\sigma$ variance is shown as dark gray shading and range of flux values are indicated by light gray. Objects included in the templates are listed on the left in order of increasing $J-K_S$ color. The most prominent atomic and molecular features are indicated. \added{The templates are available as supplementary material.}}
   \label{fig:beta_templates}
 \end{figure}
 
@@ -651,7 +651,7 @@ In anticipation of this, we dub the templates presented here version 1.0.
   \plotone{L0strip_g.pdf}
   \plotone{L1strip_g.pdf}
   \plotone{L2strip_g.pdf}
-  \caption{Spectral average templates for $\gamma$-type very low-gravity objects. The average is shown as a solid black line. At each pixel, the 1$\sigma$ variance is shown as dark gray shading and range of flux values are indicated by light gray. Objects included in the templates are listed on the left in order of increasing $J-K_S$ color. The most prominent atomic and molecular features are indicated. \added{The templates are available as Data behind the Figure.}}
+  \caption{Spectral average templates for $\gamma$-type very low-gravity objects. The average is shown as a solid black line. At each pixel, the 1$\sigma$ variance is shown as dark gray shading and range of flux values are indicated by light gray. Objects included in the templates are listed on the left in order of increasing $J-K_S$ color. The most prominent atomic and molecular features are indicated. \added{The templates are available as supplementary material.}}
   \label{fig:gamma_templates}
 \end{figure}
 
@@ -806,12 +806,12 @@ The spectral type distribution of the low-gravity objects is shown in Figure~\re
 This sample of low-gravity objects is small and incomplete\added{,} but the striking homogeneity of their NIR spectral morphologies amongst objects of the same optical spectral type provided strong motivation for \replaced{making}{constructing} templates \replaced{at}{for} some spectral types.
 
 \replaced
-{The low-gravity templates are shown in Figure Sets~\ref{fig:beta_templates}--\ref{fig:gamma_templates} and the targets included in them are listed in Table~\ref{tab:lowg_template}.}
+{The low-gravity templates are shown in Figures~\ref{fig:beta_templates}--\ref{fig:gamma_templates} and the targets included in them are listed in Table~\ref{tab:lowg_template}.}
 {Low-gravity templates were produced following the same procedure for our field gravity templates.
-These are shown in Figure Sets~\ref{fig:beta_templates}--\ref{fig:gamma_templates}, with the targets included in them are listed in Table~\ref{tab:lowg_template}.}
-The spectra rejected from the low-gravity templates are shown in Figure Set~\ref{fig:lowg_excluded} and listed in Table~\ref{tab:lowg_excluded}.
+These are shown in Figures~\ref{fig:beta_templates}--\ref{fig:gamma_templates}, with the targets included in them are listed in Table~\ref{tab:lowg_template}.}
+The spectra rejected from the low-gravity templates are shown in Figure~\ref{fig:lowg_excluded} and listed in Table~\ref{tab:lowg_excluded}.
 
-\replaced{Of the~\optLowG, only two were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, rather than because of their inconsistent spectral morphology}{Of the~\optLowG~low-gravity spectra available, only two were excluded from the templates. They were excluded primarily due to the low signal-to-noise ratio of their NIR spectra} (Table~\ref{tab:lowg_excluded}, Figure Set~\ref{fig:lowg_excluded}).
+\replaced{Of the~\optLowG, only two were excluded from the templates and all primarily due to the low signal-to-noise ratio of their NIR spectra, rather than because of their inconsistent spectral morphology}{Of the~\optLowG~low-gravity spectra available, only two were excluded from the templates. They were excluded primarily due to the low signal-to-noise ratio of their NIR spectra} (Table~\ref{tab:lowg_excluded}, Figure~\ref{fig:lowg_excluded}).
 
 In Figure~\ref{fig:JK_colors}, we show the 2MASS $J-K_S$ color distribution versus spectral type for the field (black and gray) and low-gravity objects (red and orange) included in the optical-NIR sample of L~dwarfs.
 For the low-gravity L0 bin, we use a box plot representation for the color distribution, while for the low-gravity L1--L4, where there are fewer than five objects in each bin, we only show the whiskers indicating the range of the distribution.
@@ -1176,7 +1176,7 @@ This analysis shows that the NIR spectral typing method we propose here does ind
 We present analyses of \sample~L dwarfs with both high quality optical and NIR spectra.
 The sample is comprised of \optField~field-gravity L0--L5 objects and \optLowG~L0--L4 low-gravity $\beta$~and $\gamma$~objects.
 Included in the sample are new low-resolution NIR SpeX spectra for \NewPrismObjects~L dwarfs and new moderate-resolution far-red optical spectra for~\NewOptObjects.
-\added{These data are all are available as Data behind the Figures and from the BDNYC Database.}
+\added{These data are all are available as supplementary material and from the BDNYC Database.}
 In our analysis of the NIR spectra, we normalize the spectra band-by-band rather than at one small wavelength window.
 This normalization method effectively reduces the broad-band reddening term present in the spectra and facilitates the comparison of the molecular absorption features.
 
@@ -1217,6 +1217,25 @@ Further, more objects and analysis are required to make the low-gravity $\beta$~
 
 Our analysis suggests that a great deal of further theoretical and observational work is needed to pinpoint the nature of the physical properties modulating the spectral morphologies and colors of L~dwarfs.
 However, our results provide methods to reliably and consistently identify and classify L~dwarf spectra and represent significant progress in our ability to decode NIR spectra to reveal the underlying physics of L~dwarf atmospheres.
+
+The source files used to generate this manuscript\footnote{kelle/NIRTemplates\_Manuscript: \url{https://github.com/kelle/NIRTemplates_Manuscript/}} and the figures\footnote{alejocosmico/NIRSpecFigures: \url{https://github.com/alejocosmico/NIRSpecFigures/}} are available in GitHub repositories.
+
+\acknowledgments
+
+The authors would like to thank J. Davy Kirkpatrick, Michael Cushing, \added{and Jonathan Gagn\'{e} for useful discussions and Eileen Gonzales and Victoria DiTomasso for assistance compiling the references}.
+This material is based upon work supported by the National Science Foundation under Grant No. 1313132.
+This research has benefited from the SpeX Prism Spectral Libraries, maintained by Adam Burgasser
+and made use of NASA's Astrophysics Data System; the SIMBAD database, operated at CDS, Strasbourg, France; and the AstroBetter blog and wiki.
+Some of the data presented herein were obtained at the W.~M.~Keck Observatory, which is operated as a scientific partnership among the California Institute of Technology, the University of California and the National Aeronautics and Space Administration. The Observatory was made possible by the generous financial support of the W.~M.~Keck Foundation.
+This paper also includes data gathered with the 6.5 meter Magellan Telescopes located at Las Campanas Observatory, Chile.
+This publication makes use of data products from the Two Micron All Sky Survey, which is a joint project of the University of Massachusetts and the Infrared Processing and Analysis Center/California Institute of Technology, funded by the National Aeronautics and Space Administration and the National Science Foundation.
+The authors wish to recognize and acknowledge the very significant cultural role and reverence that the summit of Mauna Kea has always had within the indigenous Hawaiian community. We are most fortunate to have the opportunity to conduct observations from this mountain.
+
+\facility{IRTF(SpeX), Keck(LRIS), Magellan:Clay(LDSS3)}
+
+\added{\software{Astropy \citep{TheAstropyCollaboration:2013cd},
+          Matplotlib \citep{matplotlib:2007ih}, NumPy and SciPy \citep{numpy:2011}, Seaborn \citep{Seaborn:2017gc}}
+          }
 
 \clearpage
 \appendix
@@ -1371,23 +1390,6 @@ As part of the spectroscopic follow-up described in \S~\ref{sec:obs_new_nir}, so
 %    \caption{Normalized NIR spectra of 2MASS targets identified as likely galaxies cont. Will be electronic only.}
 %\end{figure}
 %\clearpage
-
-\acknowledgments
-
-The authors would like to thank J. Davy Kirkpatrick, Michael Cushing, \added{and Jonathan Gagn\'{e} for useful discussions and Eileen Gonzales and Victoria DiTomasso for assistance compiling the references}.
-This material is based upon work supported by the National Science Foundation under Grant No. 1313132.
-This research has benefited from the SpeX Prism Spectral Libraries, maintained by Adam Burgasser
-and made use of NASA's Astrophysics Data System; the SIMBAD database, operated at CDS, Strasbourg, France; and the AstroBetter blog and wiki.
-Some of the data presented herein were obtained at the W.~M.~Keck Observatory, which is operated as a scientific partnership among the California Institute of Technology, the University of California and the National Aeronautics and Space Administration. The Observatory was made possible by the generous financial support of the W.~M.~Keck Foundation.
-This paper also includes data gathered with the 6.5 meter Magellan Telescopes located at Las Campanas Observatory, Chile.
-This publication makes use of data products from the Two Micron All Sky Survey, which is a joint project of the University of Massachusetts and the Infrared Processing and Analysis Center/California Institute of Technology, funded by the National Aeronautics and Space Administration and the National Science Foundation.
-The authors wish to recognize and acknowledge the very significant cultural role and reverence that the summit of Mauna Kea has always had within the indigenous Hawaiian community. We are most fortunate to have the opportunity to conduct observations from this mountain.
-
-\facility{IRTF(SpeX), Keck(LRIS), Magellan:Clay(LDSS3)}
-
-\added{\software{Astropy \citep{TheAstropyCollaboration:2013cd},
-          Matplotlib \citep{matplotlib:2007ih}, NumPy and SciPy \citep{numpy:2011}, Seaborn \citep{Seaborn:2017gc}}
-          }
 
 \bibliographystyle{aasjournal}
 \bibliography{paper12}
